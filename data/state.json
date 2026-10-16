@@ -1,0 +1,241 @@
+{
+ "updated": 1792175582880,
+ "riskPct": 0.5,
+ "daily": {
+  "max": 4,
+  "used": 0
+ },
+ "basket": {
+  "updated": 1792175393909,
+  "entries": 0,
+  "perDay": 0,
+  "label": "",
+  "risk": 0.25,
+  "report": [
+   {
+    "tf": "15m",
+    "label": "RSI 20/65 SL3/TP4.5 ATR",
+    "t": 2.13,
+    "trades": 648,
+    "breadth": [
+     15,
+     75
+    ],
+    "ok": false,
+    "why": [
+     "non significativa nel periodo di scelta",
+     "non significativa nel test",
+     "funziona solo su pochi asset"
+    ],
+    "perDay": null
+   },
+   {
+    "tf": "30m",
+    "label": "RSI 20/65 SL2/TP4 ATR",
+    "t": 1.59,
+    "trades": 308,
+    "breadth": [
+     35,
+     65
+    ],
+    "ok": false,
+    "why": [
+     "non significativa nel periodo di scelta",
+     "non significativa nel test",
+     "funziona solo su pochi asset"
+    ],
+    "perDay": null
+   },
+   {
+    "tf": "1h",
+    "label": "RSI 20/65 SL2/TP3 ATR",
+    "t": 2.71,
+    "trades": 78,
+    "breadth": [
+     50,
+     70
+    ],
+    "ok": false,
+    "why": [
+     "non significativa nel periodo di scelta",
+     "pochi trade nel test",
+     "funziona solo su pochi asset"
+    ],
+    "perDay": null
+   }
+  ]
+ },
+ "blackout": null,
+ "minPaper": 10,
+ "scannedAt": "2026-10-16T18:23:38.462Z",
+ "briefing": null,
+ "signals": [
+  {
+   "sym": "ADAUSDT",
+   "tf": "1h",
+   "strat": "Incrocio SMA 30/100 SL1.5/TP2 ATR",
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1791986399999,
+   "price": 0.2237,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.667,
+    "t": 2.23,
+    "n": 21,
+    "sharpeTest": 4.72
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 0,
+    "avgR": null
+   },
+   "key": "ADAUSDT-1h-sma-30-100-1.5-2",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
+  {
+   "sym": "LTCUSDT",
+   "tf": "1h",
+   "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1792173599999,
+   "price": 59.66,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.52,
+    "t": 2.06,
+    "n": 25,
+    "sharpeTest": 4.59
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 0,
+    "avgR": null
+   },
+   "key": "LTCUSDT-1h-sma-10-80-3-4.5",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
+  {
+   "sym": "DOGEUSDT",
+   "tf": "1d",
+   "strat": "Incrocio SMA 10/30 SL2/TP3 ATR",
+   "dir": "SHORT",
+   "action": "ATTIVO",
+   "since": 1791763199999,
+   "price": 0.08015,
+   "entry": 0.08679,
+   "sl": 0.09612136401959087,
+   "tp": 0.0727929539706137,
+   "size": 4.7,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.517,
+    "t": 2.18,
+    "n": 29,
+    "sharpeTest": 1.7
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 0,
+    "avgR": null
+   },
+   "key": "DOGEUSDT-1d-sma-10-30-2-3",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
+  {
+   "sym": "SOLUSDT",
+   "tf": "1d",
+   "strat": "MACD 5/35 SL1.5/TP2 ATR",
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1791503999999,
+   "price": 103.97,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.508,
+    "t": 2.11,
+    "n": 59,
+    "sharpeTest": 1.51
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 0,
+    "avgR": null
+   },
+   "key": "SOLUSDT-1d-macd-5-35-1.5-2",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
+  {
+   "sym": "ETHUSDT",
+   "tf": "1d",
+   "strat": "Momentum con filtro trend 40/10 SL1.5/TP3 ATR",
+   "dir": "FLAT",
+   "action": "FLAT",
+   "since": 1787356799999,
+   "price": 2416.44,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.485,
+    "t": 2.09,
+    "n": 33,
+    "sharpeTest": 1.46
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 0,
+    "avgR": null
+   },
+   "key": "ETHUSDT-1d-momR-40-10-1.5-3",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  }
+ ],
+ "paper": {
+  "n": 0,
+  "wr": null,
+  "avgR": null,
+  "sumPct": 0
+ },
+ "recent": []
+}
