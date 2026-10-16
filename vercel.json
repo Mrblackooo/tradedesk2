@@ -1,1 +1,0 @@
-{"ignoreCommand":"git diff --quiet HEAD^ HEAD -- index.html vercel.json"}
