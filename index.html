@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PropDesk – Backtest e simulatore challenge</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap&display=swap">
+<style>
+:root{color-scheme:dark light;--bg:#0f2230;--card:#15303f;--field:#0c1b27;--ink:#e6f0f2;--mute:#8fb0ba;--line:#25485a;--acc:#7cc4ff;--win:#35c9a0;--loss:#ff7a6b;--onacc:#06202e}
+@media (prefers-color-scheme:light){:root{--bg:#eef4f5;--card:#fff;--field:#f4f8f9;--ink:#12303d;--mute:#587987;--line:#d3e0e4;--acc:#1b6f8f;--win:#14805f;--loss:#c2412f;--onacc:#fff}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.5 'Schibsted Grotesk',system-ui,sans-serif;font-feature-settings:'tnum' 1}
+main{max-width:1040px;margin:0 auto;padding:24px 16px 72px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:36px;height:36px;border-radius:10px;background:var(--acc);color:var(--onacc);display:grid;place-items:center;font-weight:700;font-size:15px}
+h1{font-size:30px;font-weight:700;letter-spacing:-.025em;margin:0}
+h2{font-size:18px;font-weight:700;letter-spacing:-.01em;margin:0 0 6px}
+p.s{color:var(--mute);margin:4px 0 16px;max-width:64ch}
+section{padding:22px 0;border-top:1px solid var(--line)}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+label{display:block;font-size:13px;color:var(--mute)}
+input,select,button{width:100%;font:inherit;padding:9px 10px;border:1px solid var(--line);border-radius:8px;background:var(--field);color:var(--ink);margin-top:4px}
+button{background:var(--acc);color:var(--onacc);border:0;font-weight:700;cursor:pointer;margin-top:14px}
+button:hover{filter:brightness(1.1)}
+button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+summary{cursor:pointer;font-weight:700;padding:8px 0}
+.m{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-top:12px}
+.m div{border-left:3px solid var(--line);padding-left:10px;font-size:13px;color:var(--mute)}
+.m b{display:block;font-size:21px;font-weight:700;color:var(--ink)}
+.m b.w,.w{color:var(--win)}.m b.l,.l{color:var(--loss)}
+canvas{width:100%;height:260px;display:block}
+.pass{font-size:46px;font-weight:700;line-height:1}
+#st{font-size:13px;color:var(--mute);margin-top:8px}
+table{border-collapse:collapse;width:100%;font-size:14px;white-space:nowrap}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mute);font-weight:500;font-size:13px}
+button.x{width:auto;margin:0;padding:2px 9px;background:var(--loss);color:#fff}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px;margin-top:6px}
+.sig{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.sig .top{display:flex;justify-content:space-between;align-items:center}
+.sig .id b{font-size:24px;font-weight:700;letter-spacing:-.02em}
+.sig .id span{margin-left:8px;color:var(--mute);font-size:13px;border:1px solid var(--line);border-radius:6px;padding:1px 7px}
+.dir{font-weight:700;font-size:13px;padding:5px 12px;border-radius:99px;border:1px solid var(--line);color:var(--mute)}
+.dir.long{background:color-mix(in srgb,var(--win) 16%,transparent);border-color:transparent;color:var(--win)}
+.dir.short{background:color-mix(in srgb,var(--loss) 16%,transparent);border-color:transparent;color:var(--loss)}
+.strat{margin:6px 0 10px;color:var(--mute);font-size:13px}
+.act{margin:0;font-weight:700;font-size:14px;display:flex;align-items:center;gap:8px}
+.act i{width:8px;height:8px;border-radius:50%;background:var(--mute)}
+.act.ok i{background:var(--win)}.act.warn i{background:var(--acc)}
+.rulewrap{position:relative;margin:18px 0 6px}
+.rule{display:flex;height:8px;border-radius:99px;overflow:hidden}
+.rule .loss{background:color-mix(in srgb,var(--loss) 80%,transparent)}
+.rule .gain{background:color-mix(in srgb,var(--win) 80%,transparent)}
+.px{position:absolute;top:-5px;width:4px;height:18px;margin-left:-2px;border-radius:2px;background:var(--ink);box-shadow:0 0 0 2px var(--card)}
+.rl{display:flex;justify-content:space-between;font-size:12px;color:var(--mute)}
+.idle{margin:14px 0 4px;color:var(--mute);font-size:13px}
+.facts{list-style:none;margin:14px 0 0;padding:0}
+.facts li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-top:1px solid var(--line);font-size:14px}
+.facts span{color:var(--mute)}.facts b{font-weight:500;text-align:right}
+.bar{height:4px;border-radius:4px;background:var(--line);margin:6px 0 10px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--acc)}
+.note{margin:4px 0 0;font-size:12px;color:var(--mute)}
+.note:empty{display:none}
+details{margin-top:8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0}
+.chip2{font-size:12px;padding:2px 8px;border-radius:99px;border:1px solid var(--line);color:var(--mute)}
+.chip2.y{color:var(--win);border-color:color-mix(in srgb,var(--win) 45%,transparent)}
+.chip2.n{color:var(--loss);border-color:color-mix(in srgb,var(--loss) 45%,transparent)}
+</style>
+</head>
+<body>
+<main>
+<div class="brand"><span class="logo">PD</span><h1>PropDesk</h1></div>
+<p class="s">Segnali con stop loss e take profit, controllati da backtest, news e operazioni virtuali.</p>
+<section id="desk"><h2>Segnali di oggi</h2>
+<p class="s">Il worker cerca le strategie, calcola i segnali ogni 15 minuti e li controlla con news e trade virtuali. Inserisci il tuo repository una sola volta.</p>
+<div class="g" style="grid-template-columns:minmax(200px,320px) max-content;align-items:end"><label>Repository GitHub<input id="repo" placeholder="utente/trading-desk"></label><button id="rp" style="margin:0">Collega</button></div>
+<div id="dk" style="margin-top:12px;overflow-x:auto"></div></section>
+<section id="scalp"><h2>Scalping e intraday veloce (5m–30m)</h2>
+<p class="s">Operazioni molto brevi: i costi di spread e commissioni pesano molto più che sulle strategie lente, quindi molte volte nessuna strategia supera i controlli, ed è il risultato corretto. I segnali live funzionano solo con questa pagina aperta, e molte prop firm limitano lo scalping (durata minima dei trade, news, bot): controlla le regole prima di sceglierne una.</p>
+<button id="nts" style="width:auto;margin:0 0 12px;padding:6px 14px">Attiva notifiche</button>
+<div id="sc"></div></section>
+<details style="margin-bottom:14px"><summary style="cursor:pointer;font-weight:600;margin:8px 0">Strumenti manuali: backtest e ottimizzatore (opzionale)</summary>
+
+<section>
+<h2>Dati</h2>
+<div class="g">
+<label>Fonte<select id="src"><option value="bn">Binance (crypto)</option><option value="csv">CSV da MT5 / cTrader</option></select></label>
+<label id="symL">Simbolo<select id="sym"><option>BTCUSDT</option><option>ETHUSDT</option><option>SOLUSDT</option><option>XRPUSDT</option></select></label>
+<label id="tfL">Timeframe<select id="tf"><option>15m</option><option selected>1h</option><option>4h</option><option>1d</option></select></label>
+<label id="csvL" hidden>File CSV (XAUUSD, petrolio…)<input id="csv" type="file" accept=".csv,.txt"></label>
+</div>
+</section>
+
+<section>
+<h2>Strategia</h2>
+<div class="g">
+<label>Tipo<select id="strat"><option value="sma">Incrocio medie (SMA)</option><option value="rsi">RSI mean reversion</option><option value="brk">Breakout canale</option></select></label>
+<label>Parametro A<input id="pa" type="number" value="20"></label>
+<label>Parametro B<input id="pb" type="number" value="50"></label>
+<label>Direzione<select id="dir"><option value="both">Long e short</option><option value="long">Solo long</option></select></label>
+<label>Costo per trade (%)<input id="fee" type="number" step="0.01" value="0.08"></label>
+<label>Quota train (%)<input id="split" type="number" value="70"></label>
+<label>Stop loss (× ATR, 0 = off)<input id="ksl" type="number" step="0.1" value="1.5"></label>
+<label>Take profit (× ATR)<input id="ktp" type="number" step="0.1" value="3"></label>
+</div>
+<p class="s" style="margin:10px 0 0;font-size:13px">SMA: A=veloce, B=lenta. RSI: A=soglia bassa, B=soglia alta (periodo 14). Breakout: A=lunghezza canale, B ignorato. Il costo include spread e commissioni per ogni cambio di posizione. Stop loss e take profit sono multipli dell'ATR(14) e sono inclusi nel backtest: se nella stessa candela toccano entrambi, si assume lo stop.</p>
+<button id="autoRun" style="background:var(--win)">Modalità automatica: trova la strategia e attiva i segnali</button>
+</section>
+
+<section>
+<h2>Regole prop firm</h2>
+<p class="s" style="font-size:13px;margin-bottom:10px">Non hai ancora scelto la firm: parti da un preset e poi sostituisci i valori con quelli della firm scelta.</p>
+<div class="g">
+<label>Preset (puoi modificarlo)<select id="pre"><option value="a">Challenge 1 fase: 8 / 5 / 10</option><option value="b">Fase 1 di 2: 10 / 5 / 10</option><option value="c">Fase 2 di 2: 5 / 5 / 10</option><option value="x">Personalizzato</option></select></label>
+<label>Profit target (%)<input id="tg" type="number" value="8"></label>
+<label>Daily drawdown (%)<input id="dd" type="number" value="5"></label>
+<label>Max drawdown (%)<input id="md" type="number" value="10"></label>
+<label>Giorni massimi<input id="days" type="number" value="30"></label>
+<label>Moltiplicatore rischio<input id="lev" type="number" step="0.1" value="1"></label>
+</div>
+<button id="run">Esegui backtest e simulazione</button>
+<div id="st"></div>
+</section>
+
+<section id="out" hidden>
+<h2>Equity (train + test, la linea tratteggiata separa i due periodi)</h2>
+<canvas id="cv"></canvas>
+<div class="m" id="met"></div>
+<p class="s" id="vd" style="margin:12px 0 0"></p>
+<button id="save" hidden>Aggiungi questo asset al portafoglio</button>
+</section>
+
+<section id="mc" hidden>
+<h2>Simulazione challenge (500 finestre storiche casuali)</h2>
+<div class="pass" id="pp"></div>
+<div class="m" id="mm"></div>
+<p class="s" style="margin:12px 0 0;font-size:13px">Le finestre vengono prese dallo storico testato: non garantiscono risultati futuri. Se il test out-of-sample è molto peggiore del train, la strategia è probabilmente in overfitting.</p>
+</section>
+<section id="op" hidden><h2>Preset suggeriti per questo asset</h2><p class="s" style="font-size:13px">Dopo ogni test l'app prova decine di combinazioni di parametri sul periodo di train e ti mostra le migliori con il risultato sul test. Il test serve a validare, non a scegliere: se una combinazione "non regge", è overfitting. Più provi, più è facile trovare un caso fortunato, quindi conferma sempre su un altro periodo o asset.</p><div style="overflow-x:auto"><table id="ot"></table></div></section>
+<section id="pf" hidden><h2>Portafoglio: una strategia per ogni asset</h2><p class="s" style="font-size:13px">Cambia asset e strategia, premi Esegui e aggiungi la riga. I valori sono sul periodo di test.</p><div style="overflow-x:auto"><table id="tb"></table></div></section>
+
+<section id="sg" hidden><h2>Segnali live</h2>
+<p class="s" style="font-size:13px">Calcolati sulle ultime candele chiuse di Binance per ogni asset del portafoglio, con la strategia e i parametri salvati. Si aggiornano da soli ogni minuto finché la pagina resta aperta. Sono segnali, non ordini e non consigli di investimento. Gli asset da CSV (oro, petrolio) non hanno un feed live gratuito e restano solo nel backtest.</p>
+<div class="g" style="grid-template-columns:repeat(auto-fit,minmax(170px,max-content));align-items:center"><button id="rf" style="margin:0">Aggiorna ora</button><button id="nt" style="margin:0;background:var(--mute)">Attiva notifiche</button><label style="display:flex;gap:6px;align-items:center"><input id="auto" type="checkbox" checked style="width:auto;margin:0">Aggiornamento automatico</label></div>
+<div style="overflow-x:auto;margin-top:10px"><table id="sgt"></table></div></section>
+</details>
+</main>
+<script src="engine.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+let D=null;
+$('src').onchange=()=>{const c=$('src').value=='csv';$('symL').hidden=$('tfL').hidden=c;$('csvL').hidden=!c};
+const PRE={a:[8,5,10,30],b:[10,5,10,30],c:[5,5,10,60]};
+$('pre').onchange=()=>{const p=PRE[$('pre').value];if(p){$('tg').value=p[0];$('dd').value=p[1];$('md').value=p[2];$('days').value=p[3]}};
+let last=null,PF=[];
+const esc=s=>String(s).replace(/[<>&"]/g,'');
+$('save').onclick=()=>{if(last){PF.push(Object.assign({},last));renderPF();refreshSig()}};
+function renderPF(){
+ try{localStorage.setItem('pd_pf',JSON.stringify(PF))}catch(e){}
+ $('pf').hidden=!PF.length;
+ $('tb').innerHTML='<tr><th>Asset</th><th>Strategia</th><th>Trade</th><th>Win rate</th><th>Rend. test</th><th>Max DD</th><th>Sharpe</th><th>Challenge</th><th></th></tr>'+
+ PF.map((x,i)=>`<tr><td>${esc(x.name)}</td><td>${esc(x.strat)}</td><td>${x.n}</td><td>${x.wr}</td><td class="${x.rc}">${x.ret}</td><td>${x.mdd}</td><td>${x.sh}</td><td>${x.pass}</td><td><button class="x" onclick="PF.splice(${i},1);renderPF();refreshSig()" aria-label="Rimuovi">×</button></td></tr>`).join('');
+}
+
+async function loadBinance(){
+ const s=$('sym').value,i=$('tf').value;let end=Date.now(),all=[];
+ for(let k=0;k<6;k++){
+  const r=await fetch(`https://data-api.binance.vision/api/v3/klines?symbol=${s}&interval=${i}&limit=1000&endTime=${end}`);
+  if(!r.ok)throw new Error('Binance non raggiungibile ('+r.status+')');
+  const a=await r.json();if(!a.length)break;all=a.concat(all);end=a[0][0]-1;
+ }
+ return all.map(x=>({t:+x[0],o:+x[1],h:+x[2],l:+x[3],c:+x[4]}));
+}
+function parseCSV(txt){
+ const L=txt.trim().split(/\r?\n/);const sp=/[,;\t]/;
+ let hd=L[0].split(sp).map(x=>x.replace(/[<>"]/g,'').trim().toLowerCase());
+ const hasH=isNaN(parseFloat(hd[hd.length-1]));
+ if(!hasH)throw new Error('Manca la riga di intestazione (date, open, high, low, close)');
+ const ix=n=>hd.findIndex(h=>h.startsWith(n));
+ const d=ix('date')>=0?ix('date'):ix('time'),tm=ix('date')>=0?ix('time'):-1;
+ const o=ix('open'),h=ix('high'),l=ix('low'),c=ix('close');
+ if([d,o,h,l,c].some(v=>v<0))throw new Error('Colonne richieste: date/time, open, high, low, close');
+ const out=[];
+ for(let k=1;k<L.length;k++){
+  const p=L[k].split(sp);if(p.length<5)continue;
+  let ds=p[d].trim().replace(/\./g,'-').replace(' ','T');
+  if(tm>=0&&p[tm])ds=ds.split('T')[0]+'T'+p[tm].trim();
+  const t=Date.parse(ds.length==10?ds+'T00:00:00':ds);
+  const v={t,o:+p[o],h:+p[h],l:+p[l],c:+p[c]};
+  if(!isNaN(t)&&!isNaN(v.c))out.push(v);
+ }
+ return out.sort((a,b)=>a.t-b.t);
+}
+
+function rsi(c,n){const r=Array(c.length).fill(50);let g=0,l=0;
+ for(let i=1;i<c.length;i++){const d=c[i]-c[i-1];const u=Math.max(d,0),w=Math.max(-d,0);
+  if(i<=n){g+=u/n;l+=w/n}else{g=(g*(n-1)+u)/n;l=(l*(n-1)+w)/n}
+  if(i>=n)r[i]=l==0?100:100-100/(1+g/l)}return r}
+function sma(c,n){const r=Array(c.length).fill(NaN);let s=0;
+ for(let i=0;i<c.length;i++){s+=c[i];if(i>=n)s-=c[i-n];if(i>=n-1)r[i]=s/n}return r}
+
+// posizione decisa alla chiusura della barra i, applicata alla barra i+1 (nessun look-ahead)
+function positions(d,st,a,b,longOnly){
+ const c=d.map(x=>x.c),n=c.length,pos=Array(n).fill(0);
+ if(st=='sma'){const f=sma(c,a),s=sma(c,b);for(let i=0;i<n;i++)if(!isNaN(s[i]))pos[i]=f[i]>s[i]?1:-1}
+ else if(st=='rsi'){const r=rsi(c,14);let p=0;for(let i=0;i<n;i++){
+  if(r[i]<a)p=1;else if(r[i]>b)p=-1;else if(longOnly&&r[i]>50&&p==1)p=0;pos[i]=p}}
+ else{let p=0;for(let i=a;i<n;i++){let hi=-1e18,lo=1e18;
+  for(let k=i-a;k<i;k++){hi=Math.max(hi,d[k].h);lo=Math.min(lo,d[k].l)}
+  if(c[i]>hi)p=1;else if(c[i]<lo)p=-1;pos[i]=p}}
+ if(longOnly)for(let i=0;i<n;i++)if(pos[i]<0)pos[i]=0;
+ return pos;
+}
+function barReturns(d,pos,fee,lev){
+ const r=Array(d.length).fill(0);
+ for(let i=1;i<d.length;i++){
+  const p=pos[i-1],pp=i>1?pos[i-2]:0;
+  r[i]=lev*(p*(d[i].c/d[i-1].c-1)-fee*Math.abs(p-pp));
+ }
+ return r;
+}
+function stats(r,t,from,to){
+ let eq=1,pk=1,mdd=0,w=0,gw=0,gl=0,tr=0;const s=[];
+ for(let i=from;i<to;i++){eq*=1+r[i];pk=Math.max(pk,eq);mdd=Math.max(mdd,1-eq/pk);s.push(r[i]);
+  if(r[i]>0){gw+=r[i];}else if(r[i]<0){gl-=r[i]}}
+ const m=s.reduce((x,y)=>x+y,0)/s.length,sd=Math.sqrt(s.reduce((x,y)=>x+(y-m)**2,0)/s.length)||1e-9;
+ const dts=[];for(let i=from+1;i<to;i++)dts.push(t[i]-t[i-1]);dts.sort((a,b)=>a-b);
+ const py=365*864e5/(dts[dts.length>>1]||864e5);
+ return{ret:eq-1,mdd,sharpe:m/sd*Math.sqrt(py),pf:gl?gw/gl:NaN};
+}
+function monte(r,t,tg,dd,md,maxD,N){
+ let pass=0,dfail=0,mfail=0,timeout=0,dpass=[];
+ for(let k=0;k<N;k++){
+  const s=Math.floor(Math.random()*(r.length-2))+1;let eq=1,dayStart=1,day=Math.floor(t[s]/864e5),d0=day,res=0;
+  for(let i=s;i<r.length;i++){
+   const dy=Math.floor(t[i]/864e5);
+   if(dy!=day){day=dy;dayStart=eq}
+   if(dy-d0>maxD){res=3;break}
+   eq*=1+r[i];
+   if(eq<=1-md){res=2;break}
+   if(eq<=dayStart*(1-dd)){res=1;break}
+   if(eq>=1+tg){res=4;dpass.push(dy-d0);break}
+  }
+  if(res==4)pass++;else if(res==1)dfail++;else if(res==2)mfail++;else timeout++;
+ }
+ return{pass:pass/N,dfail:dfail/N,mfail:mfail/N,timeout:timeout/N,avgD:dpass.length?dpass.reduce((a,b)=>a+b,0)/dpass.length:NaN};
+}
+const pc=x=>x==null||isNaN(x)?'–':(x*100).toFixed(1)+'%';
+function trades(r,pos,from,to){
+ const T=[];let cur=null;
+ for(let i=Math.max(from,1);i<to;i++){
+  const p=pos[i-1],pp=i>1?pos[i-2]:0;
+  if(p==0){if(cur!==null){T.push(cur*(1+r[i]));cur=null}continue}
+  if(cur!==null&&p!=pp){T.push(cur);cur=null}
+  cur=(cur===null?1:cur)*(1+r[i]);
+ }
+ if(cur!==null)T.push(cur);
+ return T.map(x=>x-1);
+}
+function tstat(T){
+ const n=T.length;if(n<2)return{n,wr:NaN,lo:NaN,hi:NaN,avg:NaN,t:NaN};
+ const p=T.filter(x=>x>0).length/n,z=1.96,den=1+z*z/n,ctr=(p+z*z/(2*n))/den,hw=z*Math.sqrt(p*(1-p)/n+z*z/(4*n*n))/den;
+ const m=T.reduce((a,b)=>a+b,0)/n,sd=Math.sqrt(T.reduce((a,b)=>a+(b-m)**2,0)/(n-1))||1e-9;
+ return{n,wr:p,lo:ctr-hw,hi:ctr+hw,avg:m,t:m/(sd/Math.sqrt(n))};
+}
+function met(el,items){el.innerHTML=items.map(([k,v,c])=>`<div>${k}<b class="${c||''}">${v}</b></div>`).join('')}
+
+function draw(eqS,eqB,sp){
+ const cv=$('cv'),dpr=devicePixelRatio||1,W=cv.clientWidth,H=cv.clientHeight;
+ cv.width=W*dpr;cv.height=H*dpr;const x=cv.getContext('2d');x.scale(dpr,dpr);
+ const all=eqS.concat(eqB),mn=Math.min(...all),mx=Math.max(...all),n=eqS.length;
+ const X=i=>i/(n-1)*(W-8)+4,Y=v=>H-14-(v-mn)/(mx-mn||1)*(H-28);
+ const cc=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();x.strokeStyle=cc('--line');x.lineWidth=1;x.beginPath();x.moveTo(0,Y(1));x.lineTo(W,Y(1));x.stroke();
+ x.setLineDash([4,4]);x.beginPath();x.moveTo(X(sp),0);x.lineTo(X(sp),H);x.stroke();x.setLineDash([]);
+ [[eqB,cc('--mute')],[eqS,cc('--acc')]].forEach(([a,col])=>{x.strokeStyle=col;x.lineWidth=2;x.beginPath();
+  a.forEach((v,i)=>i?x.lineTo(X(i),Y(v)):x.moveTo(X(i),Y(v)));x.stroke()});
+ x.fillStyle=cc('--mute');x.font='12px Schibsted Grotesk,sans-serif';x.fillText('Strategia (blu) – Buy & hold (grigio)',6,12);
+}
+
+const GRID=()=>{const g=[];
+ [5,8,10,15,20,30].forEach(a=>[30,50,80,100,150,200].forEach(b=>{if(a<b)g.push(['sma',a,b])}));
+ [20,25,30,35].forEach(a=>[65,70,75,80].forEach(b=>g.push(['rsi',a,b])));
+ [10,20,30,50,80,100,150].forEach(a=>g.push(['brk',a,0]));return g};
+const NM={sma:'Incrocio SMA',rsi:'RSI',brk:'Breakout'};
+function atrA(d,n){const r=Array(d.length).fill(NaN);let s=0;
+ for(let i=1;i<d.length;i++){const tr=Math.max(d[i].h-d[i].l,Math.abs(d[i].h-d[i-1].c),Math.abs(d[i].l-d[i-1].c));
+  if(i<=n){s+=tr;if(i==n)r[i]=s/n}else r[i]=(r[i-1]*(n-1)+tr)/n}return r}
+// simula la strategia con SL/TP in ATR. ep[i-1] = posizione tenuta durante la barra i. Se lo stop e il target cadono nella stessa barra, vale lo stop.
+function sim(d,pos,fee,lev,ks,kt){
+ const n=d.length;
+ if(!(ks>0&&kt>0)){const r=barReturns(d,pos,fee,lev);return{r,ep:pos,st:{cur:pos[n-1],entry:d[n-1].c,sl:null,tp:null}}}
+ const atr=atrA(d,14),r=Array(n).fill(0),ep=Array(n).fill(0);
+ let cur=0,prev=0,blocked=false,entry=0,sl=0,tp=0;
+ for(let i=1;i<=n;i++){
+  const s=isNaN(atr[i-1])?0:pos[i-1];let cost=0;
+  if(s!==prev){prev=s;blocked=false;
+   if(cur!==0){cost+=fee;cur=0}
+   if(s!==0){cur=s;entry=d[i-1].c;sl=entry-s*ks*atr[i-1];tp=entry+s*kt*atr[i-1];cost+=fee}}
+  ep[i-1]=cur;
+  if(i==n)break;
+  let px=d[i].c;
+  if(cur!==0){
+   const hs=cur>0?d[i].l<=sl:d[i].h>=sl,ht=cur>0?d[i].h>=tp:d[i].l<=tp;
+   if(hs){px=sl;cur=0;blocked=true;cost+=fee}else if(ht){px=tp;cur=0;blocked=true;cost+=fee}
+   r[i]=lev*(ep[i-1]*(px/d[i-1].c-1)-cost);
+  }else r[i]=-lev*cost;
+ }
+ return{r,ep,st:{cur,entry,sl,tp,blocked}};
+}
+function optimize(fee,lev,lo,sp,auto){
+ const n=D.length,t=D.map(x=>x.t),res=[],KS=+$('ksl').value,KT=+$('ktp').value;
+ const SLT=auto?[[1,1.5],[1,2],[1.5,2],[1.5,3],[2,3],[2,4],[3,4.5]]:[[KS,KT]];
+ for(const [st,a,b] of GRID()){
+  const p0=positions(D,st,a,b,lo);
+  for(const [ks,kt] of SLT){
+   const sm=sim(D,p0,fee,lev,ks,kt),r=sm.r,pos=sm.ep;
+   const A=stats(r,t,1,sp),B=stats(r,t,sp,n),T0=tstat(trades(r,pos,1,sp)),T1=tstat(trades(r,pos,sp,n));
+   if(T0.n<20)continue;
+   res.push({st,a,b,ks,kt,A,B,T0,T1,ok:T1.n>=20&&B.ret>0&&B.sharpe>0&&A.sharpe>0&&T0.avg>0&&T1.avg>0&&T1.t>1.5});
+  }
+ }
+ const sc=x=>auto?Math.min(x.A.sharpe,x.B.sharpe):x.A.sharpe;
+ return res.sort((x,y)=>sc(y)-sc(x));
+}
+function renderOpt(R){
+ $('op').hidden=!R.length;if(!R.length)return;
+ $('ot').innerHTML='<tr><th>Strategia</th><th>Parametri</th><th>SL/TP (ATR)</th><th>Win rate train</th><th>Win rate test</th><th>Rend. train</th><th>Rend. test</th><th>Sharpe train / test</th><th>Esito</th><th></th></tr>'+
+ R.map(x=>`<tr><td>${NM[x.st]}</td><td>${x.a}${x.b?' / '+x.b:''}</td><td>${x.ks>0?x.ks+' / '+x.kt:'–'}</td><td>${pc(x.T0.wr)}</td><td>${pc(x.T1.wr)} (${x.T1.n})</td><td>${pc(x.A.ret)}</td><td class="${x.B.ret>=0?'w':'l'}">${pc(x.B.ret)}</td><td>${x.A.sharpe.toFixed(2)} / ${x.B.sharpe.toFixed(2)}</td><td class="${x.ok?'w':'l'}">${x.ok?'Regge nel test':'Non regge'}</td><td><button class="x" style="background:var(--acc)" onclick="applyCfg('${x.st}',${x.a},${x.b},${x.ks},${x.kt})">Applica</button></td></tr>`).join('');
+}
+function applyCfg(s,a,b,ks,kt){$('strat').value=s;$('pa').value=a;$('pb').value=b||50;$('ksl').value=ks;$('ktp').value=kt;$('run').click()}
+async function runAll(reuse){
+ const st=$('st');st.textContent='Carico i dati…';
+ try{
+  if(!reuse){if($('src').value=='bn')D=await loadBinance();
+  else{const f=$('csv').files[0];if(!f)throw new Error('Carica un file CSV esportato da MT5 o cTrader.');D=parseCSV(await f.text())}}
+  if(D.length<200)throw new Error('Troppe poche candele ('+D.length+'). Servono almeno 200.');
+  const a=+$('pa').value,b=+$('pb').value,fee=$('fee').value/100,lev=+$('lev').value;
+  const pos0=positions(D,$('strat').value,a,b,$('dir').value=='long');
+  const sm=sim(D,pos0,fee,lev,+$('ksl').value,+$('ktp').value),r=sm.r,pos=sm.ep,t=D.map(x=>x.t),n=D.length;
+  const sp=Math.floor(n*$('split').value/100);
+  const bh=D.map((x,i)=>i?lev*(x.c/D[i-1].c-1):0);
+  const S=[stats(r,t,1,sp),stats(r,t,sp,n)],B=stats(bh,t,sp,n);
+  let e=1,eb=1;const eqS=r.map(v=>e*=1+v),eqB=bh.map(v=>eb*=1+v);
+  $('out').hidden=false;draw(eqS,eqB,sp);
+  const cl=v=>v>=0?'w':'l';
+  const T0=tstat(trades(r,pos,1,sp)),T1=tstat(trades(r,pos,sp,n));
+  met($('met'),[
+   ['Win rate train ('+T0.n+' trade)',pc(T0.wr)],['Win rate test ('+T1.n+' trade)',pc(T1.wr),T1.wr>=.5?'w':'l'],
+   ['Intervallo 95% win rate test',pc(T1.lo)+' – '+pc(T1.hi)],['Guadagno medio per trade',pc(T1.avg),cl(T1.avg)],
+   ['Rendimento train',pc(S[0].ret),cl(S[0].ret)],['Rendimento test',pc(S[1].ret),cl(S[1].ret)],
+   ['Buy & hold test',pc(B.ret),cl(B.ret)],['Max DD test',pc(S[1].mdd),'l'],
+   ['Sharpe test',S[1].sharpe.toFixed(2)],['Profit factor test',isNaN(S[1].pf)?'–':S[1].pf.toFixed(2)]]);
+  $('vd').textContent=T1.n<30?'Meno di 30 trade nel test: il campione è troppo piccolo, win rate e rendimento non sono affidabili. Usa più storico o un timeframe più basso.'
+   :(T1.t>2&&T1.avg>0?'Edge statisticamente significativo nel test (t = '+T1.t.toFixed(2)+'). Verifica che regga anche su un altro periodo.'
+   :'Nessun edge significativo nel test (t = '+T1.t.toFixed(2)+'): il risultato è compatibile con il caso.');
+  const m=monte(r,t,$('tg').value/100,$('dd').value/100,$('md').value/100,+$('days').value,500);
+  $('mc').hidden=false;
+  $('pp').innerHTML=`<span class="${m.pass>.4?'w':'l'}">${pc(m.pass)}</span> <span style="font-size:16px;font-weight:400;color:var(--mute)">di challenge superate</span>`;
+  met($('mm'),[['Bruciate per daily DD',pc(m.dfail),'l'],['Bruciate per max DD',pc(m.mfail),'l'],['Scadute senza target',pc(m.timeout)],['Giorni medi per passare',isNaN(m.avgD)?'–':m.avgD.toFixed(1)]]);
+  const sel=$('strat');
+  last={sym:$('src').value=='bn'?$('sym').value:null,tf:$('tf').value,st:$('strat').value,a,b,ks:+$('ksl').value,kt:+$('ktp').value,lo:$('dir').value=='long',name:$('src').value=='bn'?$('sym').value+' '+$('tf').value:($('csv').files[0].name),
+   strat:sel.options[sel.selectedIndex].text+' '+a+'/'+b+($('dir').value=='long'?' (long)':'')+(+$('ksl').value>0?' SL'+$('ksl').value+'/TP'+$('ktp').value+' ATR':''),
+   n:T1.n,wr:pc(T1.wr)+' ['+pc(T1.lo)+'–'+pc(T1.hi)+']',ret:pc(S[1].ret),rc:cl(S[1].ret),mdd:pc(S[1].mdd),sh:S[1].sharpe.toFixed(2),pass:pc(m.pass)};
+  $('save').hidden=false;
+  renderOpt(optimize(fee,lev,$('dir').value=='long',sp).slice(0,6));
+  st.textContent='Fatto. Dati dal '+new Date(D[0].t).toLocaleDateString('it-IT')+' al '+new Date(D[n-1].t).toLocaleDateString('it-IT')+'.';
+ }catch(err){st.textContent='Errore: '+err.message}
+}
+$('run').onclick=()=>runAll(false);
+const SL=p=>p>0?['LONG','w']:p<0?['SHORT','l']:['FLAT',''];
+const fdt=t=>new Date(t).toLocaleString('it-IT',{dateStyle:'short',timeStyle:'short'});
+async function liveSig(x){
+ const r=await fetch(`https://data-api.binance.vision/api/v3/klines?symbol=${x.sym}&interval=${x.tf}&limit=500`);
+ if(!r.ok)throw new Error(r.status);
+ let a=(await r.json()).map(k=>({t:+k[0],o:+k[1],h:+k[2],l:+k[3],c:+k[4],ct:+k[6]}));
+ const px=a[a.length-1].c;a=a.filter(k=>k.ct<Date.now());
+ const p0=positions(a,x.st,x.a,x.b,x.lo),sm=sim(a,p0,0,1,x.ks,x.kt),S=sm.st,n=a.length;let k=n-1;
+ while(k>0&&sm.ep[k-1]===sm.ep[n-1])k--;
+ return{p:S.cur,since:(k==0?'≥ ':'')+fdt(a[k].ct),px,ent:S.entry,sl:S.sl,tp:S.tp,blk:S.blocked};
+}
+const fp=(v,c)=>v==null||!c?'–':+(+v).toPrecision(6);
+function notify(x,p){if(window.Notification&&Notification.permission=='granted')new Notification('PropDesk: '+x.name,{body:'Nuovo segnale '+SL(p)[0]+' ('+x.strat+')'})}
+let busy=false;
+async function refreshSig(){
+ const L=PF.filter(x=>x.sym);$('sg').hidden=!L.length;if(!L.length||busy)return;busy=true;
+ for(const x of L){
+  try{const s=await liveSig(x);if(x.cur!==undefined&&x.cur!==s.p){x.chg=Date.now();notify(x,s.p)}
+   x.cur=s.p;x.since=s.since;x.px=s.px;x.ent=s.ent;x.sl=s.sl;x.tp=s.tp;x.blk=s.blk;x.upd=Date.now();x.err=''}catch(e){x.err='dati non disponibili'}
+ }
+ busy=false;
+ try{localStorage.setItem('pd_pf',JSON.stringify(PF))}catch(e){}
+ $('sgt').innerHTML='<tr><th>Asset</th><th>Strategia</th><th>Segnale</th><th>Attivo da</th><th>Entry</th><th>SL</th><th>TP</th><th>Prezzo</th><th>Aggiornato</th></tr>'+
+ L.map(x=>{const[l,c]=SL(x.cur);return`<tr><td>${esc(x.name)}</td><td>${esc(x.strat)}</td><td class="${c}"><b>${x.err?'–':l+(x.cur==0&&x.blk?' (SL/TP colpito)':'')}</b>${x.chg&&Date.now()-x.chg<36e5?' (cambiato)':''}</td><td>${x.since||'–'}</td><td>${fp(x.ent,x.cur)}</td><td>${fp(x.sl,x.cur)}</td><td>${fp(x.tp,x.cur)}</td><td>${x.px||'–'}</td><td>${x.err||(x.upd?fdt(x.upd):'–')}</td></tr>`}).join('');
+}
+$('rf').onclick=refreshSig;
+$('nt').onclick=()=>{if(window.Notification)Notification.requestPermission().then(p=>{$('nt').textContent=p=='granted'?'Notifiche attive':'Notifiche bloccate'})};
+setInterval(()=>{if($('auto').checked)refreshSig()},60000);
+try{PF=JSON.parse(localStorage.getItem('pd_pf')||'[]')}catch(e){PF=[]}
+$('autoRun').onclick=async()=>{
+ const st=$('st');st.textContent='Modalità automatica: carico i dati…';
+ try{
+  if($('src').value=='bn')D=await loadBinance();
+  else{const f=$('csv').files[0];if(!f)throw new Error('Carica prima un file CSV.');D=parseCSV(await f.text())}
+  if(D.length<300)throw new Error('Servono almeno 300 candele.');
+  st.textContent='Provo centinaia di combinazioni di strategia, stop loss e take profit…';
+  await new Promise(r=>setTimeout(r,40));
+  const sp=Math.floor(D.length*$('split').value/100),R=optimize($('fee').value/100,+$('lev').value,$('dir').value=='long',sp,true);
+  const best=R.find(x=>x.ok),show=R.filter(x=>x.ok).concat(R.filter(x=>!x.ok)).slice(0,6);
+  if(!best){renderOpt(show);st.textContent='Nessuna strategia robusta per questo asset e timeframe: nessun segnale attivato. Meglio non operare, oppure prova un altro timeframe o asset.';return}
+  $('strat').value=best.st;$('pa').value=best.a;$('pb').value=best.b||50;$('ksl').value=best.ks;$('ktp').value=best.kt;
+  await runAll(true);
+  if(last){PF.push(Object.assign({},last));renderPF();await refreshSig();renderOpt(show);
+   st.textContent='Strategia scelta in automatico e aggiunta ai segnali live: '+last.strat+'. Controlla la sezione Segnali live.';
+   $('sg').scrollIntoView({behavior:'smooth'})}
+ }catch(err){st.textContent='Errore: '+err.message}
+};
+async function loadDesk(){
+ const repo=$('repo').value.trim();if(!/^[\w.-]+\/[\w.-]+$/.test(repo))return;
+ try{localStorage.setItem('pd_repo',repo)}catch(e){}
+ try{
+  const r=await fetch(`https://raw.githubusercontent.com/${repo}/main/data/state.json?t=${Date.now()}`);
+  if(!r.ok)throw new Error('state.json non trovato ('+r.status+'). Controlla repository e ramo main.');
+  const S=await r.json();if(!S.signals){$('dk').textContent='Nessun dato ancora: lancia il workflow "signals" su GitHub.';return}
+  const c=d=>d=='LONG'?'w':d=='SHORT'?'l':'';
+  let h=`<p class="s" style="font-size:13px;margin:0 0 8px">Ultimo aggiornamento: ${fdt(S.updated)}.${Date.now()-S.updated>150*6e4?' <b class="l">Dati fermi da '+Math.round((Date.now()-S.updated)/36e5*10)/10+' ore. GitHub a volte ritarda le esecuzioni pianificate: controlla la tab Actions e, se serve, premi Run workflow.</b>':''} Rischio per trade: ${S.riskPct}% del conto.${S.blackout?' <b class="l">Evento macro ad alto impatto in corso: '+esc(S.blackout.title)+'</b>':''}</p>`;
+  if(S.briefing)h+=`<p style="margin:0 0 10px"><b>Briefing:</b> ${esc(S.briefing)}</p>`;
+  if(!S.signals.length)h+='<p><b>Nessuna strategia robusta trovata al momento</b>: il desk non propone segnali e ricontrolla da solo ogni domenica'+(S.scannedAt?' (ultima scansione '+fdt(Date.parse(S.scannedAt))+')':'')+'.</p>';
+  const MPn=S.minPaper||10,stg=x=>x.stage=='promossa'?'Promossa':x.stage=='sospesa'?'Sospesa':'In osservazione';
+  const rule=x=>{if(x.sl==null||x.tp==null||x.entry==null||x.price==null)return'<p class="idle">Nessuna posizione aperta.</p>';
+   const sp=(x.tp-x.sl)||1,cl=v=>Math.max(0,Math.min(100,v)),e=cl((x.entry-x.sl)/sp*100),p=cl((x.price-x.sl)/sp*100);
+   return`<div class="rulewrap"><div class="rule"><i class="loss" style="width:${e}%"></i><i class="gain" style="width:${100-e}%"></i></div><b class="px" style="left:${p}%"></b></div><div class="rl"><span>SL ${fp(x.sl,1)}</span><span>Entry ${fp(x.entry,1)}</span><span>TP ${fp(x.tp,1)}</span></div><p class="note">Il segno chiaro sulla barra è il prezzo attuale (${fp(x.price,1)}).</p>`};
+  const isOn=x=>x.dir&&x.dir!='FLAT',ord=x=>x.action=='ATTIVO'?0:1,cnt=f=>S.signals.filter(f).length;
+  const tot=S.signals.filter(x=>x.action=='ATTIVO').reduce((q,x)=>q+(x.risk||S.riskPct),0);   // rischio totale se tutti gli stop scattassero insieme
+  const ACT=S.signals.filter(isOn).sort((a,b)=>ord(a)-ord(b)||(b.strength||0)-(a.strength||0)),FLT=S.signals.filter(x=>!isOn(x));
+  h+=`<div class="m"><div>Segnali attivi<b>${cnt(x=>x.action=='ATTIVO')}</b></div><div>In attesa o sospesi<b>${cnt(x=>isOn(x)&&x.action!='ATTIVO')}</b></div><div>Nuovi segnali oggi<b>${(S.daily||{}).used||0} di ${(S.daily||{}).max||'–'}</b></div><div>Rischio aperto totale<b class="${tot>3?'l':''}">${+tot.toFixed(2)}%</b></div><div>Senza posizione<b>${FLT.length}</b></div><div>Promosse / in osservazione<b>${cnt(x=>x.stage=='promossa')} / ${cnt(x=>x.stage=='osservazione')}</b></div></div>`;
+  if(S.basket)h+=S.basket.entries?`<p class="s" style="font-size:13px;margin:0 0 14px"><b>Cesto di asset:</b> ${esc(S.basket.label)}, su ${S.basket.entries} asset, rischio ${S.basket.risk}% per trade. Frequenza attesa: circa ${S.basket.perDay} trade al giorno (stima dal backtest, non una promessa).</p>`:`<p class="s" style="font-size:13px;margin:0 0 14px"><b>Cesto di asset:</b> nessuna strategia comune passa i controlli, quindi la frequenza resta bassa. ${esc(((S.basket.report||[]).map(z=>z.tf+': '+(z.why||[]).join(', '))).join(' · '))}</p>`;
+  if(!ACT.length)h+='<p class="idle">Nessun segnale operativo in questo momento.</p>';
+  h+='<div class="cards">'+ACT.map(x=>{
+   const on=x.dir&&x.dir!='FLAT',d=on?x.dir.toLowerCase():'flat',n=(x.proof||{}).n||0,pct=Math.min(100,Math.round(n/MPn*100));
+   const ac=/ATTESA|SOSPESA|ERRORE/.test(x.action||'')?'warn':x.action=='ATTIVO'?'ok':'';
+   const nw=[x.llm?'Sentiment '+esc(x.llm.note)+' ('+esc(x.llm.risk)+')':'',((x.news||{}).heads||[])[0]?esc(x.news.heads[0]):''].filter(Boolean).join('. ');
+   return`<article class="sig"><div class="top"><div class="id"><b>${esc(String(x.sym||'').replace('USDT',''))}</b><span>${esc(x.tf)}</span></div><span class="dir ${d}">${esc(x.dir)}</span></div>
+<p class="strat">${esc(x.strat||'')}</p><p class="act ${ac}"><i></i>${esc(x.action)}</p>${confRow(x)}${rule(x)}
+<ul class="facts"><li><span>Size consigliata</span><b>${x.size?x.size+'% del conto':'–'}</b></li><li><span>Win rate nel backtest</span><b>${x.bt?pc(x.bt.wrTest)+' su '+x.bt.n+' trade':'–'}</b></li><li><span>Validazione</span><b>${stg(x)}, ${n} di ${MPn} trade</b></li></ul>
+<div class="bar"><i style="width:${pct}%"></i></div><p class="note">${nw}</p></article>`}).join('')+'</div>';
+  if(FLT.length)h+='<h2 style="margin-top:22px">Senza posizione</h2><div style="overflow-x:auto"><table><tr><th>Asset</th><th>Strategia</th><th>Ultimo esito</th><th>Win rate backtest</th><th>Validazione</th></tr>'+FLT.map(x=>`<tr><td>${esc(String(x.sym).replace('USDT',''))} ${esc(x.tf)}</td><td>${esc(x.strat||'')}</td><td>${esc(x.action)}</td><td>${x.bt?pc(x.bt.wrTest)+' su '+x.bt.n+' trade':'–'}</td><td>${esc(stg(x))}, ${(x.proof||{}).n||0} di ${MPn}</td></tr>`).join('')+'</table></div>';
+  const P=S.paper||{},sumR=P.sumR!=null?P.sumR:(P.avgR!=null?+(P.avgR*P.n).toFixed(2):null),acct=sumR==null?null:+(sumR*S.riskPct).toFixed(2);
+  h+=`<h2 style="margin-top:16px">Paper trading (operazioni virtuali dei segnali)</h2><div class="m"><div>Trade chiusi<b>${P.n||0}</b></div><div>Win rate reale<b>${pc(P.wr)}</b></div><div>R medio<b>${P.avgR==null?'–':P.avgR}</b></div><div>Risultato in R<b class="${sumR>=0?'w':'l'}">${sumR==null?'–':sumR+' R'}</b></div><div>Impatto sul conto<b class="${sumR>=0?'w':'l'}">${acct==null?'–':acct+'%'}</b></div></div>`;
+  if((S.recent||[]).length)h+='<table style="margin-top:10px"><tr><th>Asset</th><th>Dir.</th><th>Entry</th><th>Esito</th><th>R</th></tr>'+S.recent.map(t=>{
+   let r=t.r,e=t.status;
+   if(e=='open'){const px=(S.signals.find(z=>z.sym==t.sym&&z.tf==t.tf)||{}).price,sg=t.dir=='LONG'?1:-1;r=px&&t.slPct?+(sg*(px/t.entry-1)*100/t.slPct).toFixed(2):null;e='aperto (adesso)'}
+   else e={tp:'take profit',sl:'stop loss',signal:'segnale cambiato',abbandonata:'abbandonata'}[e]||e;
+   return`<tr><td>${esc(t.sym)} ${esc(t.tf)}</td><td>${esc(t.dir)}</td><td>${fp(t.entry,1)}</td><td>${esc(e)}</td><td class="${r>=0?'w':'l'}">${r==null?'–':r+' R'}</td></tr>`}).join('')+'</table>';
+  $('dk').innerHTML=h;
+ }catch(e){$('dk').textContent='Errore: '+e.message}
+}
+$('rp').onclick=loadDesk;
+try{$('repo').value=localStorage.getItem('pd_repo')||''}catch(e){}
+if(!$('repo').value)$('repo').value=new URLSearchParams(location.search).get('repo')||'Mrblackooo/tradedesk';   // repository predefinito: niente da inserire
+loadDesk();setInterval(loadDesk,120000);
+function confRow(x){
+ const c=x.conf;if(!c)return'';const d=x.dir=='LONG'?1:-1,nm=['Trend','Momentum','Struttura','Flusso'];
+ const chip=(t,v)=>`<span class="chip2 ${v>0?'y':v<0?'n':''}">${t} ${v>0?'✓':v<0?'✗':'–'}</span>`;
+ return`<div class="chips">${c.votes.map((v,i)=>chip(nm[i],v*d)).join('')}${chip('Volatilità',c.gate?1:-1)}${chip('News',c.news)}</div>`;
+}
+const SNM={sma:'Incrocio SMA',rsi:'RSI',brk:'Breakout',macd:'MACD',bb:'Bollinger',mom:'Momentum',rsitrend:'RSI nel trend',rsi2:'RSI(2)',smaR:'SMA con filtro trend',brkR:'Breakout con filtro trend',macdR:'MACD con filtro trend',momR:'Momentum con filtro trend',tod:'Stagionalità oraria',conf:'Confluenza'};
+const LIVE={},sKey=x=>[x.sym,x.tf,x.st,x.a,x.b,x.ks,x.kt].join('|');
+function rl2(s,px,on){
+ if(!on||px==null)return'<p class="idle">Nessuna posizione aperta.</p>';
+ const sp=(s.tp-s.sl)||1,cl=v=>Math.max(0,Math.min(100,v)),e=cl((s.entry-s.sl)/sp*100),p=cl((px-s.sl)/sp*100);
+ return`<div class="rulewrap"><div class="rule"><i class="loss" style="width:${e}%"></i><i class="gain" style="width:${100-e}%"></i></div><b class="px" style="left:${p}%"></b></div><div class="rl"><span>SL ${fp(s.sl,1)}</span><span>Entry ${fp(s.entry,1)}</span><span>TP ${fp(s.tp,1)}</span></div>`;
+}
+function drawLive(){
+ const el=$('scl');if(!el)return;const L=Object.values(LIVE);
+ if(!L.length){el.innerHTML='<p class="idle">Nessuna strategia da scalping supera i controlli: nessun segnale.</p>';return}
+ el.innerHTML=L.map(({x,s,px})=>{
+  const cur=s?s.cur:0,on=cur!==0,d=cur>0?'long':cur<0?'short':'flat';
+  return`<article class="sig"><div class="top"><div class="id"><b>${esc(x.sym.replace('USDT',''))}</b><span>${esc(x.tf)}</span></div><span class="dir ${d}">${on?(cur>0?'LONG':'SHORT'):'FLAT'}</span></div>
+<p class="strat">${esc(SNM[x.st]||x.st)} ${x.a}${x.b?'/'+x.b:''} SL${x.ks}/TP${x.kt} ATR</p><p class="act ${on?'ok':''}"><i></i>${on?'ATTIVO (live, non validato)':'FLAT'}</p>${s?rl2(s,px,on):''}
+<ul class="facts"><li><span>Prezzo live</span><b>${px==null?'–':px}</b></li><li><span>Win rate nel backtest</span><b>${pc(x.bt.wr)} su ${x.bt.n} trade</b></li><li><span>Costi / rischio</span><b>${pc(x.bt.costR)}</b></li></ul></article>`}).join('');
+}
+function notifyLive(L){
+ const c=L.s.cur,t=`${L.x.sym} ${L.x.tf}: ${c>0?'LONG':c<0?'SHORT':'FLAT'}`;
+ try{if(window.Notification&&Notification.permission=='granted')new Notification('PropDesk scalping',{body:t})}catch(e){}
+ document.title='● '+t;
+}
+function recompute(L){
+ const x=L.x,a=L.c;if(a.length<250)return;
+ const p0=Engine.positions(a,x.st,x.a,x.b,!!x.lo),sm=Engine.sim(a,p0,0,1,x.ks,x.kt),prev=L.s&&L.s.cur;
+ L.s=sm.st;if(L.ready&&prev!==L.s.cur)notifyLive(L);L.ready=true;
+}
+function connect(L){
+ const ws=new WebSocket(`wss://data-stream.binance.vision/ws/${L.x.sym.toLowerCase()}@kline_${L.x.tf}`);L.ws=ws;
+ ws.onmessage=e=>{const k=JSON.parse(e.data).k;if(!k)return;L.px=+k.c;
+  if(k.x){L.c.push({t:+k.t,o:+k.o,h:+k.h,l:+k.l,c:+k.c,ct:+k.T});if(L.c.length>600)L.c.shift();recompute(L)}
+  drawLive()};
+ ws.onclose=()=>setTimeout(()=>{if(LIVE[sKey(L.x)]===L)connect(L)},3000);
+}
+async function startLive(list){
+ const keep=new Set(list.map(sKey));
+ for(const k of Object.keys(LIVE))if(!keep.has(k)){try{LIVE[k].ws.close()}catch(e){}delete LIVE[k]}
+ if(typeof Engine==='undefined'){$('scl').innerHTML='<p class="idle">Per i segnali live serve il file engine.js nella stessa cartella di index.html.</p>';return}
+ for(const x of list){
+  const k=sKey(x);if(LIVE[k])continue;const L=LIVE[k]={x,c:[],px:null,s:null};
+  try{const r=await fetch(`https://data-api.binance.vision/api/v3/klines?symbol=${x.sym}&interval=${x.tf}&limit=500`);
+   L.c=(await r.json()).map(q=>({t:+q[0],o:+q[1],h:+q[2],l:+q[3],c:+q[4],ct:+q[6]})).filter(q=>q.ct<Date.now());L.px=L.c.length?L.c[L.c.length-1].c:null}catch(e){}
+  recompute(L);connect(L);
+ }
+ drawLive();
+}
+async function loadScalp(){
+ const repo=$('repo').value.trim();if(!/^[\w.-]+\/[\w.-]+$/.test(repo))return;
+ try{
+  const r=await fetch(`https://raw.githubusercontent.com/${repo}/main/data/scalp.json?t=${Date.now()}`);
+  if(!r.ok){$('sc').innerHTML='<p class="idle">Nessuna scansione scalping ancora: parte da sola dopo aver caricato scalp.js e il workflow scalp.yml.</p>';return}
+  const J=await r.json(),W={costi:'costi troppo alti',test:'negativa nel test',train:'negativa nella scelta',trade:'pochi trade',stab:'instabile',signif:'non significativa'};
+  $('sc').innerHTML=`<p class="s" style="font-size:13px">Scansione del ${fdt(J.updated)}. Costo ipotizzato: ${J.feePct}% per lato (modificabile in config.json).</p><div id="scl" class="cards"></div><div style="overflow-x:auto;margin-top:14px"><table><tr><th>Asset</th><th>TF</th><th>Movimento medio per candela</th><th>Miglior candidata</th><th>Costi / rischio</th><th>Win rate test</th><th>Esito</th></tr>`+
+  J.report.map(x=>`<tr><td>${esc(x.sym)}</td><td>${esc(x.tf)}</td><td>${x.atrPct}%</td><td>${esc((SNM[x.best.st]||x.best.st)+' '+x.best.a+(x.best.b?'/'+x.best.b:''))}</td><td class="${x.best.costR>.25?'l':'w'}">${pc(x.best.costR)}</td><td class="${x.best.n<50?'l':''}">${pc(x.best.wr)} (${x.best.n} trade${x.best.n<50?', pochi':''})</td><td class="${x.ok?'w':'l'}">${x.ok?'Passa i controlli':esc(x.why.map(k=>W[k]||k).join(', '))}</td></tr>`).join('')+'</table></div>';
+  startLive(J.strategies||[]);
+ }catch(e){$('sc').textContent='Errore: '+e.message}
+}
+$('nts').onclick=()=>{if(window.Notification)Notification.requestPermission().then(p=>{$('nts').textContent=p=='granted'?'Notifiche attive':'Notifiche bloccate'})};
+$('rp').addEventListener('click',loadScalp);
+loadScalp();setInterval(loadScalp,600000);
+renderPF();refreshSig();
+</script>
+</body>
+</html>
