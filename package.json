@@ -1,0 +1,1 @@
+{"scripts":{"signals":"node run.js","scan":"node auto.js"},"dependencies":{"@huggingface/transformers":"3.8.0"}}
