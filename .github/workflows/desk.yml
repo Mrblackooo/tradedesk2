@@ -1,0 +1,54 @@
+name: desk
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: desk
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    env:
+      SCAN: ${{ github.event_name != 'schedule' || github.event.schedule == '17 3 * * *' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - uses: actions/cache@v4
+        with:
+          path: |
+            node_modules
+            .model-cache
+          key: model-${{ hashFiles('package.json') }}
+      - name: Installa dipendenze (il sentiment e facoltativo)
+        run: npm install --no-audit --no-fund || echo "npm install non riuscito, il sentiment non sara disponibile"
+      - name: Scansione strategie lente
+        if: env.SCAN == 'true'
+        continue-on-error: true
+        run: node auto.js
+      - name: Scansione cesto di asset
+        if: env.SCAN == 'true'
+        continue-on-error: true
+        run: node basket.js
+      - name: Scansione scalping
+        if: env.SCAN == 'true'
+        continue-on-error: true
+        run: node scalp.js
+      - name: Strategie lente (solo se non ce ne sono di attive)
+        if: env.SCAN != 'true'
+        run: node auto.js --if-empty
+      - name: Calcola segnali
+        run: node run.js
+      - name: Salva risultati
+        run: |
+          git config user.name desk-bot
+          git config user.email desk-bot@users.noreply.github.com
+          git add data config.json
+          git diff --cached --quiet || (git commit -m "update desk" && git pull --rebase && git push)
