@@ -1,12 +1,12 @@
 {
- "updated": 1792176257482,
+ "updated": 1792177322682,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
   "used": 0
  },
  "basket": {
-  "updated": 1792176111614,
+  "updated": 1792177165312,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -15,7 +15,7 @@
    {
     "tf": "15m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 2.14,
+    "t": 2.19,
     "trades": 648,
     "breadth": [
      15,
@@ -32,7 +32,7 @@
    {
     "tf": "30m",
     "label": "RSI 20/65 SL2/TP4 ATR",
-    "t": 1.59,
+    "t": 1.67,
     "trades": 308,
     "breadth": [
      35,
@@ -49,7 +49,7 @@
    {
     "tf": "1h",
     "label": "RSI 20/65 SL2/TP3 ATR",
-    "t": 2.72,
+    "t": 2.74,
     "trades": 78,
     "breadth": [
      50,
@@ -67,9 +67,73 @@
  },
  "blackout": null,
  "minPaper": 10,
- "scannedAt": "2026-10-16T18:36:52.975Z",
+ "scannedAt": "2026-10-16T18:54:07.739Z",
  "briefing": null,
  "signals": [
+  {
+   "sym": "USDCHF=X",
+   "tf": "1h",
+   "strat": "Stagionalità oraria 25/120 SL1.5/TP2 ATR",
+   "dir": "FLAT",
+   "action": "FLAT",
+   "since": 1792108799999,
+   "price": 0.8242200016975403,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.683,
+    "t": 6.74,
+    "n": 416,
+    "sharpeTest": 8.17
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 0,
+    "avgR": null
+   },
+   "key": "USDCHF=X-1h-tod-25-120-1.5-2",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
+  {
+   "sym": "CL=F",
+   "tf": "1h",
+   "strat": "Breakout 80 SL3/TP4.5 ATR",
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1791770399999,
+   "price": 99.13999938964844,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.65,
+    "t": 2.42,
+    "n": 20,
+    "sharpeTest": 3.33
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 0,
+    "avgR": null
+   },
+   "key": "CL=F-1h-brk-80-0-3-4.5",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
   {
    "sym": "ADAUSDT",
    "tf": "1h",
@@ -77,7 +141,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791986399999,
-   "price": 0.2228,
+   "price": 0.2223,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -109,7 +173,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1792173599999,
-   "price": 59.45,
+   "price": 59.35,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -141,7 +205,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.0798,
+   "price": 0.07964,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -152,7 +216,7 @@
    },
    "bt": {
     "wrTest": 0.517,
-    "t": 2.18,
+    "t": 2.19,
     "n": 29,
     "sharpeTest": 1.71
    },
@@ -173,7 +237,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 103.41,
+   "price": 102.8,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -194,38 +258,6 @@
     "avgR": null
    },
    "key": "SOLUSDT-1d-macd-5-35-1.5-2",
-   "risk": 0.5,
-   "strength": 0,
-   "conf": null
-  },
-  {
-   "sym": "ETHUSDT",
-   "tf": "1d",
-   "strat": "Momentum con filtro trend 40/10 SL1.5/TP3 ATR",
-   "dir": "FLAT",
-   "action": "FLAT",
-   "since": 1787356799999,
-   "price": 2408.63,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
-   "news": {
-    "score": 0,
-    "heads": []
-   },
-   "bt": {
-    "wrTest": 0.485,
-    "t": 2.09,
-    "n": 33,
-    "sharpeTest": 1.46
-   },
-   "stage": "osservazione",
-   "proof": {
-    "n": 0,
-    "avgR": null
-   },
-   "key": "ETHUSDT-1d-momR-40-10-1.5-3",
    "risk": 0.5,
    "strength": 0,
    "conf": null

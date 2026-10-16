@@ -27,6 +27,44 @@
  },
  "watch": [
   {
+   "sym": "USDCHF=X",
+   "tf": "1h",
+   "st": "tod",
+   "a": 25,
+   "b": 120,
+   "ks": 1.5,
+   "kt": 2,
+   "lo": false,
+   "active": true,
+   "adopted": "2026-10-16T18:54:07.737Z",
+   "bt": {
+    "wrTest": 0.683,
+    "t": 6.74,
+    "n": 416,
+    "sharpeTest": 8.17
+   },
+   "tested": "2026-10-16T18:54:07.737Z"
+  },
+  {
+   "sym": "CL=F",
+   "tf": "1h",
+   "st": "brk",
+   "a": 80,
+   "b": 0,
+   "ks": 3,
+   "kt": 4.5,
+   "lo": false,
+   "active": true,
+   "adopted": "2026-10-16T18:54:07.738Z",
+   "bt": {
+    "wrTest": 0.65,
+    "t": 2.42,
+    "n": 20,
+    "sharpeTest": 3.33
+   },
+   "tested": "2026-10-16T18:54:07.738Z"
+  },
+  {
    "sym": "ADAUSDT",
    "tf": "1h",
    "st": "sma",
@@ -43,7 +81,7 @@
     "n": 21,
     "sharpeTest": 4.72
    },
-   "tested": "2026-10-16T18:36:52.973Z"
+   "tested": "2026-10-16T18:54:07.738Z"
   },
   {
    "sym": "LTCUSDT",
@@ -62,7 +100,7 @@
     "n": 25,
     "sharpeTest": 4.59
    },
-   "tested": "2026-10-16T18:36:52.975Z"
+   "tested": "2026-10-16T18:54:07.738Z"
   },
   {
    "sym": "DOGEUSDT",
@@ -77,11 +115,11 @@
    "adopted": "2026-10-16T18:23:38.462Z",
    "bt": {
     "wrTest": 0.517,
-    "t": 2.18,
+    "t": 2.19,
     "n": 29,
     "sharpeTest": 1.71
    },
-   "tested": "2026-10-16T18:36:52.975Z"
+   "tested": "2026-10-16T18:54:07.739Z"
   },
   {
    "sym": "SOLUSDT",
@@ -100,31 +138,12 @@
     "n": 59,
     "sharpeTest": 1.51
    },
-   "tested": "2026-10-16T18:36:52.975Z"
-  },
-  {
-   "sym": "ETHUSDT",
-   "tf": "1d",
-   "st": "momR",
-   "a": 40,
-   "b": 10,
-   "ks": 1.5,
-   "kt": 3,
-   "lo": false,
-   "active": true,
-   "adopted": "2026-10-16T18:23:38.462Z",
-   "bt": {
-    "wrTest": 0.485,
-    "t": 2.09,
-    "n": 33,
-    "sharpeTest": 1.46
-   },
-   "tested": "2026-10-16T18:36:52.975Z"
+   "tested": "2026-10-16T18:54:07.739Z"
   }
  ],
- "scannedAt": "2026-10-16T18:36:52.975Z",
+ "scannedAt": "2026-10-16T18:54:07.739Z",
  "basket": {
-  "updated": 1792176111614,
+  "updated": 1792177165312,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -133,7 +152,7 @@
    {
     "tf": "15m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 2.14,
+    "t": 2.19,
     "trades": 648,
     "breadth": [
      15,
@@ -150,7 +169,7 @@
    {
     "tf": "30m",
     "label": "RSI 20/65 SL2/TP4 ATR",
-    "t": 1.59,
+    "t": 1.67,
     "trades": 308,
     "breadth": [
      35,
@@ -167,7 +186,7 @@
    {
     "tf": "1h",
     "label": "RSI 20/65 SL2/TP3 ATR",
-    "t": 2.72,
+    "t": 2.74,
     "trades": 78,
     "breadth": [
      50,
