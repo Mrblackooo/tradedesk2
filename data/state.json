@@ -1,9 +1,9 @@
 {
- "updated": 1792177322682,
+ "updated": 1792186713896,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 0
+  "used": 2
  },
  "basket": {
   "updated": 1792177165312,
@@ -74,14 +74,14 @@
    "sym": "USDCHF=X",
    "tf": "1h",
    "strat": "Stagionalità oraria 25/120 SL1.5/TP2 ATR",
-   "dir": "FLAT",
-   "action": "FLAT",
-   "since": 1792108799999,
-   "price": 0.8242200016975403,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
+   "dir": "SHORT",
+   "action": "ATTIVO",
+   "since": 1792180799999,
+   "price": 0.8236100077629089,
+   "entry": 0.8239399790763855,
+   "sl": 0.8259882435845173,
+   "tp": 0.8212089597322099,
+   "size": 201.1,
    "news": {
     "score": 0,
     "heads": []
@@ -109,7 +109,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 99.13999938964844,
+   "price": 99.04000091552734,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -141,7 +141,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791986399999,
-   "price": 0.2223,
+   "price": 0.2256,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -170,14 +170,14 @@
    "sym": "LTCUSDT",
    "tf": "1h",
    "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
-   "dir": "FLAT",
-   "action": "FLAT (SL/TP colpito)",
-   "since": 1792173599999,
-   "price": 59.35,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
+   "dir": "SHORT",
+   "action": "ATTIVO",
+   "since": 1792180799999,
+   "price": 59.54,
+   "entry": 59.77,
+   "sl": 61.48758047915625,
+   "tp": 57.19362928126563,
+   "size": 17.4,
    "news": {
     "score": 0,
     "heads": []
@@ -205,7 +205,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.07964,
+   "price": 0.08063,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -237,7 +237,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 102.8,
+   "price": 104.35,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -269,5 +269,36 @@
   "avgR": null,
   "sumPct": 0
  },
- "recent": []
+ "recent": [
+  {
+   "id": "LTCUSDT-1h-1792180799999",
+   "key": "LTCUSDT-1h-sma-10-80-3-4.5",
+   "sym": "LTCUSDT",
+   "tf": "1h",
+   "dir": "SHORT",
+   "entry": 59.77,
+   "sl": 61.48758047915625,
+   "tp": 57.19362928126563,
+   "slPct": 2.874,
+   "t0": 1792180799999,
+   "status": "open",
+   "news": 0,
+   "blackout": false
+  },
+  {
+   "id": "USDCHF=X-1h-1792180799999",
+   "key": "USDCHF=X-1h-tod-25-120-1.5-2",
+   "sym": "USDCHF=X",
+   "tf": "1h",
+   "dir": "SHORT",
+   "entry": 0.8239399790763855,
+   "sl": 0.8259882435845173,
+   "tp": 0.8212089597322099,
+   "slPct": 0.249,
+   "t0": 1792180799999,
+   "status": "open",
+   "news": 0,
+   "blackout": false
+  }
+ ]
 }
