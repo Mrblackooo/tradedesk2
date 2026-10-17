@@ -1,5 +1,5 @@
 {
- "updated": 1792261467733,
+ "updated": 1792270463358,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -88,7 +88,7 @@
  "blackout": null,
  "minPaper": 10,
  "scannedAt": "2026-10-17T07:52:42.797Z",
- "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – SOL: positivo (+0.7).",
+ "briefing": null,
  "signals": [
   {
    "sym": "USDCHF=X",
@@ -129,7 +129,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1792180799999,
-   "price": 58.85,
+   "price": 59.41,
    "entry": 59.77,
    "sl": 61.48758047915625,
    "tp": 57.19362928126563,
@@ -193,7 +193,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791986399999,
-   "price": 0.222,
+   "price": 0.2227,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -225,7 +225,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.07969,
+   "price": 0.08024,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -257,16 +257,14 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 103.82,
+   "price": 104.23,
    "entry": null,
    "sl": null,
    "tp": null,
    "size": null,
    "news": {
     "score": 0,
-    "heads": [
-     "Solana shows resilience, but some areas need continued observation, Fidelity says"
-    ]
+    "heads": []
    },
    "bt": {
     "wrTest": 0.508,
@@ -282,12 +280,7 @@
    "key": "SOLUSDT-1d-macd-5-35-1.5-2",
    "risk": 0.5,
    "strength": 0,
-   "conf": null,
-   "llm": {
-    "score": 0.7,
-    "risk": "low",
-    "note": "sentiment +0.7 su 1 titoli"
-   }
+   "conf": null
   }
  ],
  "paper": {
