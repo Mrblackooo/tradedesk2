@@ -1,9 +1,9 @@
 {
- "updated": 1792195078797,
+ "updated": 1792210431817,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 2
+  "used": 0
  },
  "basket": {
   "updated": 1792177165312,
@@ -141,7 +141,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791986399999,
-   "price": 0.2259,
+   "price": 0.2248,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -173,7 +173,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1792180799999,
-   "price": 59.73,
+   "price": 59.91,
    "entry": 59.77,
    "sl": 61.48758047915625,
    "tp": 57.19362928126563,
@@ -205,7 +205,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.08096,
+   "price": 0.08054,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -237,7 +237,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 104.46,
+   "price": 104.84,
    "entry": null,
    "sl": null,
    "tp": null,
