@@ -39,11 +39,30 @@
    "adopted": "2026-10-16T18:54:07.737Z",
    "bt": {
     "wrTest": 0.683,
-    "t": 6.74,
-    "n": 416,
-    "sharpeTest": 8.17
+    "t": 6.75,
+    "n": 417,
+    "sharpeTest": 8.18
    },
-   "tested": "2026-10-16T18:54:07.737Z"
+   "tested": "2026-10-17T07:52:42.795Z"
+  },
+  {
+   "sym": "LTCUSDT",
+   "tf": "1h",
+   "st": "sma",
+   "a": 10,
+   "b": 80,
+   "ks": 3,
+   "kt": 4.5,
+   "lo": false,
+   "active": true,
+   "adopted": "2026-10-16T18:23:38.462Z",
+   "bt": {
+    "wrTest": 0.56,
+    "t": 2.16,
+    "n": 25,
+    "sharpeTest": 4.77
+   },
+   "tested": "2026-10-17T07:52:42.797Z"
   },
   {
    "sym": "CL=F",
@@ -62,7 +81,7 @@
     "n": 20,
     "sharpeTest": 3.33
    },
-   "tested": "2026-10-16T18:54:07.738Z"
+   "tested": "2026-10-17T07:52:42.797Z"
   },
   {
    "sym": "ADAUSDT",
@@ -81,26 +100,7 @@
     "n": 21,
     "sharpeTest": 4.72
    },
-   "tested": "2026-10-16T18:54:07.738Z"
-  },
-  {
-   "sym": "LTCUSDT",
-   "tf": "1h",
-   "st": "sma",
-   "a": 10,
-   "b": 80,
-   "ks": 3,
-   "kt": 4.5,
-   "lo": false,
-   "active": true,
-   "adopted": "2026-10-16T18:23:38.462Z",
-   "bt": {
-    "wrTest": 0.52,
-    "t": 2.06,
-    "n": 25,
-    "sharpeTest": 4.59
-   },
-   "tested": "2026-10-16T18:54:07.738Z"
+   "tested": "2026-10-17T07:52:42.797Z"
   },
   {
    "sym": "DOGEUSDT",
@@ -115,11 +115,11 @@
    "adopted": "2026-10-16T18:23:38.462Z",
    "bt": {
     "wrTest": 0.517,
-    "t": 2.19,
+    "t": 2.12,
     "n": 29,
-    "sharpeTest": 1.71
+    "sharpeTest": 1.67
    },
-   "tested": "2026-10-16T18:54:07.739Z"
+   "tested": "2026-10-17T07:52:42.797Z"
   },
   {
    "sym": "SOLUSDT",
@@ -136,24 +136,25 @@
     "wrTest": 0.508,
     "t": 2.11,
     "n": 59,
-    "sharpeTest": 1.51
+    "sharpeTest": 1.5
    },
-   "tested": "2026-10-16T18:54:07.739Z"
+   "tested": "2026-10-17T07:52:42.797Z"
   }
  ],
- "scannedAt": "2026-10-16T18:54:07.739Z",
+ "scannedAt": "2026-10-17T07:52:42.797Z",
  "basket": {
-  "updated": 1792177165312,
+  "updated": 1792223920775,
   "entries": 0,
   "perDay": 0,
   "label": "",
   "risk": 0.25,
   "report": [
    {
+    "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 2.19,
-    "trades": 648,
+    "t": 2.13,
+    "trades": 647,
     "breadth": [
      15,
      75
@@ -167,12 +168,13 @@
     "perDay": null
    },
    {
+    "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/65 SL2/TP4 ATR",
-    "t": 1.67,
+    "t": 1.57,
     "trades": 308,
     "breadth": [
-     35,
+     40,
      65
     ],
     "ok": false,
@@ -184,10 +186,11 @@
     "perDay": null
    },
    {
+    "basket": "crypto",
     "tf": "1h",
     "label": "RSI 20/65 SL2/TP3 ATR",
-    "t": 2.74,
-    "trades": 78,
+    "t": 2.66,
+    "trades": 76,
     "breadth": [
      50,
      70
@@ -197,6 +200,23 @@
      "non significativa nel periodo di scelta",
      "pochi trade nel test",
      "funziona solo su pochi asset"
+    ],
+    "perDay": null
+   },
+   {
+    "basket": "forex",
+    "tf": "1h",
+    "label": "RSI nel trend 30/200 SL1.5/TP3 ATR",
+    "t": 2.92,
+    "trades": 123,
+    "breadth": [
+     60,
+     90
+    ],
+    "ok": false,
+    "why": [
+     "non significativa nel periodo di scelta",
+     "pochi trade nel test"
     ],
     "perDay": null
    }
