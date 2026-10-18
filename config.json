@@ -43,7 +43,7 @@
     "n": 417,
     "sharpeTest": 8.18
    },
-   "tested": "2026-10-17T07:52:42.795Z"
+   "tested": "2026-10-18T08:07:13.170Z"
   },
   {
    "sym": "LTCUSDT",
@@ -58,11 +58,11 @@
    "adopted": "2026-10-16T18:23:38.462Z",
    "bt": {
     "wrTest": 0.56,
-    "t": 2.16,
+    "t": 2.21,
     "n": 25,
-    "sharpeTest": 4.77
+    "sharpeTest": 4.79
    },
-   "tested": "2026-10-17T07:52:42.797Z"
+   "tested": "2026-10-18T08:07:13.171Z"
   },
   {
    "sym": "CL=F",
@@ -81,7 +81,7 @@
     "n": 20,
     "sharpeTest": 3.33
    },
-   "tested": "2026-10-17T07:52:42.797Z"
+   "tested": "2026-10-18T08:07:13.171Z"
   },
   {
    "sym": "ADAUSDT",
@@ -100,7 +100,7 @@
     "n": 21,
     "sharpeTest": 4.72
    },
-   "tested": "2026-10-17T07:52:42.797Z"
+   "tested": "2026-10-18T08:07:13.171Z"
   },
   {
    "sym": "DOGEUSDT",
@@ -115,11 +115,11 @@
    "adopted": "2026-10-16T18:23:38.462Z",
    "bt": {
     "wrTest": 0.517,
-    "t": 2.12,
+    "t": 2.16,
     "n": 29,
-    "sharpeTest": 1.67
+    "sharpeTest": 1.7
    },
-   "tested": "2026-10-17T07:52:42.797Z"
+   "tested": "2026-10-18T08:07:13.171Z"
   },
   {
    "sym": "SOLUSDT",
@@ -134,16 +134,16 @@
    "adopted": "2026-10-16T18:23:38.462Z",
    "bt": {
     "wrTest": 0.508,
-    "t": 2.11,
+    "t": 2.01,
     "n": 59,
-    "sharpeTest": 1.5
+    "sharpeTest": 1.42
    },
-   "tested": "2026-10-17T07:52:42.797Z"
+   "tested": "2026-10-18T08:07:13.172Z"
   }
  ],
- "scannedAt": "2026-10-17T07:52:42.797Z",
+ "scannedAt": "2026-10-18T08:07:13.172Z",
  "basket": {
-  "updated": 1792223920775,
+  "updated": 1792311193965,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -153,11 +153,11 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 2.13,
-    "trades": 647,
+    "t": 2.41,
+    "trades": 643,
     "breadth": [
-     15,
-     75
+     20,
+     70
     ],
     "ok": false,
     "why": [
@@ -171,11 +171,11 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/65 SL2/TP4 ATR",
-    "t": 1.57,
-    "trades": 308,
+    "t": 1.85,
+    "trades": 307,
     "breadth": [
      40,
-     65
+     70
     ],
     "ok": false,
     "why": [
@@ -188,17 +188,16 @@
    {
     "basket": "crypto",
     "tf": "1h",
-    "label": "RSI 20/65 SL2/TP3 ATR",
-    "t": 2.66,
-    "trades": 76,
+    "label": "Confluenza 4 su 4, intraday SL3/TP4.5 ATR",
+    "t": 2.59,
+    "trades": 1181,
     "breadth": [
-     50,
-     70
+     5,
+     65
     ],
     "ok": false,
     "why": [
      "non significativa nel periodo di scelta",
-     "pochi trade nel test",
      "funziona solo su pochi asset"
     ],
     "perDay": null
