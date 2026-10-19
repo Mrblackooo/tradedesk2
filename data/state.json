@@ -1,5 +1,5 @@
 {
- "updated": 1792367076941,
+ "updated": 1792374684948,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -93,14 +93,14 @@
    "sym": "USDCHF=X",
    "tf": "1h",
    "strat": "Stagionalità oraria 25/120 SL1.5/TP2 ATR",
-   "dir": "SHORT",
-   "action": "ATTIVO",
-   "since": 1792180799999,
-   "price": 0.8239200115203857,
-   "entry": 0.8239399790763855,
-   "sl": 0.8259882435845173,
-   "tp": 0.8212089597322099,
-   "size": 201.1,
+   "dir": "FLAT",
+   "action": "FLAT",
+   "since": 1792367999999,
+   "price": 0.8242400288581848,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -113,8 +113,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 0,
-    "avgR": null
+    "n": 1,
+    "avgR": -0.24
    },
    "key": "USDCHF=X-1h-tod-25-120-1.5-2",
    "risk": 0.5,
@@ -128,7 +128,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1792353599999,
-   "price": 59.15,
+   "price": 59.39,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -160,7 +160,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 97.9800033569336,
+   "price": 97.58000183105469,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -192,7 +192,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791986399999,
-   "price": 0.221,
+   "price": 0.2224,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -224,7 +224,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.07946,
+   "price": 0.07983,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -256,7 +256,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 104.19,
+   "price": 104.9,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -283,10 +283,10 @@
   }
  ],
  "paper": {
-  "n": 1,
-  "wr": 1,
-  "avgR": 1.44,
-  "sumPct": 4.15
+  "n": 2,
+  "wr": 0.5,
+  "avgR": 0.6,
+  "sumPct": 4.09
  },
  "recent": [
   {
@@ -319,9 +319,13 @@
    "tp": 0.8212089597322099,
    "slPct": 0.249,
    "t0": 1792180799999,
-   "status": "open",
+   "status": "signal",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 0.8242400288581848,
+   "t1": 1792374683857,
+   "pct": -0.06,
+   "r": -0.24
   }
  ]
 }
