@@ -1,9 +1,9 @@
 {
- "updated": 1792400930631,
+ "updated": 1792420606331,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 1
+  "used": 2
  },
  "basket": {
   "updated": 1792400764198,
@@ -96,7 +96,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1792367999999,
-   "price": 0.8245499730110168,
+   "price": 0.8256700038909912,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -128,7 +128,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 97.58000183105469,
+   "price": 97.55999755859375,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -160,7 +160,7 @@
    "dir": "LONG",
    "action": "ATTIVO",
    "since": 1792400399999,
-   "price": 59.92,
+   "price": 59.75,
    "entry": 60.02,
    "sl": 58.40830880965466,
    "tp": 62.43753678551801,
@@ -192,7 +192,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.07973,
+   "price": 0.07903,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -223,12 +223,12 @@
    "strat": "Incrocio SMA 15/30 SL2/TP4 ATR",
    "dir": "SHORT",
    "action": "ATTIVO",
-   "since": 1792389599999,
-   "price": 4190.89990234375,
-   "entry": 4204.7998046875,
-   "sl": 4234.730230082821,
-   "tp": 4144.938953896858,
-   "size": 70.2,
+   "since": 1792418399999,
+   "price": 4169.60009765625,
+   "entry": 4174.2001953125,
+   "sl": 4203.653511905921,
+   "tp": 4115.293562125657,
+   "size": 70.9,
    "news": {
     "score": 0,
     "heads": []
@@ -256,7 +256,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 105.54,
+   "price": 103.87,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -289,6 +289,21 @@
   "sumPct": 4.09
  },
  "recent": [
+  {
+   "id": "GC=F-1h-1792418399999",
+   "key": "GC=F-1h-sma-15-30-2-4",
+   "sym": "GC=F",
+   "tf": "1h",
+   "dir": "SHORT",
+   "entry": 4174.2001953125,
+   "sl": 4203.653511905921,
+   "tp": 4115.293562125657,
+   "slPct": 0.706,
+   "t0": 1792418399999,
+   "status": "open",
+   "news": 0,
+   "blackout": false
+  },
   {
    "id": "LTCUSDT-1h-1792400399999",
    "key": "LTCUSDT-1h-sma-10-80-3-4.5",
