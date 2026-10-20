@@ -1,5 +1,5 @@
 {
- "updated": 1792501410299,
+ "updated": 1792519003195,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -88,7 +88,7 @@
  "blackout": null,
  "minPaper": 10,
  "scannedAt": "2026-10-20T08:38:31.221Z",
- "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – SOL: neutro (+0.09).",
+ "briefing": null,
  "signals": [
   {
    "sym": "GC=F",
@@ -97,11 +97,11 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1792418399999,
-   "price": 4139.5,
-   "entry": 4174.2001953125,
-   "sl": 4203.653511905921,
-   "tp": 4115.293562125657,
-   "size": 70.9,
+   "price": 4142.60009765625,
+   "entry": 4174.5,
+   "sl": 4203.6879794998895,
+   "tp": 4116.124041000222,
+   "size": 71.5,
    "news": {
     "score": 0,
     "heads": []
@@ -126,14 +126,14 @@
    "sym": "LTCUSDT",
    "tf": "1h",
    "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
-   "dir": "FLAT",
-   "action": "FLAT (SL/TP colpito)",
-   "since": 1792497599999,
-   "price": 58.74,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
+   "dir": "LONG",
+   "action": "ATTIVO",
+   "since": 1792508399999,
+   "price": 60.29,
+   "entry": 60.95,
+   "sl": 59.14851256648689,
+   "tp": 63.65223115026967,
+   "size": 16.9,
    "news": {
     "score": 0,
     "heads": []
@@ -161,7 +161,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1792454399999,
-   "price": 0.8235300183296204,
+   "price": 0.8251799941062927,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -193,7 +193,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 99.58000183105469,
+   "price": 97.88999938964844,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -225,7 +225,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.07914,
+   "price": 0.08122,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -257,16 +257,14 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 104.32,
+   "price": 106.66,
    "entry": null,
    "sl": null,
    "tp": null,
    "size": null,
    "news": {
     "score": 0,
-    "heads": [
-     "BlackRock files for third Bitcoin ETF, still no Solana or XRP"
-    ]
+    "heads": []
    },
    "bt": {
     "wrTest": 0.508,
@@ -282,12 +280,7 @@
    "key": "SOLUSDT-1d-macd-5-35-1.5-2",
    "risk": 0.5,
    "strength": 0,
-   "conf": null,
-   "llm": {
-    "score": 0.09,
-    "risk": "low",
-    "note": "sentiment +0.09 su 1 titoli"
-   }
+   "conf": null
   }
  ],
  "paper": {
