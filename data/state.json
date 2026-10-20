@@ -1,5 +1,5 @@
 {
- "updated": 1792486006990,
+ "updated": 1792501410299,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -97,11 +97,11 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1792418399999,
-   "price": 4142.10009765625,
-   "entry": 4174.5,
-   "sl": 4203.6879794998895,
-   "tp": 4116.124041000222,
-   "size": 71.5,
+   "price": 4139.5,
+   "entry": 4174.2001953125,
+   "sl": 4203.653511905921,
+   "tp": 4115.293562125657,
+   "size": 70.9,
    "news": {
     "score": 0,
     "heads": []
@@ -126,14 +126,14 @@
    "sym": "LTCUSDT",
    "tf": "1h",
    "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
-   "dir": "LONG",
-   "action": "ATTIVO",
-   "since": 1792400399999,
-   "price": 59.13,
-   "entry": 60.02,
-   "sl": 58.40830880965466,
-   "tp": 62.43753678551801,
-   "size": 18.6,
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1792497599999,
+   "price": 58.74,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -146,8 +146,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 1,
-    "avgR": 1.44
+    "n": 2,
+    "avgR": 0.19
    },
    "key": "LTCUSDT-1h-sma-10-80-3-4.5",
    "risk": 0.5,
@@ -161,7 +161,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1792454399999,
-   "price": 0.824720025062561,
+   "price": 0.8235300183296204,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -193,7 +193,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 99.80000305175781,
+   "price": 99.58000183105469,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -225,7 +225,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.07897,
+   "price": 0.07914,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -257,7 +257,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 104.19,
+   "price": 104.32,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -291,10 +291,10 @@
   }
  ],
  "paper": {
-  "n": 3,
-  "wr": 0.333,
-  "avgR": 0.31,
-  "sumPct": 4.04
+  "n": 4,
+  "wr": 0.25,
+  "avgR": -0.03,
+  "sumPct": 1.19
  },
  "recent": [
   {
@@ -342,9 +342,13 @@
    "tp": 62.43753678551801,
    "slPct": 2.685,
    "t0": 1792400399999,
-   "status": "open",
+   "status": "sl",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 58.40830880965466,
+   "t1": 1792494000000,
+   "pct": -2.845,
+   "r": -1.06
   },
   {
    "id": "LTCUSDT-1h-1792180799999",
