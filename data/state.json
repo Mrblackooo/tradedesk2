@@ -1,5 +1,5 @@
 {
- "updated": 1792462235800,
+ "updated": 1792482269423,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -87,7 +87,7 @@
  "blackout": null,
  "minPaper": 10,
  "scannedAt": "2026-10-19T08:59:52.212Z",
- "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – SOL: neutro (+0.24).",
+ "briefing": null,
  "signals": [
   {
    "sym": "USDCHF=X",
@@ -96,7 +96,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1792454399999,
-   "price": 0.8256300091743469,
+   "price": 0.8243899941444397,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -128,7 +128,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 98.62999725341797,
+   "price": 99.5999984741211,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -160,7 +160,7 @@
    "dir": "LONG",
    "action": "ATTIVO",
    "since": 1792400399999,
-   "price": 59.28,
+   "price": 59.36,
    "entry": 60.02,
    "sl": 58.40830880965466,
    "tp": 62.43753678551801,
@@ -192,7 +192,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.07921,
+   "price": 0.07926,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -224,7 +224,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1792418399999,
-   "price": 4147.7001953125,
+   "price": 4145.89990234375,
    "entry": 4174.2001953125,
    "sl": 4203.653511905921,
    "tp": 4115.293562125657,
@@ -256,16 +256,14 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 104.62,
+   "price": 104.47,
    "entry": null,
    "sl": null,
    "tp": null,
    "size": null,
    "news": {
     "score": 0,
-    "heads": [
-     "Solana treasury firm SkyAI sells all SOL holdings, launches $201M buyback"
-    ]
+    "heads": []
    },
    "bt": {
     "wrTest": 0.508,
@@ -281,12 +279,7 @@
    "key": "SOLUSDT-1d-macd-5-35-1.5-2",
    "risk": 0.5,
    "strength": 0,
-   "conf": null,
-   "llm": {
-    "score": 0.24,
-    "risk": "low",
-    "note": "sentiment +0.24 su 1 titoli"
-   }
+   "conf": null
   }
  ],
  "paper": {
