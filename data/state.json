@@ -1,12 +1,12 @@
 {
- "updated": 1792482269423,
+ "updated": 1792486006990,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
   "used": 0
  },
  "basket": {
-  "updated": 1792400764198,
+  "updated": 1792485854349,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -16,10 +16,10 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 2.25,
-    "trades": 663,
+    "t": 2.34,
+    "trades": 666,
     "breadth": [
-     20,
+     15,
      70
     ],
     "ok": false,
@@ -34,7 +34,7 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/65 SL2/TP4 ATR",
-    "t": 2.25,
+    "t": 2.39,
     "trades": 321,
     "breadth": [
      35,
@@ -51,16 +51,17 @@
    {
     "basket": "crypto",
     "tf": "1h",
-    "label": "Confluenza 4 su 4, intraday SL3/TP4.5 ATR",
-    "t": 2.54,
-    "trades": 1187,
+    "label": "RSI 20/65 SL2/TP3 ATR",
+    "t": 2.76,
+    "trades": 79,
     "breadth": [
-     5,
-     65
+     35,
+     75
     ],
     "ok": false,
     "why": [
      "non significativa nel periodo di scelta",
+     "pochi trade nel test",
      "funziona solo su pochi asset"
     ],
     "perDay": null
@@ -69,8 +70,8 @@
     "basket": "forex",
     "tf": "1h",
     "label": "RSI nel trend 30/200 SL1.5/TP3 ATR",
-    "t": 2.9,
-    "trades": 123,
+    "t": 2.75,
+    "trades": 121,
     "breadth": [
      60,
      90
@@ -86,9 +87,73 @@
  },
  "blackout": null,
  "minPaper": 10,
- "scannedAt": "2026-10-19T08:59:52.212Z",
- "briefing": null,
+ "scannedAt": "2026-10-20T08:38:31.221Z",
+ "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – SOL: neutro (+0.09).",
  "signals": [
+  {
+   "sym": "GC=F",
+   "tf": "1h",
+   "strat": "Incrocio SMA 15/30 SL2/TP4 ATR",
+   "dir": "SHORT",
+   "action": "ATTIVO",
+   "since": 1792418399999,
+   "price": 4142.10009765625,
+   "entry": 4174.5,
+   "sl": 4203.6879794998895,
+   "tp": 4116.124041000222,
+   "size": 71.5,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.44,
+    "t": 2.51,
+    "n": 159,
+    "sharpeTest": 3.87
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 0,
+    "avgR": null
+   },
+   "key": "GC=F-1h-sma-15-30-2-4",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
+  {
+   "sym": "LTCUSDT",
+   "tf": "1h",
+   "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
+   "dir": "LONG",
+   "action": "ATTIVO",
+   "since": 1792400399999,
+   "price": 59.13,
+   "entry": 60.02,
+   "sl": 58.40830880965466,
+   "tp": 62.43753678551801,
+   "size": 18.6,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.56,
+    "t": 2.3,
+    "n": 25,
+    "sharpeTest": 5.03
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 1,
+    "avgR": 1.44
+   },
+   "key": "LTCUSDT-1h-sma-10-80-3-4.5",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
   {
    "sym": "USDCHF=X",
    "tf": "1h",
@@ -96,7 +161,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1792454399999,
-   "price": 0.8243899941444397,
+   "price": 0.824720025062561,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -106,10 +171,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.683,
-    "t": 6.74,
-    "n": 417,
-    "sharpeTest": 8.16
+    "wrTest": 0.68,
+    "t": 6.49,
+    "n": 416,
+    "sharpeTest": 7.91
    },
    "stage": "osservazione",
    "proof": {
@@ -128,7 +193,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 99.5999984741211,
+   "price": 99.80000305175781,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -141,7 +206,7 @@
     "wrTest": 0.65,
     "t": 2.42,
     "n": 20,
-    "sharpeTest": 3.33
+    "sharpeTest": 3.34
    },
    "stage": "osservazione",
    "proof": {
@@ -154,45 +219,13 @@
    "conf": null
   },
   {
-   "sym": "LTCUSDT",
-   "tf": "1h",
-   "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
-   "dir": "LONG",
-   "action": "ATTIVO",
-   "since": 1792400399999,
-   "price": 59.36,
-   "entry": 60.02,
-   "sl": 58.40830880965466,
-   "tp": 62.43753678551801,
-   "size": 18.6,
-   "news": {
-    "score": 0,
-    "heads": []
-   },
-   "bt": {
-    "wrTest": 0.583,
-    "t": 2.48,
-    "n": 24,
-    "sharpeTest": 5.36
-   },
-   "stage": "osservazione",
-   "proof": {
-    "n": 1,
-    "avgR": 1.44
-   },
-   "key": "LTCUSDT-1h-sma-10-80-3-4.5",
-   "risk": 0.5,
-   "strength": 0,
-   "conf": null
-  },
-  {
    "sym": "DOGEUSDT",
    "tf": "1d",
    "strat": "Incrocio SMA 10/30 SL2/TP3 ATR",
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.07926,
+   "price": 0.07897,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -203,9 +236,9 @@
    },
    "bt": {
     "wrTest": 0.517,
-    "t": 2.15,
+    "t": 2.1,
     "n": 29,
-    "sharpeTest": 1.69
+    "sharpeTest": 1.66
    },
    "stage": "osservazione",
    "proof": {
@@ -218,58 +251,28 @@
    "conf": null
   },
   {
-   "sym": "GC=F",
-   "tf": "1h",
-   "strat": "Incrocio SMA 15/30 SL2/TP4 ATR",
-   "dir": "SHORT",
-   "action": "ATTIVO",
-   "since": 1792418399999,
-   "price": 4145.89990234375,
-   "entry": 4174.2001953125,
-   "sl": 4203.653511905921,
-   "tp": 4115.293562125657,
-   "size": 70.9,
-   "news": {
-    "score": 0,
-    "heads": []
-   },
-   "bt": {
-    "wrTest": 0.435,
-    "t": 2.3,
-    "n": 161,
-    "sharpeTest": 3.43
-   },
-   "stage": "osservazione",
-   "proof": {
-    "n": 0,
-    "avgR": null
-   },
-   "key": "GC=F-1h-sma-15-30-2-4",
-   "risk": 0.5,
-   "strength": 0,
-   "conf": null
-  },
-  {
    "sym": "SOLUSDT",
    "tf": "1d",
    "strat": "MACD 5/35 SL1.5/TP2 ATR",
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 104.47,
+   "price": 104.19,
    "entry": null,
    "sl": null,
    "tp": null,
    "size": null,
    "news": {
     "score": 0,
-    "heads": []
+    "heads": [
+     "BlackRock files for third Bitcoin ETF, still no Solana or XRP"
+    ]
    },
    "bt": {
     "wrTest": 0.508,
-    "t": 2.01,
+    "t": 1.99,
     "n": 59,
-    "sharpeTest": 1.42
+    "sharpeTest": 1.41
    },
    "stage": "osservazione",
    "proof": {
@@ -279,7 +282,12 @@
    "key": "SOLUSDT-1d-macd-5-35-1.5-2",
    "risk": 0.5,
    "strength": 0,
-   "conf": null
+   "conf": null,
+   "llm": {
+    "score": 0.09,
+    "risk": "low",
+    "note": "sentiment +0.09 su 1 titoli"
+   }
   }
  ],
  "paper": {
