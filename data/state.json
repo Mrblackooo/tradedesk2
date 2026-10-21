@@ -1,5 +1,5 @@
 {
- "updated": 1792575744675,
+ "updated": 1792593757969,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -88,7 +88,7 @@
  "blackout": null,
  "minPaper": 10,
  "scannedAt": "2026-10-21T08:40:08.278Z",
- "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – SOL: neutro (+0.06).",
+ "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – DOGE: neutro (+0.33); SOL: neutro (+0.49).",
  "signals": [
   {
    "sym": "GC=F",
@@ -97,11 +97,11 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1792418399999,
-   "price": 4142.2001953125,
-   "entry": 4174.5,
-   "sl": 4203.6879794998895,
-   "tp": 4116.124041000222,
-   "size": 71.5,
+   "price": 4151.2998046875,
+   "entry": 4174.2001953125,
+   "sl": 4203.653511905921,
+   "tp": 4115.293562125657,
+   "size": 70.9,
    "news": {
     "score": 0,
     "heads": []
@@ -129,7 +129,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1792540799999,
-   "price": 0.8253899812698364,
+   "price": 0.8249099850654602,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -161,7 +161,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 98.83000183105469,
+   "price": 97.7300033569336,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -193,7 +193,7 @@
    "dir": "LONG",
    "action": "ATTIVO",
    "since": 1792508399999,
-   "price": 61.65,
+   "price": 61.54,
    "entry": 60.95,
    "sl": 59.14851256648689,
    "tp": 63.65223115026967,
@@ -225,14 +225,16 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.08211,
+   "price": 0.08255,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
    "size": 4.7,
    "news": {
     "score": 0,
-    "heads": []
+    "heads": [
+     "Dogecoin wallet, app teams unite in push to give DOGE more everyday uses"
+    ]
    },
    "bt": {
     "wrTest": 0.517,
@@ -248,7 +250,12 @@
    "key": "DOGEUSDT-1d-sma-10-30-2-3",
    "risk": 0.5,
    "strength": 0,
-   "conf": null
+   "conf": null,
+   "llm": {
+    "score": 0.33,
+    "risk": "low",
+    "note": "sentiment +0.33 su 1 titoli"
+   }
   },
   {
    "sym": "SOLUSDT",
@@ -257,7 +264,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 106.94,
+   "price": 107.24,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -265,7 +272,7 @@
    "news": {
     "score": 0,
     "heads": [
-     "Solana’s Alpenglow, its biggest network overhaul since 2020, goes live Wednesday"
+     "Solana’s Alpenglow launches on mainnet, targets 99% faster finality"
     ]
    },
    "bt": {
@@ -284,9 +291,9 @@
    "strength": 0,
    "conf": null,
    "llm": {
-    "score": 0.06,
+    "score": 0.49,
     "risk": "low",
-    "note": "sentiment +0.06 su 1 titoli"
+    "note": "sentiment +0.49 su 1 titoli"
    }
   }
  ],
