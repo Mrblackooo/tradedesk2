@@ -1,9 +1,9 @@
 {
- "updated": 1792609187938,
+ "updated": 1792621020474,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 0
+  "used": 1
  },
  "basket": {
   "updated": 1792572326824,
@@ -88,20 +88,20 @@
  "blackout": null,
  "minPaper": 10,
  "scannedAt": "2026-10-21T08:40:08.278Z",
- "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – SOL: neutro (+0.49).",
+ "briefing": null,
  "signals": [
   {
    "sym": "GC=F",
    "tf": "1h",
    "strat": "Incrocio SMA 15/30 SL2/TP4 ATR",
-   "dir": "LONG",
-   "action": "ATTIVO",
-   "since": 1792598399999,
-   "price": 4148.10009765625,
-   "entry": 4150.10009765625,
-   "sl": 4123.840236896214,
-   "tp": 4202.6198191763215,
-   "size": 79,
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1792612799999,
+   "price": 4155.89990234375,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -126,14 +126,14 @@
    "sym": "USDCHF=X",
    "tf": "1h",
    "strat": "Stagionalità oraria 25/120 SL1.5/TP2 ATR",
-   "dir": "FLAT",
-   "action": "FLAT",
-   "since": 1792540799999,
-   "price": 0.8252900242805481,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
+   "dir": "LONG",
+   "action": "ATTIVO",
+   "since": 1792619999999,
+   "price": 0.8242599964141846,
+   "entry": 0.8240699768066406,
+   "sl": 0.8225195228912103,
+   "tp": 0.826137248693881,
+   "size": 265.8,
    "news": {
     "score": 0,
     "heads": []
@@ -161,7 +161,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 97.69000244140625,
+   "price": 97.86000061035156,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -193,7 +193,7 @@
    "dir": "LONG",
    "action": "ATTIVO",
    "since": 1792508399999,
-   "price": 61.99,
+   "price": 61.59,
    "entry": 60.95,
    "sl": 59.14851256648689,
    "tp": 63.65223115026967,
@@ -225,7 +225,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.08293,
+   "price": 0.08255,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -257,16 +257,14 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 108.07,
+   "price": 107.89,
    "entry": null,
    "sl": null,
    "tp": null,
    "size": null,
    "news": {
     "score": 0,
-    "heads": [
-     "Solana’s Alpenglow launches on mainnet, targets 99% faster finality"
-    ]
+    "heads": []
    },
    "bt": {
     "wrTest": 0.508,
@@ -282,12 +280,7 @@
    "key": "SOLUSDT-1d-macd-5-35-1.5-2",
    "risk": 0.5,
    "strength": 0,
-   "conf": null,
-   "llm": {
-    "score": 0.49,
-    "risk": "low",
-    "note": "sentiment +0.49 su 1 titoli"
-   }
+   "conf": null
   }
  ],
  "paper": {
@@ -297,6 +290,21 @@
   "sumPct": 1.63
  },
  "recent": [
+  {
+   "id": "USDCHF=X-1h-1792619999999",
+   "key": "USDCHF=X-1h-tod-25-120-1.5-2",
+   "sym": "USDCHF=X",
+   "tf": "1h",
+   "dir": "LONG",
+   "entry": 0.8240699768066406,
+   "sl": 0.8225195228912103,
+   "tp": 0.826137248693881,
+   "slPct": 0.188,
+   "t0": 1792619999999,
+   "status": "open",
+   "news": 0,
+   "blackout": false
+  },
   {
    "id": "USDCHF=X-1h-1792526399999",
    "key": "USDCHF=X-1h-tod-25-120-1.5-2",
