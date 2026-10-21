@@ -1,5 +1,5 @@
 {
- "updated": 1792541156187,
+ "updated": 1792557439059,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -88,7 +88,7 @@
  "blackout": null,
  "minPaper": 10,
  "scannedAt": "2026-10-20T08:38:31.221Z",
- "briefing": null,
+ "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – SOL: neutro (+0.06).",
  "signals": [
   {
    "sym": "GC=F",
@@ -97,7 +97,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1792418399999,
-   "price": 4132.5,
+   "price": 4139,
    "entry": 4174.2001953125,
    "sl": 4203.653511905921,
    "tp": 4115.293562125657,
@@ -129,7 +129,7 @@
    "dir": "LONG",
    "action": "ATTIVO",
    "since": 1792508399999,
-   "price": 61.71,
+   "price": 61.31,
    "entry": 60.95,
    "sl": 59.14851256648689,
    "tp": 63.65223115026967,
@@ -161,7 +161,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1792540799999,
-   "price": 0.8255199790000916,
+   "price": 0.8256000280380249,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -193,7 +193,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 98.38999938964844,
+   "price": 99.16000366210938,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -225,7 +225,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.08189,
+   "price": 0.08156,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -257,14 +257,16 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 106.54,
+   "price": 105.84,
    "entry": null,
    "sl": null,
    "tp": null,
    "size": null,
    "news": {
     "score": 0,
-    "heads": []
+    "heads": [
+     "Solana’s Alpenglow, its biggest network overhaul since 2020, goes live Wednesday"
+    ]
    },
    "bt": {
     "wrTest": 0.508,
@@ -280,7 +282,12 @@
    "key": "SOLUSDT-1d-macd-5-35-1.5-2",
    "risk": 0.5,
    "strength": 0,
-   "conf": null
+   "conf": null,
+   "llm": {
+    "score": 0.06,
+    "risk": "low",
+    "note": "sentiment +0.06 su 1 titoli"
+   }
   }
  ],
  "paper": {
