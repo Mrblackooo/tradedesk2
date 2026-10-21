@@ -1,12 +1,12 @@
 {
- "updated": 1792557439059,
+ "updated": 1792572472487,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
   "used": 0
  },
  "basket": {
-  "updated": 1792485854349,
+  "updated": 1792572326824,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -16,7 +16,7 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 2.34,
+    "t": 2.25,
     "trades": 666,
     "breadth": [
      15,
@@ -34,8 +34,8 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/65 SL2/TP4 ATR",
-    "t": 2.39,
-    "trades": 321,
+    "t": 2.06,
+    "trades": 322,
     "breadth": [
      35,
      70
@@ -52,8 +52,8 @@
     "basket": "crypto",
     "tf": "1h",
     "label": "RSI 20/65 SL2/TP3 ATR",
-    "t": 2.76,
-    "trades": 79,
+    "t": 2.57,
+    "trades": 84,
     "breadth": [
      35,
      75
@@ -70,7 +70,7 @@
     "basket": "forex",
     "tf": "1h",
     "label": "RSI nel trend 30/200 SL1.5/TP3 ATR",
-    "t": 2.75,
+    "t": 2.69,
     "trades": 121,
     "breadth": [
      60,
@@ -87,7 +87,7 @@
  },
  "blackout": null,
  "minPaper": 10,
- "scannedAt": "2026-10-20T08:38:31.221Z",
+ "scannedAt": "2026-10-21T08:40:08.278Z",
  "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – SOL: neutro (+0.06).",
  "signals": [
   {
@@ -97,20 +97,20 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1792418399999,
-   "price": 4139,
-   "entry": 4174.2001953125,
-   "sl": 4203.653511905921,
-   "tp": 4115.293562125657,
-   "size": 70.9,
+   "price": 4139.7001953125,
+   "entry": 4174.5,
+   "sl": 4203.6879794998895,
+   "tp": 4116.124041000222,
+   "size": 71.5,
    "news": {
     "score": 0,
     "heads": []
    },
    "bt": {
     "wrTest": 0.44,
-    "t": 2.51,
+    "t": 2.42,
     "n": 159,
-    "sharpeTest": 3.87
+    "sharpeTest": 3.59
    },
    "stage": "osservazione",
    "proof": {
@@ -123,45 +123,13 @@
    "conf": null
   },
   {
-   "sym": "LTCUSDT",
-   "tf": "1h",
-   "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
-   "dir": "LONG",
-   "action": "ATTIVO",
-   "since": 1792508399999,
-   "price": 61.31,
-   "entry": 60.95,
-   "sl": 59.14851256648689,
-   "tp": 63.65223115026967,
-   "size": 16.9,
-   "news": {
-    "score": 0,
-    "heads": []
-   },
-   "bt": {
-    "wrTest": 0.56,
-    "t": 2.3,
-    "n": 25,
-    "sharpeTest": 5.03
-   },
-   "stage": "osservazione",
-   "proof": {
-    "n": 2,
-    "avgR": 0.19
-   },
-   "key": "LTCUSDT-1h-sma-10-80-3-4.5",
-   "risk": 0.5,
-   "strength": 0,
-   "conf": null
-  },
-  {
    "sym": "USDCHF=X",
    "tf": "1h",
    "strat": "Stagionalità oraria 25/120 SL1.5/TP2 ATR",
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1792540799999,
-   "price": 0.8256000280380249,
+   "price": 0.8246300220489502,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -171,10 +139,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.68,
-    "t": 6.49,
+    "wrTest": 0.685,
+    "t": 6.81,
     "n": 416,
-    "sharpeTest": 7.91
+    "sharpeTest": 8.26
    },
    "stage": "osservazione",
    "proof": {
@@ -193,7 +161,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 99.16000366210938,
+   "price": 98.87000274658203,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -219,13 +187,45 @@
    "conf": null
   },
   {
+   "sym": "LTCUSDT",
+   "tf": "1h",
+   "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
+   "dir": "LONG",
+   "action": "ATTIVO",
+   "since": 1792508399999,
+   "price": 61.62,
+   "entry": 60.95,
+   "sl": 59.14851256648689,
+   "tp": 63.65223115026967,
+   "size": 16.9,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.538,
+    "t": 1.86,
+    "n": 26,
+    "sharpeTest": 4.17
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 2,
+    "avgR": 0.19
+   },
+   "key": "LTCUSDT-1h-sma-10-80-3-4.5",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
+  {
    "sym": "DOGEUSDT",
    "tf": "1d",
    "strat": "Incrocio SMA 10/30 SL2/TP3 ATR",
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.08156,
+   "price": 0.08205,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -236,9 +236,9 @@
    },
    "bt": {
     "wrTest": 0.517,
-    "t": 2.1,
+    "t": 2.17,
     "n": 29,
-    "sharpeTest": 1.66
+    "sharpeTest": 1.7
    },
    "stage": "osservazione",
    "proof": {
@@ -257,7 +257,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 105.84,
+   "price": 106.8,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -270,9 +270,9 @@
    },
    "bt": {
     "wrTest": 0.508,
-    "t": 1.99,
+    "t": 2.08,
     "n": 59,
-    "sharpeTest": 1.41
+    "sharpeTest": 1.48
    },
    "stage": "osservazione",
    "proof": {
