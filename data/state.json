@@ -1,5 +1,5 @@
 {
- "updated": 1792593757969,
+ "updated": 1792609187938,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -88,20 +88,20 @@
  "blackout": null,
  "minPaper": 10,
  "scannedAt": "2026-10-21T08:40:08.278Z",
- "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – DOGE: neutro (+0.33); SOL: neutro (+0.49).",
+ "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – SOL: neutro (+0.49).",
  "signals": [
   {
    "sym": "GC=F",
    "tf": "1h",
    "strat": "Incrocio SMA 15/30 SL2/TP4 ATR",
-   "dir": "SHORT",
+   "dir": "LONG",
    "action": "ATTIVO",
-   "since": 1792418399999,
-   "price": 4151.2998046875,
-   "entry": 4174.2001953125,
-   "sl": 4203.653511905921,
-   "tp": 4115.293562125657,
-   "size": 70.9,
+   "since": 1792598399999,
+   "price": 4148.10009765625,
+   "entry": 4150.10009765625,
+   "sl": 4123.840236896214,
+   "tp": 4202.6198191763215,
+   "size": 79,
    "news": {
     "score": 0,
     "heads": []
@@ -114,8 +114,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 0,
-    "avgR": null
+    "n": 1,
+    "avgR": 0.8
    },
    "key": "GC=F-1h-sma-15-30-2-4",
    "risk": 0.5,
@@ -129,7 +129,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1792540799999,
-   "price": 0.8249099850654602,
+   "price": 0.8252900242805481,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -161,7 +161,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 97.7300033569336,
+   "price": 97.69000244140625,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -193,7 +193,7 @@
    "dir": "LONG",
    "action": "ATTIVO",
    "since": 1792508399999,
-   "price": 61.54,
+   "price": 61.99,
    "entry": 60.95,
    "sl": 59.14851256648689,
    "tp": 63.65223115026967,
@@ -225,16 +225,14 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.08255,
+   "price": 0.08293,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
    "size": 4.7,
    "news": {
     "score": 0,
-    "heads": [
-     "Dogecoin wallet, app teams unite in push to give DOGE more everyday uses"
-    ]
+    "heads": []
    },
    "bt": {
     "wrTest": 0.517,
@@ -250,12 +248,7 @@
    "key": "DOGEUSDT-1d-sma-10-30-2-3",
    "risk": 0.5,
    "strength": 0,
-   "conf": null,
-   "llm": {
-    "score": 0.33,
-    "risk": "low",
-    "note": "sentiment +0.33 su 1 titoli"
-   }
+   "conf": null
   },
   {
    "sym": "SOLUSDT",
@@ -264,7 +257,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 107.24,
+   "price": 108.07,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -298,10 +291,10 @@
   }
  ],
  "paper": {
-  "n": 5,
-  "wr": 0.2,
-  "avgR": -0.15,
-  "sumPct": 1.07
+  "n": 6,
+  "wr": 0.333,
+  "avgR": 0.01,
+  "sumPct": 1.63
  },
  "recent": [
   {
@@ -353,9 +346,13 @@
    "tp": 4115.293562125657,
    "slPct": 0.706,
    "t0": 1792418399999,
-   "status": "open",
+   "status": "signal",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 4148.10009765625,
+   "t1": 1792609186153,
+   "pct": 0.565,
+   "r": 0.8
   },
   {
    "id": "LTCUSDT-1h-1792400399999",
