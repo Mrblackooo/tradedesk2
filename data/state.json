@@ -1,9 +1,9 @@
 {
- "updated": 1792659029264,
+ "updated": 1792665312847,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 0
+  "used": 1
  },
  "basket": {
   "updated": 1792658870484,
@@ -97,7 +97,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1792627199999,
-   "price": 0.8195300102233887,
+   "price": 0.8210099935531616,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -129,7 +129,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 99.94000244140625,
+   "price": 99.20999908447266,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -161,10 +161,10 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1792648799999,
-   "price": 4105.2001953125,
+   "price": 4107.89990234375,
    "entry": 4105.39990234375,
-   "sl": 4136.204345578659,
-   "tp": 4043.7910158739323,
+   "sl": 4136.216029255462,
+   "tp": 4043.7676485203256,
    "size": 66.6,
    "news": {
     "score": 0,
@@ -190,14 +190,14 @@
    "sym": "LTCUSDT",
    "tf": "1h",
    "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
-   "dir": "LONG",
+   "dir": "SHORT",
    "action": "ATTIVO",
-   "since": 1792508399999,
-   "price": 59.42,
-   "entry": 60.95,
-   "sl": 59.14851256648689,
-   "tp": 63.65223115026967,
-   "size": 16.9,
+   "since": 1792663199999,
+   "price": 59.53,
+   "entry": 59.55,
+   "sl": 61.131513660163385,
+   "tp": 57.17772950975491,
+   "size": 18.8,
    "news": {
     "score": 0,
     "heads": []
@@ -225,7 +225,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.07912,
+   "price": 0.07943,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -257,7 +257,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 103.87,
+   "price": 104.73,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -297,6 +297,21 @@
   "sumPct": 1.64
  },
  "recent": [
+  {
+   "id": "LTCUSDT-1h-1792663199999",
+   "key": "LTCUSDT-1h-sma-10-80-3-4.5",
+   "sym": "LTCUSDT",
+   "tf": "1h",
+   "dir": "SHORT",
+   "entry": 59.55,
+   "sl": 61.131513660163385,
+   "tp": 57.17772950975491,
+   "slPct": 2.656,
+   "t0": 1792663199999,
+   "status": "open",
+   "news": 0,
+   "blackout": false
+  },
   {
    "id": "USDCHF=X-1h-1792619999999",
    "key": "USDCHF=X-1h-tod-25-120-1.5-2",
