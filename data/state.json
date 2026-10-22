@@ -1,5 +1,5 @@
 {
- "updated": 1792629870143,
+ "updated": 1792646938253,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -88,7 +88,7 @@
  "blackout": null,
  "minPaper": 10,
  "scannedAt": "2026-10-21T08:40:08.278Z",
- "briefing": null,
+ "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – SOL: neutro (+0.08).",
  "signals": [
   {
    "sym": "GC=F",
@@ -97,7 +97,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1792612799999,
-   "price": 4132.39990234375,
+   "price": 4103.7998046875,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -129,7 +129,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1792627199999,
-   "price": 0.8242999911308289,
+   "price": 0.8225100040435791,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -161,7 +161,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 98.12000274658203,
+   "price": 99,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -193,7 +193,7 @@
    "dir": "LONG",
    "action": "ATTIVO",
    "since": 1792508399999,
-   "price": 61.73,
+   "price": 60.62,
    "entry": 60.95,
    "sl": 59.14851256648689,
    "tp": 63.65223115026967,
@@ -225,7 +225,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.08212,
+   "price": 0.08022,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -257,14 +257,16 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 107.39,
+   "price": 105.46,
    "entry": null,
    "sl": null,
    "tp": null,
    "size": null,
    "news": {
-    "score": 0,
-    "heads": []
+    "score": 1,
+    "heads": [
+     "Solana completes Alpenglow upgrade. Here’s what it means for users"
+    ]
    },
    "bt": {
     "wrTest": 0.508,
@@ -280,7 +282,12 @@
    "key": "SOLUSDT-1d-macd-5-35-1.5-2",
    "risk": 0.5,
    "strength": 0,
-   "conf": null
+   "conf": null,
+   "llm": {
+    "score": 0.08,
+    "risk": "low",
+    "note": "sentiment +0.08 su 1 titoli"
+   }
   }
  ],
  "paper": {
