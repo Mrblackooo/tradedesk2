@@ -1,5 +1,5 @@
 {
- "updated": 1792683440438,
+ "updated": 1792697644183,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -94,14 +94,14 @@
    "sym": "USDCHF=X",
    "tf": "1h",
    "strat": "Stagionalità oraria 25/120 SL1.5/TP2 ATR",
-   "dir": "LONG",
-   "action": "ATTIVO",
-   "since": 1792681199999,
-   "price": 0.8232600092887878,
-   "entry": 0.8235099911689758,
-   "sl": 0.8215465384747737,
-   "tp": 0.8261279280945787,
-   "size": 209.7,
+   "dir": "FLAT",
+   "action": "FLAT",
+   "since": 1792684799999,
+   "price": 0.820330023765564,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -114,8 +114,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 4,
-    "avgR": -0.28
+    "n": 5,
+    "avgR": -0.44
    },
    "key": "USDCHF=X-1h-tod-25-120-1.5-2",
    "risk": 0.5,
@@ -129,7 +129,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 98,
+   "price": 99.44999694824219,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -161,7 +161,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1792648799999,
-   "price": 4070.699951171875,
+   "price": 4043.5,
    "entry": 4105.39990234375,
    "sl": 4136.216029255462,
    "tp": 4043.7676485203256,
@@ -193,7 +193,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1792663199999,
-   "price": 58.85,
+   "price": 58.69,
    "entry": 59.55,
    "sl": 61.131513660163385,
    "tp": 57.17772950975491,
@@ -225,7 +225,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.07916,
+   "price": 0.07893,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -257,7 +257,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 104.68,
+   "price": 103.84,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -284,10 +284,10 @@
   }
  ],
  "paper": {
-  "n": 7,
-  "wr": 0.429,
-  "avgR": 0.01,
-  "sumPct": 1.64
+  "n": 8,
+  "wr": 0.375,
+  "avgR": -0.13,
+  "sumPct": 1.38
  },
  "recent": [
   {
@@ -301,9 +301,13 @@
    "tp": 0.8261279280945787,
    "slPct": 0.238,
    "t0": 1792681199999,
-   "status": "open",
+   "status": "sl",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 0.8215465384747737,
+   "t1": 1792684800000,
+   "pct": -0.262,
+   "r": -1.1
   },
   {
    "id": "LTCUSDT-1h-1792663199999",
