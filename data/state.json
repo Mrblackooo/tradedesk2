@@ -1,12 +1,12 @@
 {
- "updated": 1792646938253,
+ "updated": 1792659029264,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
   "used": 0
  },
  "basket": {
-  "updated": 1792572326824,
+  "updated": 1792658870484,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -16,8 +16,8 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 2.25,
-    "trades": 666,
+    "t": 2.13,
+    "trades": 668,
     "breadth": [
      15,
      70
@@ -34,11 +34,11 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/65 SL2/TP4 ATR",
-    "t": 2.06,
+    "t": 2.1,
     "trades": 322,
     "breadth": [
      35,
-     70
+     75
     ],
     "ok": false,
     "why": [
@@ -51,17 +51,16 @@
    {
     "basket": "crypto",
     "tf": "1h",
-    "label": "RSI 20/65 SL2/TP3 ATR",
-    "t": 2.57,
-    "trades": 84,
+    "label": "Confluenza 4 su 4, intraday SL3/TP4.5 ATR",
+    "t": 2.6,
+    "trades": 1207,
     "breadth": [
-     35,
-     75
+     5,
+     70
     ],
     "ok": false,
     "why": [
      "non significativa nel periodo di scelta",
-     "pochi trade nel test",
      "funziona solo su pochi asset"
     ],
     "perDay": null
@@ -70,8 +69,8 @@
     "basket": "forex",
     "tf": "1h",
     "label": "RSI nel trend 30/200 SL1.5/TP3 ATR",
-    "t": 2.69,
-    "trades": 121,
+    "t": 2.47,
+    "trades": 119,
     "breadth": [
      60,
      90
@@ -79,6 +78,7 @@
     "ok": false,
     "why": [
      "non significativa nel periodo di scelta",
+     "non significativa nel test",
      "pochi trade nel test"
     ],
     "perDay": null
@@ -87,41 +87,9 @@
  },
  "blackout": null,
  "minPaper": 10,
- "scannedAt": "2026-10-21T08:40:08.278Z",
- "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – SOL: neutro (+0.08).",
+ "scannedAt": "2026-10-22T08:42:17.527Z",
+ "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – SOL: neutro (+0.03).",
  "signals": [
-  {
-   "sym": "GC=F",
-   "tf": "1h",
-   "strat": "Incrocio SMA 15/30 SL2/TP4 ATR",
-   "dir": "FLAT",
-   "action": "FLAT (SL/TP colpito)",
-   "since": 1792612799999,
-   "price": 4103.7998046875,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
-   "news": {
-    "score": 0,
-    "heads": []
-   },
-   "bt": {
-    "wrTest": 0.44,
-    "t": 2.42,
-    "n": 159,
-    "sharpeTest": 3.59
-   },
-   "stage": "osservazione",
-   "proof": {
-    "n": 1,
-    "avgR": 0.8
-   },
-   "key": "GC=F-1h-sma-15-30-2-4",
-   "risk": 0.5,
-   "strength": 0,
-   "conf": null
-  },
   {
    "sym": "USDCHF=X",
    "tf": "1h",
@@ -129,7 +97,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1792627199999,
-   "price": 0.8225100040435791,
+   "price": 0.8195300102233887,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -139,10 +107,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.685,
-    "t": 6.81,
-    "n": 416,
-    "sharpeTest": 8.26
+    "wrTest": 0.683,
+    "t": 6.69,
+    "n": 417,
+    "sharpeTest": 8.14
    },
    "stage": "osservazione",
    "proof": {
@@ -161,7 +129,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 99,
+   "price": 99.94000244140625,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -187,13 +155,45 @@
    "conf": null
   },
   {
+   "sym": "GC=F",
+   "tf": "1h",
+   "strat": "Incrocio SMA 15/30 SL2/TP4 ATR",
+   "dir": "SHORT",
+   "action": "ATTIVO",
+   "since": 1792648799999,
+   "price": 4105.2001953125,
+   "entry": 4105.39990234375,
+   "sl": 4136.204345578659,
+   "tp": 4043.7910158739323,
+   "size": 66.6,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.431,
+    "t": 2.23,
+    "n": 160,
+    "sharpeTest": 3.32
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 1,
+    "avgR": 0.8
+   },
+   "key": "GC=F-1h-sma-15-30-2-4",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
+  {
    "sym": "LTCUSDT",
    "tf": "1h",
    "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
    "dir": "LONG",
    "action": "ATTIVO",
    "since": 1792508399999,
-   "price": 60.62,
+   "price": 59.42,
    "entry": 60.95,
    "sl": 59.14851256648689,
    "tp": 63.65223115026967,
@@ -203,10 +203,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.538,
-    "t": 1.86,
+    "wrTest": 0.5,
+    "t": 1.59,
     "n": 26,
-    "sharpeTest": 4.17
+    "sharpeTest": 3.62
    },
    "stage": "osservazione",
    "proof": {
@@ -225,7 +225,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.08022,
+   "price": 0.07912,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -236,9 +236,9 @@
    },
    "bt": {
     "wrTest": 0.517,
-    "t": 2.17,
+    "t": 2.21,
     "n": 29,
-    "sharpeTest": 1.7
+    "sharpeTest": 1.74
    },
    "stage": "osservazione",
    "proof": {
@@ -257,15 +257,15 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 105.46,
+   "price": 103.87,
    "entry": null,
    "sl": null,
    "tp": null,
    "size": null,
    "news": {
-    "score": 1,
+    "score": 0,
     "heads": [
-     "Solana completes Alpenglow upgrade. Here’s what it means for users"
+     "Solana’s biggest network change since 2020 is live. Here’s how users benefit"
     ]
    },
    "bt": {
@@ -284,9 +284,9 @@
    "strength": 0,
    "conf": null,
    "llm": {
-    "score": 0.08,
+    "score": 0.03,
     "risk": "low",
-    "note": "sentiment +0.08 su 1 titoli"
+    "note": "sentiment +0.03 su 1 titoli"
    }
   }
  ],
