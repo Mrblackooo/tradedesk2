@@ -27,6 +27,25 @@
  },
  "watch": [
   {
+   "sym": "LTCUSDT",
+   "tf": "1h",
+   "st": "sma",
+   "a": 10,
+   "b": 80,
+   "ks": 3,
+   "kt": 4.5,
+   "lo": false,
+   "active": true,
+   "adopted": "2026-10-16T18:23:38.462Z",
+   "bt": {
+    "wrTest": 0.481,
+    "t": 1.55,
+    "n": 27,
+    "sharpeTest": 3.52
+   },
+   "tested": "2026-10-23T08:38:07.063Z"
+  },
+  {
    "sym": "USDCHF=X",
    "tf": "1h",
    "st": "tod",
@@ -38,12 +57,31 @@
    "active": true,
    "adopted": "2026-10-16T18:54:07.737Z",
    "bt": {
-    "wrTest": 0.683,
-    "t": 6.69,
-    "n": 417,
-    "sharpeTest": 8.14
+    "wrTest": 0.677,
+    "t": 6.63,
+    "n": 424,
+    "sharpeTest": 8.08
    },
-   "tested": "2026-10-22T08:42:17.525Z"
+   "tested": "2026-10-23T08:38:07.064Z"
+  },
+  {
+   "sym": "GC=F",
+   "tf": "1h",
+   "st": "sma",
+   "a": 15,
+   "b": 30,
+   "ks": 2,
+   "kt": 4,
+   "lo": false,
+   "active": true,
+   "adopted": "2026-10-19T08:59:52.211Z",
+   "bt": {
+    "wrTest": 0.431,
+    "t": 2.14,
+    "n": 160,
+    "sharpeTest": 3.2
+   },
+   "tested": "2026-10-23T08:38:07.064Z"
   },
   {
    "sym": "CL=F",
@@ -62,45 +100,7 @@
     "n": 20,
     "sharpeTest": 3.34
    },
-   "tested": "2026-10-22T08:42:17.526Z"
-  },
-  {
-   "sym": "GC=F",
-   "tf": "1h",
-   "st": "sma",
-   "a": 15,
-   "b": 30,
-   "ks": 2,
-   "kt": 4,
-   "lo": false,
-   "active": true,
-   "adopted": "2026-10-19T08:59:52.211Z",
-   "bt": {
-    "wrTest": 0.431,
-    "t": 2.23,
-    "n": 160,
-    "sharpeTest": 3.32
-   },
-   "tested": "2026-10-22T08:42:17.526Z"
-  },
-  {
-   "sym": "LTCUSDT",
-   "tf": "1h",
-   "st": "sma",
-   "a": 10,
-   "b": 80,
-   "ks": 3,
-   "kt": 4.5,
-   "lo": false,
-   "active": true,
-   "adopted": "2026-10-16T18:23:38.462Z",
-   "bt": {
-    "wrTest": 0.5,
-    "t": 1.59,
-    "n": 26,
-    "sharpeTest": 3.62
-   },
-   "tested": "2026-10-22T08:42:17.526Z"
+   "tested": "2026-10-23T08:38:07.064Z"
   },
   {
    "sym": "DOGEUSDT",
@@ -115,11 +115,11 @@
    "adopted": "2026-10-16T18:23:38.462Z",
    "bt": {
     "wrTest": 0.517,
-    "t": 2.21,
+    "t": 2.17,
     "n": 29,
-    "sharpeTest": 1.74
+    "sharpeTest": 1.71
    },
-   "tested": "2026-10-22T08:42:17.527Z"
+   "tested": "2026-10-23T08:38:07.064Z"
   },
   {
    "sym": "SOLUSDT",
@@ -134,16 +134,16 @@
    "adopted": "2026-10-16T18:23:38.462Z",
    "bt": {
     "wrTest": 0.508,
-    "t": 2.08,
+    "t": 2.07,
     "n": 59,
     "sharpeTest": 1.48
    },
-   "tested": "2026-10-22T08:42:17.527Z"
+   "tested": "2026-10-23T08:38:07.064Z"
   }
  ],
- "scannedAt": "2026-10-22T08:42:17.527Z",
+ "scannedAt": "2026-10-23T08:38:07.064Z",
  "basket": {
-  "updated": 1792658870484,
+  "updated": 1792744994200,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -153,10 +153,10 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 2.13,
-    "trades": 668,
+    "t": 1.98,
+    "trades": 666,
     "breadth": [
-     15,
+     10,
      70
     ],
     "ok": false,
@@ -171,11 +171,11 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/65 SL2/TP4 ATR",
-    "t": 2.1,
-    "trades": 322,
+    "t": 1.91,
+    "trades": 331,
     "breadth": [
      35,
-     75
+     50
     ],
     "ok": false,
     "why": [
@@ -189,10 +189,10 @@
     "basket": "crypto",
     "tf": "1h",
     "label": "Confluenza 4 su 4, intraday SL3/TP4.5 ATR",
-    "t": 2.6,
-    "trades": 1207,
+    "t": 2.58,
+    "trades": 1209,
     "breadth": [
-     5,
+     10,
      70
     ],
     "ok": false,
@@ -206,7 +206,7 @@
     "basket": "forex",
     "tf": "1h",
     "label": "RSI nel trend 30/200 SL1.5/TP3 ATR",
-    "t": 2.47,
+    "t": 2.39,
     "trades": 119,
     "breadth": [
      60,
