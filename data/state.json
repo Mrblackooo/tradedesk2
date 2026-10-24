@@ -1,5 +1,5 @@
 {
- "updated": 1792830128142,
+ "updated": 1792841509948,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -194,7 +194,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1792796399999,
-   "price": 56.68,
+   "price": 56.21,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -226,7 +226,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.07776,
+   "price": 0.07756,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.07279295397061371,
@@ -258,7 +258,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791503999999,
-   "price": 102.04,
+   "price": 101.44,
    "entry": null,
    "sl": null,
    "tp": null,
