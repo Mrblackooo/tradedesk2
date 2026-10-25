@@ -1,5 +1,5 @@
 {
- "updated": 1792830125728,
+ "updated": 1792917408399,
  "feePct": 0.05,
  "strategies": [],
  "report": [
@@ -7,7 +7,7 @@
    "sym": "BTCUSDT",
    "tf": "5m",
    "candles": 60000,
-   "atrPct": 0.12,
+   "atrPct": 0.119,
    "best": {
     "st": "rsi",
     "a": 20,
@@ -17,7 +17,7 @@
     "wr": 0.5,
     "n": 14,
     "t": -0.07,
-    "costR": 0.837
+    "costR": 0.84
    },
    "ok": false,
    "why": [
@@ -38,9 +38,9 @@
     "b": 85,
     "ks": 1,
     "kt": 1.5,
-    "wr": 0.5,
-    "n": 8,
-    "t": 0.08,
+    "wr": 0.556,
+    "n": 9,
+    "t": 0.38,
     "costR": 0.392
    },
    "ok": false,
@@ -77,22 +77,22 @@
    "sym": "ETHUSDT",
    "tf": "5m",
    "candles": 60000,
-   "atrPct": 0.164,
+   "atrPct": 0.163,
    "best": {
     "st": "rsi",
-    "a": 25,
-    "b": 80,
+    "a": 15,
+    "b": 75,
     "ks": 1.5,
     "kt": 3,
-    "wr": 0.45,
-    "n": 40,
-    "t": 0.24,
-    "costR": 0.406
+    "wr": 0.438,
+    "n": 16,
+    "t": -0.28,
+    "costR": 0.408
    },
    "ok": false,
    "why": [
     "costi",
-    "train",
+    "test",
     "trade",
     "stab",
     "signif"
@@ -109,9 +109,9 @@
     "b": 75,
     "ks": 1.5,
     "kt": 3,
-    "wr": 0.438,
-    "n": 16,
-    "t": 0.76,
+    "wr": 0.412,
+    "n": 17,
+    "t": 0.59,
     "costR": 0.164
    },
    "ok": false,
@@ -146,17 +146,17 @@
    "sym": "SOLUSDT",
    "tf": "5m",
    "candles": 60000,
-   "atrPct": 0.203,
+   "atrPct": 0.202,
    "best": {
     "st": "rsi",
     "a": 20,
     "b": 80,
     "ks": 1,
     "kt": 2,
-    "wr": 0.348,
-    "n": 23,
-    "t": 0.28,
-    "costR": 0.493
+    "wr": 0.375,
+    "n": 24,
+    "t": 0.36,
+    "costR": 0.495
    },
    "ok": false,
    "why": [
@@ -169,7 +169,7 @@
    "sym": "SOLUSDT",
    "tf": "15m",
    "candles": 60000,
-   "atrPct": 0.481,
+   "atrPct": 0.48,
    "best": {
     "st": "rsi",
     "a": 30,
@@ -223,7 +223,7 @@
     "wr": 0.75,
     "n": 8,
     "t": 0.83,
-    "costR": 0.546
+    "costR": 0.547
    },
    "ok": false,
    "why": [
@@ -236,7 +236,7 @@
    "sym": "XRPUSDT",
    "tf": "15m",
    "candles": 60000,
-   "atrPct": 0.431,
+   "atrPct": 0.43,
    "best": {
     "st": "rsi",
     "a": 15,
