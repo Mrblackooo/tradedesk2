@@ -38,12 +38,31 @@
    "active": true,
    "adopted": "2026-10-16T18:54:07.737Z",
    "bt": {
-    "wrTest": 0.68,
-    "t": 6.69,
-    "n": 425,
-    "sharpeTest": 8.16
+    "wrTest": 0.683,
+    "t": 6.86,
+    "n": 435,
+    "sharpeTest": 8.35
    },
-   "tested": "2026-10-25T08:30:29.146Z"
+   "tested": "2026-10-26T09:02:45.769Z"
+  },
+  {
+   "sym": "GC=F",
+   "tf": "1h",
+   "st": "sma",
+   "a": 15,
+   "b": 30,
+   "ks": 2,
+   "kt": 4,
+   "lo": false,
+   "active": true,
+   "adopted": "2026-10-19T08:59:52.211Z",
+   "bt": {
+    "wrTest": 0.426,
+    "t": 1.8,
+    "n": 162,
+    "sharpeTest": 2.69
+   },
+   "tested": "2026-10-26T09:02:45.770Z"
   },
   {
    "sym": "CL=F",
@@ -60,28 +79,9 @@
     "wrTest": 0.65,
     "t": 2.42,
     "n": 20,
-    "sharpeTest": 3.34
+    "sharpeTest": 3.33
    },
-   "tested": "2026-10-25T08:30:29.148Z"
-  },
-  {
-   "sym": "GC=F",
-   "tf": "1h",
-   "st": "sma",
-   "a": 15,
-   "b": 30,
-   "ks": 2,
-   "kt": 4,
-   "lo": false,
-   "active": true,
-   "adopted": "2026-10-19T08:59:52.211Z",
-   "bt": {
-    "wrTest": 0.438,
-    "t": 2.33,
-    "n": 160,
-    "sharpeTest": 3.51
-   },
-   "tested": "2026-10-25T08:30:29.148Z"
+   "tested": "2026-10-26T09:02:45.770Z"
   },
   {
    "sym": "LINKUSDT",
@@ -100,7 +100,7 @@
     "n": 61,
     "sharpeTest": 4.51
    },
-   "tested": "2026-10-25T08:30:29.148Z"
+   "tested": "2026-10-26T09:02:45.771Z"
   },
   {
    "sym": "LTCUSDT",
@@ -115,11 +115,11 @@
    "adopted": "2026-10-16T18:23:38.462Z",
    "bt": {
     "wrTest": 0.519,
-    "t": 1.76,
+    "t": 1.79,
     "n": 27,
-    "sharpeTest": 4.04
+    "sharpeTest": 4.11
    },
-   "tested": "2026-10-25T08:30:29.148Z"
+   "tested": "2026-10-26T09:02:45.771Z"
   },
   {
    "sym": "DOGEUSDT",
@@ -134,16 +134,16 @@
    "adopted": "2026-10-16T18:23:38.462Z",
    "bt": {
     "wrTest": 0.517,
-    "t": 2.17,
+    "t": 2.13,
     "n": 29,
-    "sharpeTest": 1.72
+    "sharpeTest": 1.69
    },
-   "tested": "2026-10-25T08:30:29.148Z"
+   "tested": "2026-10-26T09:02:45.771Z"
   }
  ],
- "scannedAt": "2026-10-25T08:30:29.148Z",
+ "scannedAt": "2026-10-26T09:02:45.771Z",
  "basket": {
-  "updated": 1792917287447,
+  "updated": 1793005760505,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -153,8 +153,8 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 2.17,
-    "trades": 702,
+    "t": 2.3,
+    "trades": 700,
     "breadth": [
      15,
      70
@@ -171,8 +171,8 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/65 SL1.5/TP3 ATR",
-    "t": 1.91,
-    "trades": 334,
+    "t": 1.9,
+    "trades": 333,
     "breadth": [
      30,
      50
@@ -189,8 +189,8 @@
     "basket": "crypto",
     "tf": "1h",
     "label": "Confluenza 4 su 4, intraday SL3/TP4.5 ATR",
-    "t": 2.73,
-    "trades": 1216,
+    "t": 2.56,
+    "trades": 1212,
     "breadth": [
      10,
      70
@@ -205,18 +205,17 @@
    {
     "basket": "forex",
     "tf": "1h",
-    "label": "RSI nel trend 30/200 SL1.5/TP3 ATR",
-    "t": 2.32,
-    "trades": 119,
+    "label": "RSI 20/65 SL1/TP2 ATR",
+    "t": -0.81,
+    "trades": 174,
     "breadth": [
      60,
-     90
+     60
     ],
     "ok": false,
     "why": [
      "non significativa nel periodo di scelta",
-     "non significativa nel test",
-     "pochi trade nel test"
+     "non significativa nel test"
     ],
     "perDay": null
    }
