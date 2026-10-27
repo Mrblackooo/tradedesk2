@@ -1,9 +1,9 @@
 {
- "updated": 1793051766953,
+ "updated": 1793064303232,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 3
+  "used": 0
  },
  "basket": {
   "updated": 1793005760505,
@@ -93,14 +93,14 @@
    "sym": "USDCHF=X",
    "tf": "1h",
    "strat": "Stagionalità oraria 25/120 SL1.5/TP2 ATR",
-   "dir": "SHORT",
-   "action": "ATTIVO",
-   "since": 1793044799999,
-   "price": 0.8267800211906433,
-   "entry": 0.8275799751281738,
-   "sl": 0.8290991747813952,
-   "tp": 0.8255543755905453,
-   "size": 272.4,
+   "dir": "FLAT",
+   "action": "FLAT",
+   "since": 1793059199999,
+   "price": 0.8280900120735168,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -113,8 +113,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 8,
-    "avgR": -0.27
+    "n": 9,
+    "avgR": -0.29
    },
    "key": "USDCHF=X-1h-tod-25-120-1.5-2",
    "risk": 0.5,
@@ -128,10 +128,10 @@
    "dir": "LONG",
    "action": "ATTIVO",
    "since": 1793030399999,
-   "price": 4031,
+   "price": 4026.800048828125,
    "entry": 4030.199951171875,
-   "sl": 3999.9946236270116,
-   "tp": 4090.610606261602,
+   "sl": 3999.997222673201,
+   "tp": 4090.6054081692223,
    "size": 66.7,
    "news": {
     "score": 0,
@@ -160,7 +160,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 101.25,
+   "price": 100.94999694824219,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -192,7 +192,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1793044799999,
-   "price": 11.35,
+   "price": 11.335,
    "entry": 11.382,
    "sl": 11.496291070609583,
    "tp": 11.15341785878083,
@@ -224,7 +224,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1792796399999,
-   "price": 56.62,
+   "price": 56.56,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -256,10 +256,10 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.0773,
+   "price": 0.07776,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
-   "tp": 0.07279295397061371,
+   "tp": 0.0727929539706137,
    "size": 4.7,
    "news": {
     "score": 0,
@@ -283,10 +283,10 @@
   }
  ],
  "paper": {
-  "n": 12,
-  "wr": 0.417,
-  "avgR": 0.04,
-  "sumPct": 5.22
+  "n": 13,
+  "wr": 0.385,
+  "avgR": 0,
+  "sumPct": 5.13
  },
  "recent": [
   {
@@ -315,9 +315,13 @@
    "tp": 0.8255543755905453,
    "slPct": 0.184,
    "t0": 1793044799999,
-   "status": "open",
+   "status": "signal",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 0.8280900120735168,
+   "t1": 1793064301546,
+   "pct": -0.086,
+   "r": -0.47
   },
   {
    "id": "GC=F-1h-1793030399999",
