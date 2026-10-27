@@ -1,9 +1,9 @@
 {
- "updated": 1793105133892,
+ "updated": 1793125378539,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 1
+  "used": 2
  },
  "basket": {
   "updated": 1793092360182,
@@ -93,14 +93,14 @@
    "sym": "GC=F",
    "tf": "1h",
    "strat": "Incrocio SMA 15/30 SL2/TP4 ATR",
-   "dir": "SHORT",
+   "dir": "LONG",
    "action": "ATTIVO",
-   "since": 1793091599999,
-   "price": 4037.699951171875,
-   "entry": 4007.300048828125,
-   "sl": 4033.5918744030755,
-   "tp": 3954.7163976782235,
-   "size": 76.2,
+   "since": 1793116799999,
+   "price": 4071.199951171875,
+   "entry": 4077.89990234375,
+   "sl": 4048.950731665634,
+   "tp": 4135.798243699982,
+   "size": 70.4,
    "news": {
     "score": 0,
     "heads": []
@@ -125,14 +125,14 @@
    "sym": "LINKUSDT",
    "tf": "1h",
    "strat": "Incrocio SMA 5/50 SL1/TP2 ATR",
-   "dir": "SHORT",
+   "dir": "LONG",
    "action": "ATTIVO",
-   "since": 1793044799999,
-   "price": 11.41,
-   "entry": 11.382,
-   "sl": 11.496291070609583,
-   "tp": 11.15341785878083,
-   "size": 49.8,
+   "since": 1793120399999,
+   "price": 11.476,
+   "entry": 11.492,
+   "sl": 11.383962744129255,
+   "tp": 11.708074511741493,
+   "size": 53.2,
    "news": {
     "score": 0,
     "heads": []
@@ -145,8 +145,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 0,
-    "avgR": null
+    "n": 1,
+    "avgR": -1.16
    },
    "key": "LINKUSDT-1h-sma-5-50-1-2",
    "risk": 0.5,
@@ -159,8 +159,8 @@
    "strat": "Stagionalità oraria 25/120 SL1.5/TP2 ATR",
    "dir": "FLAT",
    "action": "FLAT",
-   "since": 1793059199999,
-   "price": 0.8285300135612488,
+   "since": 1793116799999,
+   "price": 0.8287699818611145,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -192,7 +192,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 100.91999816894531,
+   "price": 100.02999877929688,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -224,7 +224,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1792796399999,
-   "price": 56.65,
+   "price": 56.79,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -256,7 +256,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.07774,
+   "price": 0.07818,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -283,12 +283,27 @@
   }
  ],
  "paper": {
-  "n": 15,
-  "wr": 0.333,
-  "avgR": -0.12,
-  "sumPct": 3.85
+  "n": 16,
+  "wr": 0.313,
+  "avgR": -0.19,
+  "sumPct": 2.69
  },
  "recent": [
+  {
+   "id": "LINKUSDT-1h-1793120399999",
+   "key": "LINKUSDT-1h-sma-5-50-1-2",
+   "sym": "LINKUSDT",
+   "tf": "1h",
+   "dir": "LONG",
+   "entry": 11.492,
+   "sl": 11.383962744129255,
+   "tp": 11.708074511741493,
+   "slPct": 0.94,
+   "t0": 1793120399999,
+   "status": "open",
+   "news": 0,
+   "blackout": false
+  },
   {
    "id": "GC=F-1h-1793091599999",
    "key": "GC=F-1h-sma-15-30-2-4",
@@ -319,9 +334,13 @@
    "tp": 11.15341785878083,
    "slPct": 1.004,
    "t0": 1793044799999,
-   "status": "open",
+   "status": "sl",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 11.496291070609583,
+   "t1": 1793113200000,
+   "pct": -1.164,
+   "r": -1.16
   },
   {
    "id": "USDCHF=X-1h-1793044799999",
@@ -550,25 +569,6 @@
    "t1": 1792494000000,
    "pct": -2.845,
    "r": -1.06
-  },
-  {
-   "id": "LTCUSDT-1h-1792180799999",
-   "key": "LTCUSDT-1h-sma-10-80-3-4.5",
-   "sym": "LTCUSDT",
-   "tf": "1h",
-   "dir": "SHORT",
-   "entry": 59.77,
-   "sl": 61.48758047915625,
-   "tp": 57.19362928126563,
-   "slPct": 2.874,
-   "t0": 1792180799999,
-   "status": "tp",
-   "news": 0,
-   "blackout": false,
-   "exit": 57.19362928126563,
-   "t1": 1792350000000,
-   "pct": 4.15,
-   "r": 1.44
   }
  ]
 }
