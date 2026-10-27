@@ -1,5 +1,5 @@
 {
- "updated": 1793092550239,
+ "updated": 1793105133892,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -96,7 +96,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1793091599999,
-   "price": 4009.89990234375,
+   "price": 4037.699951171875,
    "entry": 4007.300048828125,
    "sl": 4033.5918744030755,
    "tp": 3954.7163976782235,
@@ -113,8 +113,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 2,
-    "avgR": 0.03
+    "n": 3,
+    "avgR": -0.35
    },
    "key": "GC=F-1h-sma-15-30-2-4",
    "risk": 0.5,
@@ -128,7 +128,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1793044799999,
-   "price": 11.32,
+   "price": 11.41,
    "entry": 11.382,
    "sl": 11.496291070609583,
    "tp": 11.15341785878083,
@@ -160,7 +160,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1793059199999,
-   "price": 0.8288000226020813,
+   "price": 0.8285300135612488,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -192,7 +192,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 101.88999938964844,
+   "price": 100.91999816894531,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -224,7 +224,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1792796399999,
-   "price": 56.26,
+   "price": 56.65,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -256,7 +256,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.07709,
+   "price": 0.07774,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -283,10 +283,10 @@
   }
  ],
  "paper": {
-  "n": 14,
-  "wr": 0.357,
-  "avgR": -0.05,
-  "sumPct": 4.57
+  "n": 15,
+  "wr": 0.333,
+  "avgR": -0.12,
+  "sumPct": 3.85
  },
  "recent": [
   {
@@ -300,9 +300,13 @@
    "tp": 3954.7163976782235,
    "slPct": 0.656,
    "t0": 1793091599999,
-   "status": "open",
+   "status": "sl",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 4033.5918744030755,
+   "t1": 1793102400000,
+   "pct": -0.716,
+   "r": -1.09
   },
   {
    "id": "LINKUSDT-1h-1793044799999",
