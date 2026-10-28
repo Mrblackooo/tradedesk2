@@ -1,5 +1,5 @@
 {
- "updated": 1793151566063,
+ "updated": 1793172716517,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -93,14 +93,14 @@
    "sym": "GC=F",
    "tf": "1h",
    "strat": "Incrocio SMA 15/30 SL2/TP4 ATR",
-   "dir": "LONG",
-   "action": "ATTIVO",
-   "since": 1793116799999,
-   "price": 4072.89990234375,
-   "entry": 4077.89990234375,
-   "sl": 4048.950731665634,
-   "tp": 4135.798243699982,
-   "size": 70.4,
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1793167199999,
+   "price": 4046.10009765625,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -125,14 +125,14 @@
    "sym": "LINKUSDT",
    "tf": "1h",
    "strat": "Incrocio SMA 5/50 SL1/TP2 ATR",
-   "dir": "LONG",
-   "action": "ATTIVO",
-   "since": 1793120399999,
-   "price": 11.629,
-   "entry": 11.492,
-   "sl": 11.383962744129255,
-   "tp": 11.708074511741493,
-   "size": 53.2,
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1793156399999,
+   "price": 11.71,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -145,8 +145,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 1,
-    "avgR": -1.16
+    "n": 2,
+    "avgR": 0.34
    },
    "key": "LINKUSDT-1h-sma-5-50-1-2",
    "risk": 0.5,
@@ -159,8 +159,8 @@
    "strat": "Stagionalità oraria 25/120 SL1.5/TP2 ATR",
    "dir": "FLAT",
    "action": "FLAT",
-   "since": 1793149199999,
-   "price": 0.8297299742698669,
+   "since": 1793145599999,
+   "price": 0.8306699991226196,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -192,7 +192,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 101.08000183105469,
+   "price": 101.91999816894531,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -224,7 +224,7 @@
    "dir": "LONG",
    "action": "ATTIVO",
    "since": 1793138399999,
-   "price": 57.36,
+   "price": 57.43,
    "entry": 56.84,
    "sl": 55.53074548843336,
    "tp": 58.80388176734997,
@@ -256,7 +256,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.07921,
+   "price": 0.07975,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -283,10 +283,10 @@
   }
  ],
  "paper": {
-  "n": 17,
-  "wr": 0.353,
-  "avgR": -0.11,
-  "sumPct": 2.87
+  "n": 18,
+  "wr": 0.389,
+  "avgR": 0,
+  "sumPct": 4.59
  },
  "recent": [
   {
@@ -334,9 +334,13 @@
    "tp": 11.708074511741493,
    "slPct": 0.94,
    "t0": 1793120399999,
-   "status": "open",
+   "status": "tp",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 11.708074511741493,
+   "t1": 1793152800000,
+   "pct": 1.72,
+   "r": 1.83
   },
   {
    "id": "GC=F-1h-1793091599999",
