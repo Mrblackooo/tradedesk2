@@ -1,5 +1,5 @@
 {
- "updated": 1793197558618,
+ "updated": 1793216992413,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -94,14 +94,14 @@
    "sym": "LTCUSDT",
    "tf": "1h",
    "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
-   "dir": "LONG",
-   "action": "ATTIVO",
-   "since": 1793138399999,
-   "price": 57.25,
-   "entry": 56.84,
-   "sl": 55.53074548843336,
-   "tp": 58.80388176734997,
-   "size": 21.7,
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1793206799999,
+   "price": 59.42,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -114,8 +114,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 3,
-    "avgR": 0.61
+    "n": 4,
+    "avgR": 0.81
    },
    "key": "LTCUSDT-1h-sma-10-80-3-4.5",
    "risk": 0.5,
@@ -129,7 +129,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1793145599999,
-   "price": 0.8305500149726868,
+   "price": 0.8283299803733826,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -160,8 +160,8 @@
    "strat": "Incrocio SMA 15/30 SL2/TP4 ATR",
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
-   "since": 1793167199999,
-   "price": 4060.5,
+   "since": 1793213999999,
+   "price": 4066.60009765625,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -193,7 +193,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793156399999,
-   "price": 11.5,
+   "price": 11.8,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -225,7 +225,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 102.16999816894531,
+   "price": 102.8499984741211,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -257,7 +257,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.07862,
+   "price": 0.07989,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -284,10 +284,10 @@
   }
  ],
  "paper": {
-  "n": 18,
-  "wr": 0.389,
-  "avgR": 0,
-  "sumPct": 4.59
+  "n": 19,
+  "wr": 0.421,
+  "avgR": 0.08,
+  "sumPct": 7.88
  },
  "recent": [
   {
@@ -301,9 +301,13 @@
    "tp": 58.80388176734997,
    "slPct": 2.303,
    "t0": 1793138399999,
-   "status": "open",
+   "status": "tp",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 58.80388176734997,
+   "t1": 1793203200000,
+   "pct": 3.295,
+   "r": 1.43
   },
   {
    "id": "USDCHF=X-1h-1793138399999",
