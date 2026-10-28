@@ -1,9 +1,9 @@
 {
- "updated": 1793140462375,
+ "updated": 1793151566063,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 4
+  "used": 0
  },
  "basket": {
   "updated": 1793092360182,
@@ -96,10 +96,10 @@
    "dir": "LONG",
    "action": "ATTIVO",
    "since": 1793116799999,
-   "price": 4076,
+   "price": 4072.89990234375,
    "entry": 4077.89990234375,
-   "sl": 4048.951204344604,
-   "tp": 4135.797298342042,
+   "sl": 4048.950731665634,
+   "tp": 4135.798243699982,
    "size": 70.4,
    "news": {
     "score": 0,
@@ -128,7 +128,7 @@
    "dir": "LONG",
    "action": "ATTIVO",
    "since": 1793120399999,
-   "price": 11.533,
+   "price": 11.629,
    "entry": 11.492,
    "sl": 11.383962744129255,
    "tp": 11.708074511741493,
@@ -157,14 +157,14 @@
    "sym": "USDCHF=X",
    "tf": "1h",
    "strat": "Stagionalità oraria 25/120 SL1.5/TP2 ATR",
-   "dir": "LONG",
-   "action": "ATTIVO",
-   "since": 1793138399999,
-   "price": 0.8288000226020813,
-   "entry": 0.8280699849128723,
-   "sl": 0.8268280276034032,
-   "tp": 0.8297259279921644,
-   "size": 333.4,
+   "dir": "FLAT",
+   "action": "FLAT",
+   "since": 1793149199999,
+   "price": 0.8297299742698669,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -175,10 +175,10 @@
     "n": 432,
     "sharpeTest": 8.41
    },
-   "stage": "osservazione",
+   "stage": "sospesa",
    "proof": {
-    "n": 9,
-    "avgR": -0.29
+    "n": 10,
+    "avgR": -0.14
    },
    "key": "USDCHF=X-1h-tod-25-120-1.5-2",
    "risk": 0.5,
@@ -192,7 +192,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 99.88999938964844,
+   "price": 101.08000183105469,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -224,7 +224,7 @@
    "dir": "LONG",
    "action": "ATTIVO",
    "since": 1793138399999,
-   "price": 57,
+   "price": 57.36,
    "entry": 56.84,
    "sl": 55.53074548843336,
    "tp": 58.80388176734997,
@@ -256,7 +256,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.07867,
+   "price": 0.07921,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -283,10 +283,10 @@
   }
  ],
  "paper": {
-  "n": 16,
-  "wr": 0.313,
-  "avgR": -0.19,
-  "sumPct": 2.69
+  "n": 17,
+  "wr": 0.353,
+  "avgR": -0.11,
+  "sumPct": 2.87
  },
  "recent": [
   {
@@ -315,9 +315,13 @@
    "tp": 0.8297259279921644,
    "slPct": 0.15,
    "t0": 1793138399999,
-   "status": "open",
+   "status": "tp",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 0.8297259279921644,
+   "t1": 1793151564000,
+   "pct": 0.176,
+   "r": 1.17
   },
   {
    "id": "LINKUSDT-1h-1793120399999",
