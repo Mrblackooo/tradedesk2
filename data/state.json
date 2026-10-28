@@ -1,12 +1,12 @@
 {
- "updated": 1793172716517,
+ "updated": 1793181453605,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
   "used": 0
  },
  "basket": {
-  "updated": 1793092360182,
+  "updated": 1793181259088,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -16,8 +16,8 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 2.21,
-    "trades": 692,
+    "t": 2.06,
+    "trades": 664,
     "breadth": [
      15,
      70
@@ -34,11 +34,11 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/65 SL2/TP4 ATR",
-    "t": 1.63,
-    "trades": 333,
+    "t": 1.45,
+    "trades": 331,
     "breadth": [
      35,
-     55
+     65
     ],
     "ok": false,
     "why": [
@@ -52,10 +52,10 @@
     "basket": "crypto",
     "tf": "1h",
     "label": "Confluenza 4 su 4, intraday SL3/TP4.5 ATR",
-    "t": 2.52,
-    "trades": 1204,
+    "t": 2.56,
+    "trades": 1211,
     "breadth": [
-     10,
+     5,
      70
     ],
     "ok": false,
@@ -69,8 +69,8 @@
     "basket": "forex",
     "tf": "1h",
     "label": "RSI nel trend 30/200 SL1.5/TP3 ATR",
-    "t": 2.72,
-    "trades": 123,
+    "t": 2.5,
+    "trades": 122,
     "breadth": [
      60,
      90
@@ -78,6 +78,7 @@
     "ok": false,
     "why": [
      "non significativa nel periodo di scelta",
+     "non significativa nel test",
      "pochi trade nel test"
     ],
     "perDay": null
@@ -86,17 +87,49 @@
  },
  "blackout": null,
  "minPaper": 10,
- "scannedAt": "2026-10-27T09:06:03.090Z",
+ "scannedAt": "2026-10-28T09:46:51.144Z",
  "briefing": null,
  "signals": [
   {
-   "sym": "GC=F",
+   "sym": "LTCUSDT",
    "tf": "1h",
-   "strat": "Incrocio SMA 15/30 SL2/TP4 ATR",
+   "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
+   "dir": "LONG",
+   "action": "ATTIVO",
+   "since": 1793138399999,
+   "price": 57.9,
+   "entry": 56.84,
+   "sl": 55.53074548843336,
+   "tp": 58.80388176734997,
+   "size": 21.7,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.536,
+    "t": 1.8,
+    "n": 28,
+    "sharpeTest": 4.15
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 3,
+    "avgR": 0.61
+   },
+   "key": "LTCUSDT-1h-sma-10-80-3-4.5",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
+  {
+   "sym": "USDCHF=X",
+   "tf": "1h",
+   "strat": "Stagionalità oraria 30/120 SL1.5/TP2 ATR",
    "dir": "FLAT",
-   "action": "FLAT (SL/TP colpito)",
-   "since": 1793167199999,
-   "price": 4046.10009765625,
+   "action": "FLAT",
+   "since": 1793145599999,
+   "price": 0.8303599953651428,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -106,10 +139,42 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.421,
-    "t": 1.74,
-    "n": 164,
-    "sharpeTest": 2.62
+    "wrTest": 0.698,
+    "t": 7.19,
+    "n": 417,
+    "sharpeTest": 8.71
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 0,
+    "avgR": null
+   },
+   "key": "USDCHF=X-1h-tod-30-120-1.5-2",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
+  {
+   "sym": "GC=F",
+   "tf": "1h",
+   "strat": "Incrocio SMA 15/30 SL2/TP4 ATR",
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1793167199999,
+   "price": 4067.199951171875,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.417,
+    "t": 1.67,
+    "n": 163,
+    "sharpeTest": 2.52
    },
    "stage": "osservazione",
    "proof": {
@@ -128,7 +193,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793156399999,
-   "price": 11.71,
+   "price": 11.87,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -138,10 +203,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.484,
-    "t": 2.06,
+    "wrTest": 0.468,
+    "t": 1.94,
     "n": 62,
-    "sharpeTest": 4.54
+    "sharpeTest": 4.29
    },
    "stage": "osservazione",
    "proof": {
@@ -154,45 +219,13 @@
    "conf": null
   },
   {
-   "sym": "USDCHF=X",
-   "tf": "1h",
-   "strat": "Stagionalità oraria 25/120 SL1.5/TP2 ATR",
-   "dir": "FLAT",
-   "action": "FLAT",
-   "since": 1793145599999,
-   "price": 0.8306699991226196,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
-   "news": {
-    "score": 0,
-    "heads": []
-   },
-   "bt": {
-    "wrTest": 0.685,
-    "t": 6.9,
-    "n": 432,
-    "sharpeTest": 8.41
-   },
-   "stage": "sospesa",
-   "proof": {
-    "n": 10,
-    "avgR": -0.14
-   },
-   "key": "USDCHF=X-1h-tod-25-120-1.5-2",
-   "risk": 0.5,
-   "strength": 0,
-   "conf": null
-  },
-  {
    "sym": "CL=F",
    "tf": "1h",
    "strat": "Breakout 80 SL3/TP4.5 ATR",
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1791770399999,
-   "price": 101.91999816894531,
+   "price": 101.33000183105469,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -203,9 +236,9 @@
    },
    "bt": {
     "wrTest": 0.65,
-    "t": 2.42,
+    "t": 2.44,
     "n": 20,
-    "sharpeTest": 3.33
+    "sharpeTest": 3.36
    },
    "stage": "osservazione",
    "proof": {
@@ -218,45 +251,13 @@
    "conf": null
   },
   {
-   "sym": "LTCUSDT",
-   "tf": "1h",
-   "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
-   "dir": "LONG",
-   "action": "ATTIVO",
-   "since": 1793138399999,
-   "price": 57.43,
-   "entry": 56.84,
-   "sl": 55.53074548843336,
-   "tp": 58.80388176734997,
-   "size": 21.7,
-   "news": {
-    "score": 0,
-    "heads": []
-   },
-   "bt": {
-    "wrTest": 0.519,
-    "t": 1.72,
-    "n": 27,
-    "sharpeTest": 3.98
-   },
-   "stage": "osservazione",
-   "proof": {
-    "n": 3,
-    "avgR": 0.61
-   },
-   "key": "LTCUSDT-1h-sma-10-80-3-4.5",
-   "risk": 0.5,
-   "strength": 0,
-   "conf": null
-  },
-  {
    "sym": "DOGEUSDT",
    "tf": "1d",
    "strat": "Incrocio SMA 10/30 SL2/TP3 ATR",
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1791763199999,
-   "price": 0.07975,
+   "price": 0.08043,
    "entry": 0.08679,
    "sl": 0.09612136401959087,
    "tp": 0.0727929539706137,
@@ -267,9 +268,9 @@
    },
    "bt": {
     "wrTest": 0.517,
-    "t": 2.13,
+    "t": 2.12,
     "n": 29,
-    "sharpeTest": 1.69
+    "sharpeTest": 1.67
    },
    "stage": "osservazione",
    "proof": {

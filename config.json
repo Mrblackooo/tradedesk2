@@ -27,6 +27,44 @@
  },
  "watch": [
   {
+   "sym": "LTCUSDT",
+   "tf": "1h",
+   "st": "sma",
+   "a": 10,
+   "b": 80,
+   "ks": 3,
+   "kt": 4.5,
+   "lo": false,
+   "active": true,
+   "adopted": "2026-10-16T18:23:38.462Z",
+   "bt": {
+    "wrTest": 0.536,
+    "t": 1.8,
+    "n": 28,
+    "sharpeTest": 4.15
+   },
+   "tested": "2026-10-28T09:46:51.142Z"
+  },
+  {
+   "sym": "USDCHF=X",
+   "tf": "1h",
+   "st": "tod",
+   "a": 30,
+   "b": 120,
+   "ks": 1.5,
+   "kt": 2,
+   "lo": false,
+   "active": true,
+   "adopted": "2026-10-28T09:46:51.143Z",
+   "bt": {
+    "wrTest": 0.698,
+    "t": 7.19,
+    "n": 417,
+    "sharpeTest": 8.71
+   },
+   "tested": "2026-10-28T09:46:51.143Z"
+  },
+  {
    "sym": "GC=F",
    "tf": "1h",
    "st": "sma",
@@ -38,12 +76,12 @@
    "active": true,
    "adopted": "2026-10-19T08:59:52.211Z",
    "bt": {
-    "wrTest": 0.421,
-    "t": 1.74,
-    "n": 164,
-    "sharpeTest": 2.62
+    "wrTest": 0.417,
+    "t": 1.67,
+    "n": 163,
+    "sharpeTest": 2.52
    },
-   "tested": "2026-10-27T09:06:03.088Z"
+   "tested": "2026-10-28T09:46:51.143Z"
   },
   {
    "sym": "LINKUSDT",
@@ -57,31 +95,12 @@
    "active": true,
    "adopted": "2026-10-25T08:30:29.148Z",
    "bt": {
-    "wrTest": 0.484,
-    "t": 2.06,
+    "wrTest": 0.468,
+    "t": 1.94,
     "n": 62,
-    "sharpeTest": 4.54
+    "sharpeTest": 4.29
    },
-   "tested": "2026-10-27T09:06:03.090Z"
-  },
-  {
-   "sym": "USDCHF=X",
-   "tf": "1h",
-   "st": "tod",
-   "a": 25,
-   "b": 120,
-   "ks": 1.5,
-   "kt": 2,
-   "lo": false,
-   "active": true,
-   "adopted": "2026-10-16T18:54:07.737Z",
-   "bt": {
-    "wrTest": 0.685,
-    "t": 6.9,
-    "n": 432,
-    "sharpeTest": 8.41
-   },
-   "tested": "2026-10-27T09:06:03.090Z"
+   "tested": "2026-10-28T09:46:51.143Z"
   },
   {
    "sym": "CL=F",
@@ -96,30 +115,11 @@
    "adopted": "2026-10-16T18:54:07.738Z",
    "bt": {
     "wrTest": 0.65,
-    "t": 2.42,
+    "t": 2.44,
     "n": 20,
-    "sharpeTest": 3.33
+    "sharpeTest": 3.36
    },
-   "tested": "2026-10-27T09:06:03.090Z"
-  },
-  {
-   "sym": "LTCUSDT",
-   "tf": "1h",
-   "st": "sma",
-   "a": 10,
-   "b": 80,
-   "ks": 3,
-   "kt": 4.5,
-   "lo": false,
-   "active": true,
-   "adopted": "2026-10-16T18:23:38.462Z",
-   "bt": {
-    "wrTest": 0.519,
-    "t": 1.72,
-    "n": 27,
-    "sharpeTest": 3.98
-   },
-   "tested": "2026-10-27T09:06:03.090Z"
+   "tested": "2026-10-28T09:46:51.143Z"
   },
   {
    "sym": "DOGEUSDT",
@@ -134,16 +134,16 @@
    "adopted": "2026-10-16T18:23:38.462Z",
    "bt": {
     "wrTest": 0.517,
-    "t": 2.13,
+    "t": 2.12,
     "n": 29,
-    "sharpeTest": 1.69
+    "sharpeTest": 1.67
    },
-   "tested": "2026-10-27T09:06:03.090Z"
+   "tested": "2026-10-28T09:46:51.143Z"
   }
  ],
- "scannedAt": "2026-10-27T09:06:03.090Z",
+ "scannedAt": "2026-10-28T09:46:51.144Z",
  "basket": {
-  "updated": 1793092360182,
+  "updated": 1793181259088,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -153,8 +153,8 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 2.21,
-    "trades": 692,
+    "t": 2.06,
+    "trades": 664,
     "breadth": [
      15,
      70
@@ -171,11 +171,11 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/65 SL2/TP4 ATR",
-    "t": 1.63,
-    "trades": 333,
+    "t": 1.45,
+    "trades": 331,
     "breadth": [
      35,
-     55
+     65
     ],
     "ok": false,
     "why": [
@@ -189,10 +189,10 @@
     "basket": "crypto",
     "tf": "1h",
     "label": "Confluenza 4 su 4, intraday SL3/TP4.5 ATR",
-    "t": 2.52,
-    "trades": 1204,
+    "t": 2.56,
+    "trades": 1211,
     "breadth": [
-     10,
+     5,
      70
     ],
     "ok": false,
@@ -206,8 +206,8 @@
     "basket": "forex",
     "tf": "1h",
     "label": "RSI nel trend 30/200 SL1.5/TP3 ATR",
-    "t": 2.72,
-    "trades": 123,
+    "t": 2.5,
+    "trades": 122,
     "breadth": [
      60,
      90
@@ -215,6 +215,7 @@
     "ok": false,
     "why": [
      "non significativa nel periodo di scelta",
+     "non significativa nel test",
      "pochi trade nel test"
     ],
     "perDay": null
