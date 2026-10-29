@@ -27,25 +27,6 @@
  },
  "watch": [
   {
-   "sym": "LTCUSDT",
-   "tf": "1h",
-   "st": "sma",
-   "a": 10,
-   "b": 80,
-   "ks": 3,
-   "kt": 4.5,
-   "lo": false,
-   "active": true,
-   "adopted": "2026-10-16T18:23:38.462Z",
-   "bt": {
-    "wrTest": 0.536,
-    "t": 1.8,
-    "n": 28,
-    "sharpeTest": 4.15
-   },
-   "tested": "2026-10-28T09:46:51.142Z"
-  },
-  {
    "sym": "USDCHF=X",
    "tf": "1h",
    "st": "tod",
@@ -57,12 +38,12 @@
    "active": true,
    "adopted": "2026-10-28T09:46:51.143Z",
    "bt": {
-    "wrTest": 0.698,
-    "t": 7.19,
-    "n": 417,
-    "sharpeTest": 8.71
+    "wrTest": 0.702,
+    "t": 7.23,
+    "n": 416,
+    "sharpeTest": 8.74
    },
-   "tested": "2026-10-28T09:46:51.143Z"
+   "tested": "2026-10-29T10:05:00.254Z"
   },
   {
    "sym": "GC=F",
@@ -76,12 +57,12 @@
    "active": true,
    "adopted": "2026-10-19T08:59:52.211Z",
    "bt": {
-    "wrTest": 0.417,
-    "t": 1.67,
-    "n": 163,
-    "sharpeTest": 2.52
+    "wrTest": 0.41,
+    "t": 1.62,
+    "n": 166,
+    "sharpeTest": 2.45
    },
-   "tested": "2026-10-28T09:46:51.143Z"
+   "tested": "2026-10-29T10:05:00.256Z"
   },
   {
    "sym": "LINKUSDT",
@@ -95,12 +76,12 @@
    "active": true,
    "adopted": "2026-10-25T08:30:29.148Z",
    "bt": {
-    "wrTest": 0.468,
-    "t": 1.94,
-    "n": 62,
-    "sharpeTest": 4.29
+    "wrTest": 0.46,
+    "t": 1.82,
+    "n": 63,
+    "sharpeTest": 4.04
    },
-   "tested": "2026-10-28T09:46:51.143Z"
+   "tested": "2026-10-29T10:05:00.256Z"
   },
   {
    "sym": "CL=F",
@@ -115,11 +96,30 @@
    "adopted": "2026-10-16T18:54:07.738Z",
    "bt": {
     "wrTest": 0.65,
-    "t": 2.44,
+    "t": 2.5,
     "n": 20,
-    "sharpeTest": 3.36
+    "sharpeTest": 3.42
    },
-   "tested": "2026-10-28T09:46:51.143Z"
+   "tested": "2026-10-29T10:05:00.256Z"
+  },
+  {
+   "sym": "LTCUSDT",
+   "tf": "1h",
+   "st": "sma",
+   "a": 10,
+   "b": 80,
+   "ks": 3,
+   "kt": 4.5,
+   "lo": false,
+   "active": true,
+   "adopted": "2026-10-16T18:23:38.462Z",
+   "bt": {
+    "wrTest": 0.519,
+    "t": 1.83,
+    "n": 27,
+    "sharpeTest": 4.24
+   },
+   "tested": "2026-10-29T10:05:00.256Z"
   },
   {
    "sym": "DOGEUSDT",
@@ -134,16 +134,16 @@
    "adopted": "2026-10-16T18:23:38.462Z",
    "bt": {
     "wrTest": 0.517,
-    "t": 2.12,
+    "t": 2.15,
     "n": 29,
-    "sharpeTest": 1.67
+    "sharpeTest": 1.7
    },
-   "tested": "2026-10-28T09:46:51.143Z"
+   "tested": "2026-10-29T10:05:00.256Z"
   }
  ],
- "scannedAt": "2026-10-28T09:46:51.144Z",
+ "scannedAt": "2026-10-29T10:05:00.256Z",
  "basket": {
-  "updated": 1793181259088,
+  "updated": 1793268694056,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -153,11 +153,11 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 2.06,
-    "trades": 664,
+    "t": 0.37,
+    "trades": 654,
     "breadth": [
-     15,
-     70
+     25,
+     55
     ],
     "ok": false,
     "why": [
@@ -170,12 +170,12 @@
    {
     "basket": "crypto",
     "tf": "30m",
-    "label": "RSI 20/65 SL2/TP4 ATR",
-    "t": 1.45,
-    "trades": 331,
+    "label": "RSI 20/75 SL2/TP3 ATR",
+    "t": 1.05,
+    "trades": 259,
     "breadth": [
-     35,
-     65
+     45,
+     55
     ],
     "ok": false,
     "why": [
@@ -189,15 +189,16 @@
     "basket": "crypto",
     "tf": "1h",
     "label": "Confluenza 4 su 4, intraday SL3/TP4.5 ATR",
-    "t": 2.56,
-    "trades": 1211,
+    "t": 2.06,
+    "trades": 1219,
     "breadth": [
      5,
-     70
+     65
     ],
     "ok": false,
     "why": [
      "non significativa nel periodo di scelta",
+     "non significativa nel test",
      "funziona solo su pochi asset"
     ],
     "perDay": null
