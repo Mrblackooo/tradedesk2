@@ -38,12 +38,12 @@
    "active": true,
    "adopted": "2026-10-28T09:46:51.143Z",
    "bt": {
-    "wrTest": 0.698,
-    "t": 7.17,
-    "n": 414,
-    "sharpeTest": 8.64
+    "wrTest": 0.699,
+    "t": 7.15,
+    "n": 418,
+    "sharpeTest": 8.62
    },
-   "tested": "2026-10-30T10:07:49.806Z"
+   "tested": "2026-10-31T09:45:06.215Z"
   },
   {
    "sym": "GC=F",
@@ -57,31 +57,12 @@
    "active": true,
    "adopted": "2026-10-19T08:59:52.211Z",
    "bt": {
-    "wrTest": 0.42,
-    "t": 1.84,
-    "n": 162,
-    "sharpeTest": 2.77
+    "wrTest": 0.409,
+    "t": 1.59,
+    "n": 164,
+    "sharpeTest": 2.42
    },
-   "tested": "2026-10-30T10:07:49.808Z"
-  },
-  {
-   "sym": "CL=F",
-   "tf": "1h",
-   "st": "brk",
-   "a": 80,
-   "b": 0,
-   "ks": 3,
-   "kt": 4.5,
-   "lo": false,
-   "active": true,
-   "adopted": "2026-10-16T18:54:07.738Z",
-   "bt": {
-    "wrTest": 0.65,
-    "t": 2.42,
-    "n": 20,
-    "sharpeTest": 3.34
-   },
-   "tested": "2026-10-30T10:07:49.808Z"
+   "tested": "2026-10-31T09:45:06.216Z"
   },
   {
    "sym": "LINKUSDT",
@@ -95,12 +76,50 @@
    "active": true,
    "adopted": "2026-10-25T08:30:29.148Z",
    "bt": {
-    "wrTest": 0.446,
-    "t": 1.55,
-    "n": 65,
-    "sharpeTest": 3.42
+    "wrTest": 0.453,
+    "t": 1.59,
+    "n": 64,
+    "sharpeTest": 3.52
    },
-   "tested": "2026-10-30T10:07:49.808Z"
+   "tested": "2026-10-31T09:45:06.216Z"
+  },
+  {
+   "sym": "CL=F",
+   "tf": "1h",
+   "st": "brk",
+   "a": 80,
+   "b": 0,
+   "ks": 3,
+   "kt": 4.5,
+   "lo": false,
+   "active": true,
+   "adopted": "2026-10-16T18:54:07.738Z",
+   "bt": {
+    "wrTest": 0.684,
+    "t": 2.58,
+    "n": 19,
+    "sharpeTest": 3.48
+   },
+   "tested": "2026-10-31T09:45:06.217Z"
+  },
+  {
+   "sym": "LTCUSDT",
+   "tf": "1h",
+   "st": "sma",
+   "a": 10,
+   "b": 80,
+   "ks": 3,
+   "kt": 4.5,
+   "lo": false,
+   "active": true,
+   "adopted": "2026-10-16T18:23:38.462Z",
+   "bt": {
+    "wrTest": 0.556,
+    "t": 1.92,
+    "n": 27,
+    "sharpeTest": 4.29
+   },
+   "tested": "2026-10-31T09:45:06.217Z"
   },
   {
    "sym": "DOGEUSDT",
@@ -115,35 +134,16 @@
    "adopted": "2026-10-16T18:23:38.462Z",
    "bt": {
     "wrTest": 0.517,
-    "t": 2.18,
+    "t": 2.2,
     "n": 29,
-    "sharpeTest": 1.73
+    "sharpeTest": 1.75
    },
-   "tested": "2026-10-30T10:07:49.808Z"
-  },
-  {
-   "sym": "LTCUSDT",
-   "tf": "1h",
-   "st": "sma",
-   "a": 10,
-   "b": 80,
-   "ks": 3,
-   "kt": 4.5,
-   "lo": false,
-   "active": true,
-   "adopted": "2026-10-16T18:23:38.462Z",
-   "bt": {
-    "wrTest": 0.536,
-    "t": 1.84,
-    "n": 28,
-    "sharpeTest": 4.19
-   },
-   "tested": "2026-10-30T10:07:49.808Z"
+   "tested": "2026-10-31T09:45:06.217Z"
   }
  ],
- "scannedAt": "2026-10-30T10:07:49.808Z",
+ "scannedAt": "2026-10-31T09:45:06.217Z",
  "basket": {
-  "updated": 1793355160418,
+  "updated": 1793440296068,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -152,12 +152,12 @@
    {
     "basket": "crypto",
     "tf": "15m",
-    "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": -0.42,
-    "trades": 681,
+    "label": "RSI 20/80 SL3/TP4.5 ATR",
+    "t": -0.64,
+    "trades": 370,
     "breadth": [
-     30,
-     60
+     40,
+     40
     ],
     "ok": false,
     "why": [
@@ -171,8 +171,8 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/75 SL1.5/TP2 ATR",
-    "t": 1.25,
-    "trades": 266,
+    "t": 1.23,
+    "trades": 264,
     "breadth": [
      50,
      60
@@ -188,16 +188,17 @@
    {
     "basket": "crypto",
     "tf": "1h",
-    "label": "RSI 25/70 SL1.5/TP3 ATR",
-    "t": 0.66,
-    "trades": 185,
+    "label": "RSI 20/65 SL2/TP3 ATR",
+    "t": 2.61,
+    "trades": 83,
     "breadth": [
-     65,
-     35
+     40,
+     70
     ],
     "ok": false,
     "why": [
-     "non significativa nel test",
+     "non significativa nel periodo di scelta",
+     "pochi trade nel test",
      "funziona solo su pochi asset"
     ],
     "perDay": null
@@ -206,7 +207,7 @@
     "basket": "forex",
     "tf": "1h",
     "label": "RSI nel trend 30/200 SL1.5/TP3 ATR",
-    "t": 2.33,
+    "t": 2.37,
     "trades": 120,
     "breadth": [
      60,
