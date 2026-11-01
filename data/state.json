@@ -1,5 +1,5 @@
 {
- "updated": 1793561581675,
+ "updated": 1793574035190,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -191,14 +191,14 @@
    "sym": "LINKUSDT",
    "tf": "1h",
    "strat": "Incrocio SMA 5/50 SL1/TP2 ATR",
-   "dir": "SHORT",
-   "action": "ATTIVO",
-   "since": 1793559599999,
-   "price": 11.409,
-   "entry": 11.456,
-   "sl": 11.55651680769488,
-   "tp": 11.254966384610238,
-   "size": 57,
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1793573999999,
+   "price": 11.334,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -211,8 +211,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 5,
-    "avgR": -0.54
+    "n": 6,
+    "avgR": -0.14
    },
    "key": "LINKUSDT-1h-sma-5-50-1-2",
    "risk": 0.5,
@@ -226,7 +226,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1793555999999,
-   "price": 55.07,
+   "price": 55.31,
    "entry": 55.54,
    "sl": 56.446351763840184,
    "tp": 54.18047235423972,
@@ -258,7 +258,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793404799999,
-   "price": 0.07512,
+   "price": 0.07515,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -285,10 +285,10 @@
   }
  ],
  "paper": {
-  "n": 25,
-  "wr": 0.36,
-  "avgR": -0.11,
-  "sumPct": 1.49
+  "n": 26,
+  "wr": 0.385,
+  "avgR": -0.04,
+  "sumPct": 3.09
  },
  "recent": [
   {
@@ -317,9 +317,13 @@
    "tp": 11.254966384610238,
    "slPct": 0.877,
    "t0": 1793559599999,
-   "status": "open",
+   "status": "tp",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 11.254966384610238,
+   "t1": 1793570400000,
+   "pct": 1.595,
+   "r": 1.82
   },
   {
    "id": "LTCUSDT-1h-1793527199999",
