@@ -1,9 +1,9 @@
 {
- "updated": 1793545202642,
+ "updated": 1793561581675,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 1
+  "used": 3
  },
  "basket": {
   "updated": 1793529615795,
@@ -191,14 +191,14 @@
    "sym": "LINKUSDT",
    "tf": "1h",
    "strat": "Incrocio SMA 5/50 SL1/TP2 ATR",
-   "dir": "FLAT",
-   "action": "FLAT (SL/TP colpito)",
-   "since": 1793419199999,
-   "price": 11.594,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
+   "dir": "SHORT",
+   "action": "ATTIVO",
+   "since": 1793559599999,
+   "price": 11.409,
+   "entry": 11.456,
+   "sl": 11.55651680769488,
+   "tp": 11.254966384610238,
+   "size": 57,
    "news": {
     "score": 0,
     "heads": []
@@ -223,14 +223,14 @@
    "sym": "LTCUSDT",
    "tf": "1h",
    "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
-   "dir": "LONG",
+   "dir": "SHORT",
    "action": "ATTIVO",
-   "since": 1793527199999,
-   "price": 55.92,
-   "entry": 55.87,
-   "sl": 54.862518384628,
-   "tp": 57.381222423058,
-   "size": 27.7,
+   "since": 1793555999999,
+   "price": 55.07,
+   "entry": 55.54,
+   "sl": 56.446351763840184,
+   "tp": 54.18047235423972,
+   "size": 30.6,
    "news": {
     "score": 0,
     "heads": []
@@ -243,8 +243,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 4,
-    "avgR": 0.81
+    "n": 5,
+    "avgR": 0.47
    },
    "key": "LTCUSDT-1h-sma-10-80-3-4.5",
    "risk": 0.5,
@@ -258,7 +258,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793404799999,
-   "price": 0.07581,
+   "price": 0.07512,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -285,12 +285,42 @@
   }
  ],
  "paper": {
-  "n": 24,
-  "wr": 0.375,
-  "avgR": -0.08,
-  "sumPct": 3.09
+  "n": 25,
+  "wr": 0.36,
+  "avgR": -0.11,
+  "sumPct": 1.49
  },
  "recent": [
+  {
+   "id": "LTCUSDT-1h-1793555999999",
+   "key": "LTCUSDT-1h-sma-10-80-3-4.5",
+   "sym": "LTCUSDT",
+   "tf": "1h",
+   "dir": "SHORT",
+   "entry": 55.54,
+   "sl": 56.446351763840184,
+   "tp": 54.18047235423972,
+   "slPct": 1.632,
+   "t0": 1793555999999,
+   "status": "open",
+   "news": 0,
+   "blackout": false
+  },
+  {
+   "id": "LINKUSDT-1h-1793559599999",
+   "key": "LINKUSDT-1h-sma-5-50-1-2",
+   "sym": "LINKUSDT",
+   "tf": "1h",
+   "dir": "SHORT",
+   "entry": 11.456,
+   "sl": 11.55651680769488,
+   "tp": 11.254966384610238,
+   "slPct": 0.877,
+   "t0": 1793559599999,
+   "status": "open",
+   "news": 0,
+   "blackout": false
+  },
   {
    "id": "LTCUSDT-1h-1793527199999",
    "key": "LTCUSDT-1h-sma-10-80-3-4.5",
@@ -302,9 +332,13 @@
    "tp": 57.381222423058,
    "slPct": 1.803,
    "t0": 1793527199999,
-   "status": "open",
+   "status": "signal",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 55.07,
+   "t1": 1793561581541,
+   "pct": -1.592,
+   "r": -0.88
   },
   {
    "id": "LINKUSDT-1h-1793408399999",
@@ -533,44 +567,6 @@
    "t1": 1793092548665,
    "pct": -0.564,
    "r": -0.75
-  },
-  {
-   "id": "USDCHF=X-1h-1792792799999",
-   "key": "USDCHF=X-1h-tod-25-120-1.5-2",
-   "sym": "USDCHF=X",
-   "tf": "1h",
-   "dir": "LONG",
-   "entry": 0.8241000175476074,
-   "sl": 0.822493311105099,
-   "tp": 0.8262422928042852,
-   "slPct": 0.195,
-   "t0": 1792792799999,
-   "status": "signal",
-   "news": 0,
-   "blackout": false,
-   "exit": 0.8241999745368958,
-   "t1": 1792992456566,
-   "pct": -0.012,
-   "r": -0.06
-  },
-  {
-   "id": "USDCHF=X-1h-1792767599999",
-   "key": "USDCHF=X-1h-tod-25-120-1.5-2",
-   "sym": "USDCHF=X",
-   "tf": "1h",
-   "dir": "LONG",
-   "entry": 0.8244100213050842,
-   "sl": 0.8224068746890488,
-   "tp": 0.827080883459798,
-   "slPct": 0.243,
-   "t0": 1792767599999,
-   "status": "signal",
-   "news": 0,
-   "blackout": false,
-   "exit": 0.825160026550293,
-   "t1": 1792785333265,
-   "pct": 0.067,
-   "r": 0.28
   }
  ]
 }
