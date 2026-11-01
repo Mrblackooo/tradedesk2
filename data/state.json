@@ -1,12 +1,12 @@
 {
- "updated": 1793520250733,
+ "updated": 1793529799442,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 0
+  "used": 1
  },
  "basket": {
-  "updated": 1793440296068,
+  "updated": 1793529615795,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -16,8 +16,8 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/80 SL3/TP4.5 ATR",
-    "t": -0.64,
-    "trades": 370,
+    "t": -0.72,
+    "trades": 372,
     "breadth": [
      40,
      40
@@ -34,8 +34,8 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/75 SL1.5/TP2 ATR",
-    "t": 1.23,
-    "trades": 264,
+    "t": 1.14,
+    "trades": 268,
     "breadth": [
      50,
      60
@@ -53,9 +53,9 @@
     "tf": "1h",
     "label": "RSI 20/65 SL2/TP3 ATR",
     "t": 2.61,
-    "trades": 83,
+    "trades": 84,
     "breadth": [
-     40,
+     35,
      70
     ],
     "ok": false,
@@ -88,7 +88,7 @@
  },
  "blackout": null,
  "minPaper": 10,
- "scannedAt": "2026-10-31T09:45:06.217Z",
+ "scannedAt": "2026-11-01T10:33:45.752Z",
  "briefing": null,
  "signals": [
   {
@@ -156,38 +156,6 @@
    "conf": null
   },
   {
-   "sym": "LINKUSDT",
-   "tf": "1h",
-   "strat": "Incrocio SMA 5/50 SL1/TP2 ATR",
-   "dir": "FLAT",
-   "action": "FLAT (SL/TP colpito)",
-   "since": 1793419199999,
-   "price": 11.777,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
-   "news": {
-    "score": 0,
-    "heads": []
-   },
-   "bt": {
-    "wrTest": 0.453,
-    "t": 1.59,
-    "n": 64,
-    "sharpeTest": 3.52
-   },
-   "stage": "osservazione",
-   "proof": {
-    "n": 5,
-    "avgR": -0.54
-   },
-   "key": "LINKUSDT-1h-sma-5-50-1-2",
-   "risk": 0.5,
-   "strength": 0,
-   "conf": null
-  },
-  {
    "sym": "CL=F",
    "tf": "1h",
    "strat": "Breakout 80 SL3/TP4.5 ATR",
@@ -220,26 +188,58 @@
    "conf": null
   },
   {
+   "sym": "LINKUSDT",
+   "tf": "1h",
+   "strat": "Incrocio SMA 5/50 SL1/TP2 ATR",
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1793419199999,
+   "price": 11.739,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.475,
+    "t": 1.79,
+    "n": 61,
+    "sharpeTest": 3.97
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 5,
+    "avgR": -0.54
+   },
+   "key": "LINKUSDT-1h-sma-5-50-1-2",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
+  {
    "sym": "LTCUSDT",
    "tf": "1h",
    "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
-   "dir": "SHORT",
+   "dir": "LONG",
    "action": "ATTIVO",
-   "since": 1793314799999,
-   "price": 56.21,
-   "entry": 55.45,
-   "sl": 58.26277509783259,
-   "tp": 51.230837353251125,
-   "size": 9.9,
+   "since": 1793527199999,
+   "price": 55.92,
+   "entry": 55.87,
+   "sl": 54.862518384628,
+   "tp": 57.381222423058,
+   "size": 27.7,
    "news": {
     "score": 0,
     "heads": []
    },
    "bt": {
     "wrTest": 0.556,
-    "t": 1.92,
+    "t": 1.86,
     "n": 27,
-    "sharpeTest": 4.29
+    "sharpeTest": 4.17
    },
    "stage": "osservazione",
    "proof": {
@@ -258,7 +258,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793404799999,
-   "price": 0.07582,
+   "price": 0.0758,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -291,6 +291,21 @@
   "sumPct": 3.09
  },
  "recent": [
+  {
+   "id": "LTCUSDT-1h-1793527199999",
+   "key": "LTCUSDT-1h-sma-10-80-3-4.5",
+   "sym": "LTCUSDT",
+   "tf": "1h",
+   "dir": "LONG",
+   "entry": 55.87,
+   "sl": 54.862518384628,
+   "tp": 57.381222423058,
+   "slPct": 1.803,
+   "t0": 1793527199999,
+   "status": "open",
+   "news": 0,
+   "blackout": false
+  },
   {
    "id": "LINKUSDT-1h-1793408399999",
    "key": "LINKUSDT-1h-sma-5-50-1-2",
@@ -556,25 +571,6 @@
    "t1": 1792785333265,
    "pct": 0.067,
    "r": 0.28
-  },
-  {
-   "id": "USDCHF=X-1h-1792706399999",
-   "key": "USDCHF=X-1h-tod-25-120-1.5-2",
-   "sym": "USDCHF=X",
-   "tf": "1h",
-   "dir": "LONG",
-   "entry": 0.82014000415802,
-   "sl": 0.8181163850190052,
-   "tp": 0.8228381630100399,
-   "slPct": 0.247,
-   "t0": 1792706399999,
-   "status": "signal",
-   "news": 0,
-   "blackout": false,
-   "exit": 0.8200700283050537,
-   "t1": 1792717312032,
-   "pct": -0.033,
-   "r": -0.13
   }
  ]
 }
