@@ -1,12 +1,12 @@
 {
- "updated": 1793613260812,
+ "updated": 1793618749983,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 1
+  "used": 2
  },
  "basket": {
-  "updated": 1793529615795,
+  "updated": 1793618602265,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -16,11 +16,11 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/80 SL3/TP4.5 ATR",
-    "t": -0.72,
-    "trades": 372,
+    "t": -0.64,
+    "trades": 373,
     "breadth": [
      40,
-     40
+     45
     ],
     "ok": false,
     "why": [
@@ -34,10 +34,10 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/75 SL1.5/TP2 ATR",
-    "t": 1.14,
+    "t": 1.23,
     "trades": 268,
     "breadth": [
-     50,
+     55,
      60
     ],
     "ok": false,
@@ -52,35 +52,33 @@
     "basket": "crypto",
     "tf": "1h",
     "label": "RSI 20/65 SL2/TP3 ATR",
-    "t": 2.61,
-    "trades": 84,
+    "t": 2.66,
+    "trades": 83,
     "breadth": [
-     35,
+     70,
      70
     ],
     "ok": false,
     "why": [
      "non significativa nel periodo di scelta",
-     "pochi trade nel test",
-     "funziona solo su pochi asset"
+     "pochi trade nel test"
     ],
     "perDay": null
    },
    {
     "basket": "forex",
     "tf": "1h",
-    "label": "RSI nel trend 30/200 SL1.5/TP3 ATR",
-    "t": 2.37,
-    "trades": 120,
+    "label": "RSI 20/70 SL3/TP4.5 ATR",
+    "t": -0.5,
+    "trades": 160,
     "breadth": [
      60,
-     90
+     60
     ],
     "ok": false,
     "why": [
      "non significativa nel periodo di scelta",
-     "non significativa nel test",
-     "pochi trade nel test"
+     "non significativa nel test"
     ],
     "perDay": null
    }
@@ -88,9 +86,41 @@
  },
  "blackout": null,
  "minPaper": 10,
- "scannedAt": "2026-11-01T10:33:45.752Z",
+ "scannedAt": "2026-11-02T11:18:02.275Z",
  "briefing": null,
  "signals": [
+  {
+   "sym": "LTCUSDT",
+   "tf": "1h",
+   "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
+   "dir": "SHORT",
+   "action": "ATTIVO",
+   "since": 1793609999999,
+   "price": 54.91,
+   "entry": 55.16,
+   "sl": 56.21344664376506,
+   "tp": 53.5798300343524,
+   "size": 26.2,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.5,
+    "t": 1.58,
+    "n": 30,
+    "sharpeTest": 3.62
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 5,
+    "avgR": 0.47
+   },
+   "key": "LTCUSDT-1h-sma-10-80-3-4.5",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
   {
    "sym": "USDCHF=X",
    "tf": "1h",
@@ -98,7 +128,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1793404799999,
-   "price": 0.8205000162124634,
+   "price": 0.8200799822807312,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -108,9 +138,9 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.699,
-    "t": 7.15,
-    "n": 418,
+    "wrTest": 0.698,
+    "t": 7.13,
+    "n": 414,
     "sharpeTest": 8.62
    },
    "stage": "osservazione",
@@ -130,7 +160,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793347199999,
-   "price": 3909.89990234375,
+   "price": 3910.199951171875,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -140,10 +170,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.409,
-    "t": 1.59,
-    "n": 164,
-    "sharpeTest": 2.42
+    "wrTest": 0.42,
+    "t": 1.83,
+    "n": 162,
+    "sharpeTest": 2.78
    },
    "stage": "osservazione",
    "proof": {
@@ -159,23 +189,23 @@
    "sym": "CL=F",
    "tf": "1h",
    "strat": "Breakout 80 SL3/TP4.5 ATR",
-   "dir": "FLAT",
-   "action": "FLAT (SL/TP colpito)",
-   "since": 1791770399999,
-   "price": 99.61000061035156,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
+   "dir": "SHORT",
+   "action": "ATTIVO",
+   "since": 1793613599999,
+   "price": 99.5999984741211,
+   "entry": 99.69999694824219,
+   "sl": 102.07250340900204,
+   "tp": 96.1412372571024,
+   "size": 21,
    "news": {
     "score": 0,
     "heads": []
    },
    "bt": {
-    "wrTest": 0.684,
-    "t": 2.58,
-    "n": 19,
-    "sharpeTest": 3.48
+    "wrTest": 0.667,
+    "t": 2.48,
+    "n": 21,
+    "sharpeTest": 3.42
    },
    "stage": "osservazione",
    "proof": {
@@ -194,7 +224,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793573999999,
-   "price": 11.315,
+   "price": 11.277,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -204,10 +234,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.475,
-    "t": 1.79,
-    "n": 61,
-    "sharpeTest": 3.97
+    "wrTest": 0.492,
+    "t": 1.93,
+    "n": 59,
+    "sharpeTest": 4.28
    },
    "stage": "osservazione",
    "proof": {
@@ -220,45 +250,13 @@
    "conf": null
   },
   {
-   "sym": "LTCUSDT",
-   "tf": "1h",
-   "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
-   "dir": "SHORT",
-   "action": "ATTIVO",
-   "since": 1793609999999,
-   "price": 55.11,
-   "entry": 55.16,
-   "sl": 56.21344664376506,
-   "tp": 53.5798300343524,
-   "size": 26.2,
-   "news": {
-    "score": 0,
-    "heads": []
-   },
-   "bt": {
-    "wrTest": 0.556,
-    "t": 1.86,
-    "n": 27,
-    "sharpeTest": 4.17
-   },
-   "stage": "osservazione",
-   "proof": {
-    "n": 5,
-    "avgR": 0.47
-   },
-   "key": "LTCUSDT-1h-sma-10-80-3-4.5",
-   "risk": 0.5,
-   "strength": 0,
-   "conf": null
-  },
-  {
    "sym": "DOGEUSDT",
    "tf": "1d",
    "strat": "Incrocio SMA 10/30 SL2/TP3 ATR",
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793404799999,
-   "price": 0.07545,
+   "price": 0.07533,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -269,9 +267,9 @@
    },
    "bt": {
     "wrTest": 0.517,
-    "t": 2.2,
+    "t": 2.23,
     "n": 29,
-    "sharpeTest": 1.75
+    "sharpeTest": 1.76
    },
    "stage": "osservazione",
    "proof": {
@@ -291,6 +289,21 @@
   "sumPct": 3.09
  },
  "recent": [
+  {
+   "id": "CL=F-1h-1793613599999",
+   "key": "CL=F-1h-brk-80-0-3-4.5",
+   "sym": "CL=F",
+   "tf": "1h",
+   "dir": "SHORT",
+   "entry": 99.69999694824219,
+   "sl": 102.07250340900204,
+   "tp": 96.1412372571024,
+   "slPct": 2.38,
+   "t0": 1793613599999,
+   "status": "open",
+   "news": 0,
+   "blackout": false
+  },
   {
    "id": "LTCUSDT-1h-1793609999999",
    "key": "LTCUSDT-1h-sma-10-80-3-4.5",
@@ -548,25 +561,6 @@
    "t1": 1793113200000,
    "pct": -1.164,
    "r": -1.16
-  },
-  {
-   "id": "USDCHF=X-1h-1793044799999",
-   "key": "USDCHF=X-1h-tod-25-120-1.5-2",
-   "sym": "USDCHF=X",
-   "tf": "1h",
-   "dir": "SHORT",
-   "entry": 0.8275799751281738,
-   "sl": 0.8290991747813952,
-   "tp": 0.8255543755905453,
-   "slPct": 0.184,
-   "t0": 1793044799999,
-   "status": "signal",
-   "news": 0,
-   "blackout": false,
-   "exit": 0.8280900120735168,
-   "t1": 1793064301546,
-   "pct": -0.086,
-   "r": -0.47
   }
  ]
 }

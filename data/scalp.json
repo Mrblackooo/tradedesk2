@@ -1,5 +1,5 @@
 {
- "updated": 1793529797224,
+ "updated": 1793618747532,
  "feePct": 0.05,
  "strategies": [],
  "report": [
@@ -7,7 +7,7 @@
    "sym": "BTCUSDT",
    "tf": "5m",
    "candles": 60000,
-   "atrPct": 0.118,
+   "atrPct": 0.117,
    "best": {
     "st": "rsi",
     "a": 20,
@@ -17,7 +17,7 @@
     "wr": 0.357,
     "n": 14,
     "t": -1.19,
-    "costR": 0.849
+    "costR": 0.853
    },
    "ok": false,
    "why": [
@@ -42,7 +42,7 @@
     "wr": 0.556,
     "n": 9,
     "t": 0.38,
-    "costR": 0.393
+    "costR": 0.394
    },
    "ok": false,
    "why": [
@@ -78,17 +78,17 @@
    "sym": "ETHUSDT",
    "tf": "5m",
    "candles": 60000,
-   "atrPct": 0.163,
+   "atrPct": 0.162,
    "best": {
     "st": "rsi",
     "a": 25,
     "b": 80,
     "ks": 1.5,
     "kt": 3,
-    "wr": 0.447,
+    "wr": 0.474,
     "n": 38,
-    "t": 0.08,
-    "costR": 0.41
+    "t": 0.31,
+    "costR": 0.411
    },
    "ok": false,
    "why": [
@@ -103,7 +103,7 @@
    "sym": "ETHUSDT",
    "tf": "15m",
    "candles": 60000,
-   "atrPct": 0.403,
+   "atrPct": 0.402,
    "best": {
     "st": "rsi",
     "a": 15,
@@ -151,13 +151,13 @@
    "best": {
     "st": "rsi",
     "a": 20,
-    "b": 85,
-    "ks": 1.5,
-    "kt": 3,
-    "wr": 0.333,
-    "n": 12,
-    "t": 0.4,
-    "costR": 0.333
+    "b": 80,
+    "ks": 1,
+    "kt": 2,
+    "wr": 0.364,
+    "n": 22,
+    "t": 0.32,
+    "costR": 0.501
    },
    "ok": false,
    "why": [
@@ -214,7 +214,7 @@
    "sym": "XRPUSDT",
    "tf": "5m",
    "candles": 60000,
-   "atrPct": 0.184,
+   "atrPct": 0.183,
    "best": {
     "st": "rsi",
     "a": 20,
@@ -224,11 +224,12 @@
     "wr": 0.6,
     "n": 10,
     "t": 1.07,
-    "costR": 0.681
+    "costR": 0.683
    },
    "ok": false,
    "why": [
     "costi",
+    "train",
     "trade",
     "signif"
    ]
@@ -237,7 +238,7 @@
    "sym": "XRPUSDT",
    "tf": "15m",
    "candles": 60000,
-   "atrPct": 0.426,
+   "atrPct": 0.425,
    "best": {
     "st": "rsi",
     "a": 15,
@@ -247,7 +248,7 @@
     "wr": 0.636,
     "n": 11,
     "t": 1.31,
-    "costR": 0.156
+    "costR": 0.157
    },
    "ok": false,
    "why": [
