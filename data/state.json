@@ -1,9 +1,9 @@
 {
- "updated": 1793650613524,
+ "updated": 1793672791685,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 3
+  "used": 0
  },
  "basket": {
   "updated": 1793618602265,
@@ -96,7 +96,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1793609999999,
-   "price": 54.05,
+   "price": 53.79,
    "entry": 55.16,
    "sl": 56.21344664376506,
    "tp": 53.5798300343524,
@@ -125,14 +125,14 @@
    "sym": "USDCHF=X",
    "tf": "1h",
    "strat": "Stagionalità oraria 30/120 SL1.5/TP2 ATR",
-   "dir": "SHORT",
-   "action": "ATTIVO",
-   "since": 1793649599999,
-   "price": 0.8181399703025818,
-   "entry": 0.8182799816131592,
-   "sl": 0.8201541449296788,
-   "tp": 0.815781097191133,
-   "size": 218.3,
+   "dir": "FLAT",
+   "action": "FLAT",
+   "since": 1793663999999,
+   "price": 0.8197699785232544,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -145,8 +145,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 2,
-    "avgR": 0
+    "n": 3,
+    "avgR": -0.3
    },
    "key": "USDCHF=X-1h-tod-30-120-1.5-2",
    "risk": 0.5,
@@ -160,7 +160,7 @@
    "dir": "LONG",
    "action": "ATTIVO",
    "since": 1793642399999,
-   "price": 3955.39990234375,
+   "price": 3955.5,
    "entry": 3968.300048828125,
    "sl": 3932.741726127149,
    "tp": 4039.4166942300767,
@@ -192,7 +192,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793642399999,
-   "price": 96.16999816894531,
+   "price": 96.55999755859375,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -224,7 +224,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793573999999,
-   "price": 11.122,
+   "price": 11.104,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -256,7 +256,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793404799999,
-   "price": 0.074,
+   "price": 0.07425,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -283,10 +283,10 @@
   }
  ],
  "paper": {
-  "n": 28,
-  "wr": 0.429,
-  "avgR": 0.07,
-  "sumPct": 8.89
+  "n": 29,
+  "wr": 0.414,
+  "avgR": 0.04,
+  "sumPct": 8.68
  },
  "recent": [
   {
@@ -300,9 +300,13 @@
    "tp": 0.815781097191133,
    "slPct": 0.229,
    "t0": 1793649599999,
-   "status": "open",
+   "status": "signal",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 0.8197699785232544,
+   "t1": 1793672790921,
+   "pct": -0.206,
+   "r": -0.9
   },
   {
    "id": "CL=F-1h-1793613599999",
