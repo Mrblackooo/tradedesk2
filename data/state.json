@@ -1,12 +1,12 @@
 {
- "updated": 1793699923907,
+ "updated": 1793703911276,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
   "used": 0
  },
  "basket": {
-  "updated": 1793618602265,
+  "updated": 1793703772645,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -16,8 +16,8 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/80 SL3/TP4.5 ATR",
-    "t": -0.64,
-    "trades": 373,
+    "t": -0.76,
+    "trades": 371,
     "breadth": [
      40,
      45
@@ -34,11 +34,11 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/75 SL1.5/TP2 ATR",
-    "t": 1.23,
-    "trades": 268,
+    "t": 1.01,
+    "trades": 266,
     "breadth": [
-     55,
-     60
+     50,
+     55
     ],
     "ok": false,
     "why": [
@@ -52,25 +52,26 @@
     "basket": "crypto",
     "tf": "1h",
     "label": "RSI 20/65 SL2/TP3 ATR",
-    "t": 2.66,
-    "trades": 83,
+    "t": 2.64,
+    "trades": 82,
     "breadth": [
-     70,
-     70
+     55,
+     75
     ],
     "ok": false,
     "why": [
      "non significativa nel periodo di scelta",
-     "pochi trade nel test"
+     "pochi trade nel test",
+     "funziona solo su pochi asset"
     ],
     "perDay": null
    },
    {
     "basket": "forex",
     "tf": "1h",
-    "label": "RSI 20/70 SL3/TP4.5 ATR",
-    "t": -0.5,
-    "trades": 160,
+    "label": "Momentum 80/10 SL2/TP3 ATR",
+    "t": 2.01,
+    "trades": 153,
     "breadth": [
      60,
      60
@@ -86,41 +87,9 @@
  },
  "blackout": null,
  "minPaper": 10,
- "scannedAt": "2026-11-02T11:18:02.275Z",
+ "scannedAt": "2026-11-03T10:58:04.367Z",
  "briefing": null,
  "signals": [
-  {
-   "sym": "LTCUSDT",
-   "tf": "1h",
-   "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
-   "dir": "FLAT",
-   "action": "FLAT (SL/TP colpito)",
-   "since": 1793678399999,
-   "price": 54.1,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
-   "news": {
-    "score": 0,
-    "heads": []
-   },
-   "bt": {
-    "wrTest": 0.5,
-    "t": 1.58,
-    "n": 30,
-    "sharpeTest": 3.62
-   },
-   "stage": "osservazione",
-   "proof": {
-    "n": 7,
-    "avgR": 0.74
-   },
-   "key": "LTCUSDT-1h-sma-10-80-3-4.5",
-   "risk": 0.5,
-   "strength": 0,
-   "conf": null
-  },
   {
    "sym": "USDCHF=X",
    "tf": "1h",
@@ -128,7 +97,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1793663999999,
-   "price": 0.8178099989891052,
+   "price": 0.8184999823570251,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -138,10 +107,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.698,
-    "t": 7.13,
-    "n": 414,
-    "sharpeTest": 8.62
+    "wrTest": 0.694,
+    "t": 7,
+    "n": 415,
+    "sharpeTest": 8.48
    },
    "stage": "osservazione",
    "proof": {
@@ -160,7 +129,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793681999999,
-   "price": 3916.89990234375,
+   "price": 3911.699951171875,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -170,10 +139,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.42,
-    "t": 1.83,
-    "n": 162,
-    "sharpeTest": 2.78
+    "wrTest": 0.41,
+    "t": 1.65,
+    "n": 161,
+    "sharpeTest": 2.51
    },
    "stage": "osservazione",
    "proof": {
@@ -192,7 +161,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793642399999,
-   "price": 97.69999694824219,
+   "price": 97.73999786376953,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -202,10 +171,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.667,
-    "t": 2.48,
-    "n": 21,
-    "sharpeTest": 3.42
+    "wrTest": 0.7,
+    "t": 2.75,
+    "n": 20,
+    "sharpeTest": 3.7
    },
    "stage": "osservazione",
    "proof": {
@@ -224,7 +193,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793573999999,
-   "price": 11.156,
+   "price": 11.143,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -256,7 +225,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793404799999,
-   "price": 0.07413,
+   "price": 0.07459,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -267,9 +236,9 @@
    },
    "bt": {
     "wrTest": 0.517,
-    "t": 2.23,
+    "t": 2.28,
     "n": 29,
-    "sharpeTest": 1.76
+    "sharpeTest": 1.8
    },
    "stage": "osservazione",
    "proof": {
@@ -277,6 +246,38 @@
     "avgR": null
    },
    "key": "DOGEUSDT-1d-sma-10-30-2-3",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
+  {
+   "sym": "EURUSD=X",
+   "tf": "1h",
+   "strat": "RSI 35/75 SL2/TP4 ATR",
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1787756399999,
+   "price": 1.11831796169281,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.556,
+    "t": 2.05,
+    "n": 27,
+    "sharpeTest": 2.76
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 0,
+    "avgR": null
+   },
+   "key": "EURUSD=X-1h-rsi-35-75-2-4",
    "risk": 0.5,
    "strength": 0,
    "conf": null
