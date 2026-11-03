@@ -1,5 +1,5 @@
 {
- "updated": 1793672791685,
+ "updated": 1793699923907,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -93,14 +93,14 @@
    "sym": "LTCUSDT",
    "tf": "1h",
    "strat": "Incrocio SMA 10/80 SL3/TP4.5 ATR",
-   "dir": "SHORT",
-   "action": "ATTIVO",
-   "since": 1793609999999,
-   "price": 53.79,
-   "entry": 55.16,
-   "sl": 56.21344664376506,
-   "tp": 53.5798300343524,
-   "size": 26.2,
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1793678399999,
+   "price": 54.1,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -113,8 +113,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 6,
-    "avgR": 0.63
+    "n": 7,
+    "avgR": 0.74
    },
    "key": "LTCUSDT-1h-sma-10-80-3-4.5",
    "risk": 0.5,
@@ -128,7 +128,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1793663999999,
-   "price": 0.8197699785232544,
+   "price": 0.8178099989891052,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -157,14 +157,14 @@
    "sym": "GC=F",
    "tf": "1h",
    "strat": "Incrocio SMA 15/30 SL2/TP4 ATR",
-   "dir": "LONG",
-   "action": "ATTIVO",
-   "since": 1793642399999,
-   "price": 3955.5,
-   "entry": 3968.300048828125,
-   "sl": 3932.741726127149,
-   "tp": 4039.4166942300767,
-   "size": 55.8,
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1793681999999,
+   "price": 3916.89990234375,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -192,7 +192,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793642399999,
-   "price": 96.55999755859375,
+   "price": 97.69999694824219,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -224,7 +224,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793573999999,
-   "price": 11.104,
+   "price": 11.156,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -256,7 +256,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793404799999,
-   "price": 0.07425,
+   "price": 0.07413,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -283,10 +283,10 @@
   }
  ],
  "paper": {
-  "n": 29,
-  "wr": 0.414,
-  "avgR": 0.04,
-  "sumPct": 8.68
+  "n": 30,
+  "wr": 0.433,
+  "avgR": 0.08,
+  "sumPct": 11.38
  },
  "recent": [
   {
@@ -338,9 +338,13 @@
    "tp": 53.5798300343524,
    "slPct": 1.91,
    "t0": 1793609999999,
-   "status": "open",
+   "status": "tp",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 53.5798300343524,
+   "t1": 1793674800000,
+   "pct": 2.705,
+   "r": 1.42
   },
   {
    "id": "LTCUSDT-1h-1793555999999",
