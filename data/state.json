@@ -1,5 +1,5 @@
 {
- "updated": 1793790555691,
+ "updated": 1793815006410,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -93,14 +93,14 @@
    "sym": "EURUSD=X",
    "tf": "1h",
    "strat": "RSI 35/75 SL2/TP4 ATR",
-   "dir": "SHORT",
-   "action": "ATTIVO",
-   "since": 1793757599999,
-   "price": 1.1242270469665527,
-   "entry": 1.1243535280227661,
-   "sl": 1.1271507797578038,
-   "tp": 1.1187590245526908,
-   "size": 201,
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1793800799999,
+   "price": 1.1238480806350708,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -113,8 +113,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 0,
-    "avgR": null
+    "n": 1,
+    "avgR": -1.1
    },
    "key": "EURUSD=X-1h-rsi-35-75-2-4",
    "risk": 0.5,
@@ -128,7 +128,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1793750399999,
-   "price": 0.8177300095558167,
+   "price": 0.8169199824333191,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -160,7 +160,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793771999999,
-   "price": 4058.10009765625,
+   "price": 4079.199951171875,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -192,7 +192,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793642399999,
-   "price": 95.27999877929688,
+   "price": 87.75,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -221,14 +221,14 @@
    "sym": "LINKUSDT",
    "tf": "1h",
    "strat": "Incrocio SMA 5/50 SL1/TP2 ATR",
-   "dir": "LONG",
-   "action": "ATTIVO",
-   "since": 1793789999999,
-   "price": 11.177,
-   "entry": 11.184,
-   "sl": 11.059300344936883,
-   "tp": 11.433399310126232,
-   "size": 44.8,
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1793797199999,
+   "price": 11.549,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -241,8 +241,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 6,
-    "avgR": -0.14
+    "n": 7,
+    "avgR": -0.29
    },
    "key": "LINKUSDT-1h-sma-5-50-1-2",
    "risk": 0.5,
@@ -256,7 +256,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793404799999,
-   "price": 0.07528,
+   "price": 0.07673,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -283,10 +283,10 @@
   }
  ],
  "paper": {
-  "n": 31,
-  "wr": 0.419,
-  "avgR": 0.04,
-  "sumPct": 11.15
+  "n": 33,
+  "wr": 0.394,
+  "avgR": -0.03,
+  "sumPct": 9.6
  },
  "recent": [
   {
@@ -300,9 +300,13 @@
    "tp": 11.433399310126232,
    "slPct": 1.115,
    "t0": 1793789999999,
-   "status": "open",
+   "status": "sl",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 11.059300344936883,
+   "t1": 1793793600000,
+   "pct": -1.275,
+   "r": -1.14
   },
   {
    "id": "EURUSD=X-1h-1793757599999",
@@ -315,9 +319,13 @@
    "tp": 1.1187590245526908,
    "slPct": 0.249,
    "t0": 1793757599999,
-   "status": "open",
+   "status": "sl",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 1.1271507797578038,
+   "t1": 1793797200000,
+   "pct": -0.273,
+   "r": -1.1
   },
   {
    "id": "USDCHF=X-1h-1793743199999",
