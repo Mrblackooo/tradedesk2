@@ -1,9 +1,9 @@
 {
- "updated": 1793835276243,
+ "updated": 1793850139941,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 3
+  "used": 0
  },
  "basket": {
   "updated": 1793790405650,
@@ -96,7 +96,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793800799999,
-   "price": 1.1235954761505127,
+   "price": 1.1262530088424683,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -125,14 +125,14 @@
    "sym": "USDCHF=X",
    "tf": "1h",
    "strat": "Stagionalità oraria 30/120 SL1.5/TP2 ATR",
-   "dir": "LONG",
-   "action": "ATTIVO",
-   "since": 1793829599999,
-   "price": 0.816510021686554,
-   "entry": 0.8169400095939636,
-   "sl": 0.8146817194063618,
-   "tp": 0.8199510631774328,
-   "size": 180.9,
+   "dir": "FLAT",
+   "action": "FLAT",
+   "since": 1793836799999,
+   "price": 0.8141099810600281,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -145,8 +145,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 4,
-    "avgR": -0.5
+    "n": 5,
+    "avgR": -0.62
    },
    "key": "USDCHF=X-1h-tod-30-120-1.5-2",
    "risk": 0.5,
@@ -160,7 +160,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793771999999,
-   "price": 4071.699951171875,
+   "price": 4145.7998046875,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -192,7 +192,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793642399999,
-   "price": 88.18000030517578,
+   "price": 86.87999725341797,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -224,7 +224,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793797199999,
-   "price": 11.461,
+   "price": 11.623,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -256,7 +256,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793404799999,
-   "price": 0.07725,
+   "price": 0.07744,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -283,10 +283,10 @@
   }
  ],
  "paper": {
-  "n": 33,
-  "wr": 0.394,
-  "avgR": -0.03,
-  "sumPct": 9.6
+  "n": 34,
+  "wr": 0.382,
+  "avgR": -0.06,
+  "sumPct": 9.3
  },
  "recent": [
   {
@@ -300,9 +300,13 @@
    "tp": 0.8199510631774328,
    "slPct": 0.276,
    "t0": 1793829599999,
-   "status": "open",
+   "status": "sl",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 0.8146817194063618,
+   "t1": 1793840400000,
+   "pct": -0.3,
+   "r": -1.09
   },
   {
    "id": "LINKUSDT-1h-1793789999999",
