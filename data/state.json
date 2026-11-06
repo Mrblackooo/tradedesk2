@@ -1,12 +1,12 @@
 {
- "updated": 1793948355915,
+ "updated": 1793963281884,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
   "used": 0
  },
  "basket": {
-  "updated": 1793876871687,
+  "updated": 1793963133578,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -16,10 +16,10 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/80 SL3/TP4.5 ATR",
-    "t": -0.18,
-    "trades": 374,
+    "t": -0.34,
+    "trades": 378,
     "breadth": [
-     45,
+     40,
      50
     ],
     "ok": false,
@@ -33,11 +33,11 @@
    {
     "basket": "crypto",
     "tf": "30m",
-    "label": "RSI 20/75 SL1.5/TP2 ATR",
-    "t": 1.07,
-    "trades": 265,
+    "label": "RSI 20/80 SL3/TP4.5 ATR",
+    "t": 0.85,
+    "trades": 182,
     "breadth": [
-     45,
+     40,
      55
     ],
     "ok": false,
@@ -52,11 +52,11 @@
     "basket": "crypto",
     "tf": "1h",
     "label": "RSI 25/70 SL3/TP4.5 ATR",
-    "t": 2.62,
-    "trades": 189,
+    "t": 3.2,
+    "trades": 200,
     "breadth": [
      30,
-     75
+     80
     ],
     "ok": false,
     "why": [
@@ -69,8 +69,8 @@
     "basket": "forex",
     "tf": "1h",
     "label": "Momentum 80/10 SL2/TP3 ATR",
-    "t": 1.71,
-    "trades": 153,
+    "t": 1.81,
+    "trades": 154,
     "breadth": [
      60,
      60
@@ -86,7 +86,7 @@
  },
  "blackout": null,
  "minPaper": 10,
- "scannedAt": "2026-11-05T11:01:50.990Z",
+ "scannedAt": "2026-11-06T11:00:11.349Z",
  "briefing": null,
  "signals": [
   {
@@ -96,7 +96,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1793923199999,
-   "price": 0.8177300095558167,
+   "price": 0.8178200125694275,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -106,10 +106,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.7,
-    "t": 7.07,
-    "n": 414,
-    "sharpeTest": 8.58
+    "wrTest": 0.694,
+    "t": 6.85,
+    "n": 415,
+    "sharpeTest": 8.34
    },
    "stage": "osservazione",
    "proof": {
@@ -128,20 +128,20 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1793933999999,
-   "price": 4055.39990234375,
+   "price": 4075,
    "entry": 4071.199951171875,
-   "sl": 4117.798562811652,
-   "tp": 3978.0027278923208,
+   "sl": 4117.806883151875,
+   "tp": 3977.9860872118757,
    "size": 43.7,
    "news": {
     "score": 0,
     "heads": []
    },
    "bt": {
-    "wrTest": 0.409,
-    "t": 1.58,
-    "n": 164,
-    "sharpeTest": 2.41
+    "wrTest": 0.41,
+    "t": 1.69,
+    "n": 161,
+    "sharpeTest": 2.57
    },
    "stage": "osservazione",
    "proof": {
@@ -160,7 +160,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793642399999,
-   "price": 91.69000244140625,
+   "price": 90.5999984741211,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -173,7 +173,7 @@
     "wrTest": 0.684,
     "t": 2.62,
     "n": 19,
-    "sharpeTest": 3.52
+    "sharpeTest": 3.53
    },
    "stage": "osservazione",
    "proof": {
@@ -192,7 +192,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793897999999,
-   "price": 10.754,
+   "price": 10.843,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -202,10 +202,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.483,
-    "t": 1.81,
+    "wrTest": 0.467,
+    "t": 1.43,
     "n": 60,
-    "sharpeTest": 4.04
+    "sharpeTest": 3.16
    },
    "stage": "osservazione",
    "proof": {
@@ -221,23 +221,23 @@
    "sym": "EURUSD=X",
    "tf": "1h",
    "strat": "RSI 35/75 SL2/TP4 ATR",
-   "dir": "LONG",
-   "action": "ATTIVO",
-   "since": 1793937599999,
-   "price": 1.1186933517456055,
-   "entry": 1.1201971769332886,
-   "sl": 1.117784545079902,
-   "tp": 1.125022440640062,
-   "size": 232.2,
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1793951999999,
+   "price": 1.117817997932434,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
    },
    "bt": {
-    "wrTest": 0.556,
-    "t": 1.98,
-    "n": 27,
-    "sharpeTest": 2.67
+    "wrTest": 0.536,
+    "t": 1.81,
+    "n": 28,
+    "sharpeTest": 2.49
    },
    "stage": "osservazione",
    "proof": {
@@ -256,7 +256,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1793915999999,
-   "price": 52.25,
+   "price": 52.88,
    "entry": 52.02,
    "sl": 54.02596727803609,
    "tp": 49.01104908294587,
@@ -266,10 +266,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.625,
-    "t": 2.6,
-    "n": 24,
-    "sharpeTest": 5.29
+    "wrTest": 0.6,
+    "t": 2.1,
+    "n": 25,
+    "sharpeTest": 4.51
    },
    "stage": "osservazione",
    "proof": {
