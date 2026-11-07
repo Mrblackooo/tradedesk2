@@ -1,9 +1,9 @@
 {
- "updated": 1793998181462,
+ "updated": 1794011187884,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 1
+  "used": 0
  },
  "basket": {
   "updated": 1793963133578,
@@ -93,14 +93,14 @@
    "sym": "USDCHF=X",
    "tf": "1h",
    "strat": "Stagionalità oraria 30/120 SL1.5/TP2 ATR",
-   "dir": "SHORT",
+   "dir": "LONG",
    "action": "ATTIVO",
-   "since": 1793995199999,
-   "price": 0.8209199905395508,
-   "entry": 0.8205199837684631,
-   "sl": 0.8226827512222592,
-   "tp": 0.8176362938300684,
-   "size": 189.7,
+   "since": 1794002399999,
+   "price": 0.8200100064277649,
+   "entry": 0.8200500011444092,
+   "sl": 0.818001107496919,
+   "tp": 0.8227818593410627,
+   "size": 200.1,
    "news": {
     "score": 0,
     "heads": []
@@ -113,8 +113,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 5,
-    "avgR": -0.62
+    "n": 6,
+    "avgR": -0.49
    },
    "key": "USDCHF=X-1h-tod-30-120-1.5-2",
    "risk": 0.5,
@@ -128,10 +128,10 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1793933999999,
-   "price": 4072,
+   "price": 4079.5,
    "entry": 4071.199951171875,
-   "sl": 4117.806883151875,
-   "tp": 3977.9860872118757,
+   "sl": 4117.798562811652,
+   "tp": 3978.0027278923208,
    "size": 43.7,
    "news": {
     "score": 0,
@@ -160,7 +160,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793642399999,
-   "price": 90.72000122070312,
+   "price": 90.33999633789062,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -192,7 +192,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793897999999,
-   "price": 10.879,
+   "price": 10.852,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -224,7 +224,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793951999999,
-   "price": 1.1140819787979126,
+   "price": 1.1143302917480469,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -256,7 +256,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1793915999999,
-   "price": 52.73,
+   "price": 52.51,
    "entry": 52.02,
    "sl": 54.02596727803609,
    "tp": 49.01104908294587,
@@ -283,10 +283,10 @@
   }
  ],
  "paper": {
-  "n": 34,
-  "wr": 0.382,
-  "avgR": -0.06,
-  "sumPct": 9.3
+  "n": 35,
+  "wr": 0.4,
+  "avgR": -0.05,
+  "sumPct": 9.34
  },
  "recent": [
   {
@@ -300,9 +300,13 @@
    "tp": 0.8176362938300684,
    "slPct": 0.264,
    "t0": 1793995199999,
-   "status": "open",
+   "status": "signal",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 0.8200100064277649,
+   "t1": 1794011186163,
+   "pct": 0.038,
+   "r": 0.14
   },
   {
    "id": "USDCHF=X-1h-1793829599999",
