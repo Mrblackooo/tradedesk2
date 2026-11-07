@@ -38,50 +38,12 @@
    "active": true,
    "adopted": "2026-10-28T09:46:51.143Z",
    "bt": {
-    "wrTest": 0.694,
-    "t": 6.85,
-    "n": 415,
-    "sharpeTest": 8.34
+    "wrTest": 0.7,
+    "t": 6.94,
+    "n": 416,
+    "sharpeTest": 8.46
    },
-   "tested": "2026-11-06T11:00:11.347Z"
-  },
-  {
-   "sym": "GC=F",
-   "tf": "1h",
-   "st": "sma",
-   "a": 15,
-   "b": 30,
-   "ks": 2,
-   "kt": 4,
-   "lo": false,
-   "active": true,
-   "adopted": "2026-10-19T08:59:52.211Z",
-   "bt": {
-    "wrTest": 0.41,
-    "t": 1.69,
-    "n": 161,
-    "sharpeTest": 2.57
-   },
-   "tested": "2026-11-06T11:00:11.349Z"
-  },
-  {
-   "sym": "CL=F",
-   "tf": "1h",
-   "st": "brk",
-   "a": 80,
-   "b": 0,
-   "ks": 3,
-   "kt": 4.5,
-   "lo": false,
-   "active": true,
-   "adopted": "2026-10-16T18:54:07.738Z",
-   "bt": {
-    "wrTest": 0.684,
-    "t": 2.62,
-    "n": 19,
-    "sharpeTest": 3.53
-   },
-   "tested": "2026-11-06T11:00:11.349Z"
+   "tested": "2026-11-07T10:19:34.410Z"
   },
   {
    "sym": "LINKUSDT",
@@ -100,7 +62,64 @@
     "n": 60,
     "sharpeTest": 3.16
    },
-   "tested": "2026-11-06T11:00:11.349Z"
+   "tested": "2026-11-07T10:19:34.412Z"
+  },
+  {
+   "sym": "GC=F",
+   "tf": "1h",
+   "st": "sma",
+   "a": 15,
+   "b": 30,
+   "ks": 2,
+   "kt": 4,
+   "lo": false,
+   "active": true,
+   "adopted": "2026-10-19T08:59:52.211Z",
+   "bt": {
+    "wrTest": 0.406,
+    "t": 1.57,
+    "n": 165,
+    "sharpeTest": 2.39
+   },
+   "tested": "2026-11-07T10:19:34.412Z"
+  },
+  {
+   "sym": "CL=F",
+   "tf": "1h",
+   "st": "brk",
+   "a": 80,
+   "b": 0,
+   "ks": 3,
+   "kt": 4.5,
+   "lo": false,
+   "active": true,
+   "adopted": "2026-10-16T18:54:07.738Z",
+   "bt": {
+    "wrTest": 0.684,
+    "t": 2.62,
+    "n": 19,
+    "sharpeTest": 3.52
+   },
+   "tested": "2026-11-07T10:19:34.412Z"
+  },
+  {
+   "sym": "LTCUSDT",
+   "tf": "1h",
+   "st": "sma",
+   "a": 20,
+   "b": 80,
+   "ks": 3,
+   "kt": 4.5,
+   "lo": false,
+   "active": true,
+   "adopted": "2026-11-05T11:01:50.990Z",
+   "bt": {
+    "wrTest": 0.6,
+    "t": 2.24,
+    "n": 25,
+    "sharpeTest": 4.7
+   },
+   "tested": "2026-11-07T10:19:34.412Z"
   },
   {
    "sym": "EURUSD=X",
@@ -117,33 +136,14 @@
     "wrTest": 0.536,
     "t": 1.81,
     "n": 28,
-    "sharpeTest": 2.49
+    "sharpeTest": 2.48
    },
-   "tested": "2026-11-06T11:00:11.349Z"
-  },
-  {
-   "sym": "LTCUSDT",
-   "tf": "1h",
-   "st": "sma",
-   "a": 20,
-   "b": 80,
-   "ks": 3,
-   "kt": 4.5,
-   "lo": false,
-   "active": true,
-   "adopted": "2026-11-05T11:01:50.990Z",
-   "bt": {
-    "wrTest": 0.6,
-    "t": 2.1,
-    "n": 25,
-    "sharpeTest": 4.51
-   },
-   "tested": "2026-11-06T11:00:11.349Z"
+   "tested": "2026-11-07T10:19:34.412Z"
   }
  ],
- "scannedAt": "2026-11-06T11:00:11.349Z",
+ "scannedAt": "2026-11-07T10:19:34.412Z",
  "basket": {
-  "updated": 1793963133578,
+  "updated": 1794047131104,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -153,7 +153,7 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/80 SL3/TP4.5 ATR",
-    "t": -0.34,
+    "t": -0.32,
     "trades": 378,
     "breadth": [
      40,
@@ -171,8 +171,8 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/80 SL3/TP4.5 ATR",
-    "t": 0.85,
-    "trades": 182,
+    "t": 0.82,
+    "trades": 181,
     "breadth": [
      40,
      55
@@ -189,7 +189,7 @@
     "basket": "crypto",
     "tf": "1h",
     "label": "RSI 25/70 SL3/TP4.5 ATR",
-    "t": 3.2,
+    "t": 3.14,
     "trades": 200,
     "breadth": [
      30,
@@ -206,7 +206,7 @@
     "basket": "forex",
     "tf": "1h",
     "label": "Momentum 80/10 SL2/TP3 ATR",
-    "t": 1.81,
+    "t": 1.74,
     "trades": 154,
     "breadth": [
      60,
