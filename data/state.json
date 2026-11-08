@@ -1,5 +1,5 @@
 {
- "updated": 1794088778017,
+ "updated": 1794100738898,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -125,14 +125,14 @@
    "sym": "LINKUSDT",
    "tf": "1h",
    "strat": "Incrocio SMA 5/50 SL1/TP2 ATR",
-   "dir": "FLAT",
-   "action": "FLAT (SL/TP colpito)",
-   "since": 1794067199999,
-   "price": 10.782,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
+   "dir": "SHORT",
+   "action": "ATTIVO",
+   "since": 1794088799999,
+   "price": 10.79,
+   "entry": 10.783,
+   "sl": 10.865086635075803,
+   "tp": 10.618826729848392,
+   "size": 65.7,
    "news": {
     "score": 0,
     "heads": []
@@ -224,7 +224,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1793915999999,
-   "price": 51.9,
+   "price": 52.13,
    "entry": 52.02,
    "sl": 54.02596727803609,
    "tp": 49.01104908294587,
