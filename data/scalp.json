@@ -1,5 +1,5 @@
 {
- "updated": 1794395627236,
+ "updated": 1794483130044,
  "feePct": 0.05,
  "strategies": [],
  "report": [
@@ -10,21 +10,21 @@
    "atrPct": 0.117,
    "best": {
     "st": "rsi",
-    "a": 20,
-    "b": 85,
-    "ks": 1,
-    "kt": 1.5,
-    "wr": 0.333,
-    "n": 12,
-    "t": -1.22,
-    "costR": 0.855
+    "a": 15,
+    "b": 70,
+    "ks": 1.5,
+    "kt": 3,
+    "wr": 0.188,
+    "n": 16,
+    "t": -2.95,
+    "costR": 0.57
    },
    "ok": false,
    "why": [
     "costi",
     "test",
-    "train",
     "trade",
+    "stab",
     "signif"
    ]
   },
@@ -32,7 +32,7 @@
    "sym": "BTCUSDT",
    "tf": "15m",
    "candles": 60000,
-   "atrPct": 0.256,
+   "atrPct": 0.255,
    "best": {
     "st": "rsi",
     "a": 15,
@@ -42,7 +42,7 @@
     "wr": 0.556,
     "n": 9,
     "t": 0.38,
-    "costR": 0.391
+    "costR": 0.392
    },
    "ok": false,
    "why": [
@@ -129,19 +129,19 @@
    "atrPct": 0.556,
    "best": {
     "st": "rsi",
-    "a": 15,
+    "a": 20,
     "b": 70,
-    "ks": 1.5,
-    "kt": 3,
-    "wr": 0.474,
-    "n": 19,
-    "t": 1.15,
-    "costR": 0.12
+    "ks": 1,
+    "kt": 2,
+    "wr": 0.39,
+    "n": 59,
+    "t": 0.67,
+    "costR": 0.18
    },
    "ok": false,
    "why": [
     "train",
-    "trade",
+    "stab",
     "signif"
    ]
   },
@@ -153,13 +153,13 @@
    "best": {
     "st": "rsi",
     "a": 20,
-    "b": 85,
-    "ks": 1,
-    "kt": 1.5,
-    "wr": 0.455,
-    "n": 11,
-    "t": 0.29,
-    "costR": 0.498
+    "b": 80,
+    "ks": 1.5,
+    "kt": 2,
+    "wr": 0.429,
+    "n": 21,
+    "t": 0.3,
+    "costR": 0.332
    },
    "ok": false,
    "why": [
@@ -172,16 +172,16 @@
    "sym": "SOLUSDT",
    "tf": "15m",
    "candles": 60000,
-   "atrPct": 0.474,
+   "atrPct": 0.473,
    "best": {
     "st": "rsi",
-    "a": 15,
-    "b": 80,
+    "a": 30,
+    "b": 85,
     "ks": 1,
-    "kt": 2,
-    "wr": 0.333,
-    "n": 15,
-    "t": 0.31,
+    "kt": 1.5,
+    "wr": 0.524,
+    "n": 21,
+    "t": 0.46,
     "costR": 0.211
    },
    "ok": false,
@@ -231,6 +231,7 @@
    "ok": false,
    "why": [
     "costi",
+    "train",
     "trade",
     "signif"
    ]
@@ -239,7 +240,7 @@
    "sym": "XRPUSDT",
    "tf": "15m",
    "candles": 60000,
-   "atrPct": 0.424,
+   "atrPct": 0.423,
    "best": {
     "st": "rsi",
     "a": 15,
