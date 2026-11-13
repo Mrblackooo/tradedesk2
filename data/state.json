@@ -1,9 +1,9 @@
 {
- "updated": 1794568381076,
+ "updated": 1794591676819,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 0
+  "used": 1
  },
  "basket": {
   "updated": 1794568254388,
@@ -96,7 +96,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1794524399999,
-   "price": 0.8377000093460083,
+   "price": 0.8393099904060364,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -125,14 +125,14 @@
    "sym": "GC=F",
    "tf": "1h",
    "strat": "Incrocio SMA 15/30 SL2/TP4 ATR",
-   "dir": "FLAT",
-   "action": "FLAT (SL/TP colpito)",
-   "since": 1794329999999,
-   "price": 3894.10009765625,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
+   "dir": "LONG",
+   "action": "ATTIVO",
+   "since": 1794585599999,
+   "price": 3885.300048828125,
+   "entry": 3876.89990234375,
+   "sl": 3841.8633537336045,
+   "tp": 3946.972999564041,
+   "size": 55.3,
    "news": {
     "score": 0,
     "heads": []
@@ -160,7 +160,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793642399999,
-   "price": 88.23999786376953,
+   "price": 88.55999755859375,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -192,7 +192,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1794329999999,
-   "price": 1.1053388118743896,
+   "price": 1.103265643119812,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -224,7 +224,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793836799999,
-   "price": 1.3226114511489868,
+   "price": 1.3206899166107178,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -256,7 +256,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1794484799999,
-   "price": 49.17,
+   "price": 49.55,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -289,6 +289,21 @@
   "sumPct": 9.29
  },
  "recent": [
+  {
+   "id": "GC=F-1h-1794585599999",
+   "key": "GC=F-1h-sma-15-30-2-4",
+   "sym": "GC=F",
+   "tf": "1h",
+   "dir": "LONG",
+   "entry": 3876.89990234375,
+   "sl": 3841.8633537336045,
+   "tp": 3946.972999564041,
+   "slPct": 0.904,
+   "t0": 1794585599999,
+   "status": "open",
+   "news": 0,
+   "blackout": false
+  },
   {
    "id": "USDCHF=X-1h-1794520799999",
    "key": "USDCHF=X-1h-tod-30-120-1.5-2",
@@ -554,25 +569,6 @@
    "t1": 1793561581541,
    "pct": -1.592,
    "r": -0.88
-  },
-  {
-   "id": "LINKUSDT-1h-1793408399999",
-   "key": "LINKUSDT-1h-sma-5-50-1-2",
-   "sym": "LINKUSDT",
-   "tf": "1h",
-   "dir": "LONG",
-   "entry": 11.664,
-   "sl": 11.48737764476096,
-   "tp": 12.017244710478082,
-   "slPct": 1.514,
-   "t0": 1793408399999,
-   "status": "sl",
-   "news": 0,
-   "blackout": false,
-   "exit": 11.48737764476096,
-   "t1": 1793415600000,
-   "pct": -1.674,
-   "r": -1.11
   }
  ]
 }
