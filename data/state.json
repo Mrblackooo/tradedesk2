@@ -1,9 +1,9 @@
 {
- "updated": 1794610539435,
+ "updated": 1794625468958,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 3
+  "used": 0
  },
  "basket": {
   "updated": 1794568254388,
@@ -94,7 +94,7 @@
    "tf": "1h",
    "strat": "Stagionalità oraria 30/120 SL1.5/TP2 ATR",
    "dir": "LONG",
-   "action": "ATTIVO",
+   "action": "MERCATO CHIUSO",
    "since": 1794607199999,
    "price": 0.8381999731063843,
    "entry": 0.8384000062942505,
@@ -126,7 +126,7 @@
    "tf": "1h",
    "strat": "Incrocio SMA 15/30 SL2/TP4 ATR",
    "dir": "SHORT",
-   "action": "ATTIVO",
+   "action": "MERCATO CHIUSO",
    "since": 1794603599999,
    "price": 3887.60009765625,
    "entry": 3881.800048828125,
@@ -224,7 +224,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793836799999,
-   "price": 1.320899248123169,
+   "price": 1.3231364488601685,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -256,7 +256,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1794484799999,
-   "price": 49.22,
+   "price": 48.96,
    "entry": null,
    "sl": null,
    "tp": null,
