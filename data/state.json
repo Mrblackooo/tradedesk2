@@ -1,5 +1,5 @@
 {
- "updated": 1794689918135,
+ "updated": 1794704321682,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -93,14 +93,14 @@
    "sym": "USDCHF=X",
    "tf": "1h",
    "strat": "Stagionalità oraria 30/120 SL1.5/TP2 ATR",
-   "dir": "LONG",
-   "action": "MERCATO CHIUSO",
-   "since": 1794607199999,
+   "dir": "FLAT",
+   "action": "FLAT",
+   "since": 1794617939999,
    "price": 0.8381999731063843,
-   "entry": 0.8384000062942505,
-   "sl": 0.8367315472015663,
-   "tp": 0.8406246184178294,
-   "size": 251.2,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -111,10 +111,10 @@
     "n": 415,
     "sharpeTest": 8
    },
-   "stage": "osservazione",
+   "stage": "sospesa",
    "proof": {
-    "n": 9,
-    "avgR": -0.35
+    "n": 10,
+    "avgR": -0.34
    },
    "key": "USDCHF=X-1h-tod-30-120-1.5-2",
    "risk": 0.5,
@@ -224,7 +224,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1794484799999,
-   "price": 44.43,
+   "price": 43.69,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -256,7 +256,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793836799999,
-   "price": 1.3231364488601685,
+   "price": 1.3212134838104248,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -283,10 +283,10 @@
   }
  ],
  "paper": {
-  "n": 39,
-  "wr": 0.436,
+  "n": 40,
+  "wr": 0.425,
   "avgR": -0.05,
-  "sumPct": 9.5
+  "sumPct": 9.45
  },
  "recent": [
   {
@@ -315,9 +315,13 @@
    "tp": 0.8406246184178294,
    "slPct": 0.199,
    "t0": 1794607199999,
-   "status": "open",
+   "status": "signal",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 0.8381999731063843,
+   "t1": 1794704320323,
+   "pct": -0.048,
+   "r": -0.24
   },
   {
    "id": "GC=F-1h-1794585599999",
