@@ -1,5 +1,5 @@
 {
- "updated": 1794829218265,
+ "updated": 1794845076903,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -87,7 +87,7 @@
  "blackout": null,
  "minPaper": 10,
  "scannedAt": "2026-11-16T11:31:22.670Z",
- "briefing": null,
+ "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – BNB: neutro (+0.14).",
  "signals": [
   {
    "sym": "GC=F",
@@ -96,7 +96,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1794603599999,
-   "price": 3878.39990234375,
+   "price": 3865.5,
    "entry": 3881.800048828125,
    "sl": 3913.2085653306144,
    "tp": 3818.983015823146,
@@ -127,8 +127,8 @@
    "strat": "Stagionalità oraria 25/120 SL3/TP4.5 ATR",
    "dir": "FLAT",
    "action": "FLAT",
-   "since": 1794790799999,
-   "price": 0.8402299880981445,
+   "since": 1794844799999,
+   "price": 0.8391000032424927,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -160,7 +160,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793642399999,
-   "price": 88.2699966430664,
+   "price": 86.7699966430664,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -192,7 +192,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1794329999999,
-   "price": 1.101078987121582,
+   "price": 1.1009578704833984,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -224,7 +224,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793836799999,
-   "price": 1.3192960023880005,
+   "price": 1.3186348676681519,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -256,14 +256,16 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793977199999,
-   "price": 590.38,
+   "price": 586.57,
    "entry": null,
    "sl": null,
    "tp": null,
    "size": null,
    "news": {
     "score": 0,
-    "heads": []
+    "heads": [
+     "Binance Pay Later offers credit backed by Bitcoin, Ether and BNB holdings"
+    ]
    },
    "bt": {
     "wrTest": 0.65,
@@ -279,7 +281,12 @@
    "key": "BNBUSDT-1h-rsi-35-70-1.5-2",
    "risk": 0.5,
    "strength": 0,
-   "conf": null
+   "conf": null,
+   "llm": {
+    "score": 0.14,
+    "risk": "low",
+    "note": "sentiment +0.14 su 1 titoli"
+   }
   }
  ],
  "paper": {
