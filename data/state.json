@@ -1,12 +1,12 @@
 {
- "updated": 1794985948931,
+ "updated": 1795003199149,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
   "used": 0
  },
  "basket": {
-  "updated": 1794917089016,
+  "updated": 1795003032589,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -16,10 +16,10 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/70 SL3/TP4.5 ATR",
-    "t": -0.44,
-    "trades": 669,
+    "t": -0.33,
+    "trades": 671,
     "breadth": [
-     35,
+     30,
      30
     ],
     "ok": false,
@@ -34,11 +34,11 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 1.26,
-    "trades": 394,
+    "t": 1.54,
+    "trades": 397,
     "breadth": [
-     40,
-     55
+     35,
+     60
     ],
     "ok": false,
     "why": [
@@ -52,11 +52,11 @@
     "basket": "crypto",
     "tf": "1h",
     "label": "RSI 25/70 SL3/TP4.5 ATR",
-    "t": 2.6,
-    "trades": 202,
+    "t": 2.63,
+    "trades": 201,
     "breadth": [
-     40,
-     70
+     35,
+     75
     ],
     "ok": false,
     "why": [
@@ -69,7 +69,7 @@
     "basket": "forex",
     "tf": "1h",
     "label": "Momentum 80/10 SL2/TP3 ATR",
-    "t": 2.16,
+    "t": 2.12,
     "trades": 157,
     "breadth": [
      60,
@@ -86,41 +86,9 @@
  },
  "blackout": null,
  "minPaper": 10,
- "scannedAt": "2026-11-17T11:58:44.043Z",
+ "scannedAt": "2026-11-18T11:51:05.320Z",
  "briefing": null,
  "signals": [
-  {
-   "sym": "GC=F",
-   "tf": "1h",
-   "strat": "Incrocio SMA 15/30 SL2/TP4 ATR",
-   "dir": "FLAT",
-   "action": "FLAT (SL/TP colpito)",
-   "since": 1794977999999,
-   "price": 3776.300048828125,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
-   "news": {
-    "score": 0,
-    "heads": []
-   },
-   "bt": {
-    "wrTest": 0.417,
-    "t": 1.41,
-    "n": 163,
-    "sharpeTest": 2.14
-   },
-   "stage": "osservazione",
-   "proof": {
-    "n": 5,
-    "avgR": -0.1
-   },
-   "key": "GC=F-1h-sma-15-30-2-4",
-   "risk": 0.5,
-   "strength": 0,
-   "conf": null
-  },
   {
    "sym": "USDCHF=X",
    "tf": "1h",
@@ -128,7 +96,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1794959999999,
-   "price": 0.8414999842643738,
+   "price": 0.8426799774169922,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -138,10 +106,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.695,
-    "t": 5.32,
-    "n": 419,
-    "sharpeTest": 6.66
+    "wrTest": 0.693,
+    "t": 5.3,
+    "n": 417,
+    "sharpeTest": 6.65
    },
    "stage": "osservazione",
    "proof": {
@@ -154,13 +122,13 @@
    "conf": null
   },
   {
-   "sym": "BNBUSDT",
+   "sym": "GC=F",
    "tf": "1h",
-   "strat": "RSI 35/70 SL1.5/TP2 ATR",
+   "strat": "Incrocio SMA 15/30 SL2/TP4 ATR",
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
-   "since": 1793977199999,
-   "price": 593.33,
+   "since": 1794977999999,
+   "price": 3763.60009765625,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -170,17 +138,17 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.684,
-    "t": 2.49,
-    "n": 19,
-    "sharpeTest": 5.01
+    "wrTest": 0.417,
+    "t": 1.45,
+    "n": 163,
+    "sharpeTest": 2.21
    },
    "stage": "osservazione",
    "proof": {
-    "n": 0,
-    "avgR": null
+    "n": 5,
+    "avgR": -0.1
    },
-   "key": "BNBUSDT-1h-rsi-35-70-1.5-2",
+   "key": "GC=F-1h-sma-15-30-2-4",
    "risk": 0.5,
    "strength": 0,
    "conf": null
@@ -192,7 +160,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793642399999,
-   "price": 83.9800033569336,
+   "price": 83.91000366210938,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -218,13 +186,77 @@
    "conf": null
   },
   {
+   "sym": "BNBUSDT",
+   "tf": "1h",
+   "strat": "RSI 35/70 SL1.5/TP2 ATR",
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1793977199999,
+   "price": 589.8,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.684,
+    "t": 2.49,
+    "n": 19,
+    "sharpeTest": 5.01
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 0,
+    "avgR": null
+   },
+   "key": "BNBUSDT-1h-rsi-35-70-1.5-2",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
+  {
+   "sym": "GBPUSD=X",
+   "tf": "1d",
+   "strat": "Incrocio SMA 15/30 SL1/TP2 ATR",
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1793836799999,
+   "price": 1.315754771232605,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.565,
+    "t": 2.11,
+    "n": 23,
+    "sharpeTest": 1.27
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 0,
+    "avgR": null
+   },
+   "key": "GBPUSD=X-1d-sma-15-30-1-2",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
+  {
    "sym": "EURUSD=X",
    "tf": "1h",
    "strat": "RSI 35/75 SL2/TP4 ATR",
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1794329999999,
-   "price": 1.098056435585022,
+   "price": 1.0964912176132202,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -245,38 +277,6 @@
     "avgR": -1.1
    },
    "key": "EURUSD=X-1h-rsi-35-75-2-4",
-   "risk": 0.5,
-   "strength": 0,
-   "conf": null
-  },
-  {
-   "sym": "GBPUSD=X",
-   "tf": "1d",
-   "strat": "Incrocio SMA 15/30 SL1/TP2 ATR",
-   "dir": "FLAT",
-   "action": "FLAT (SL/TP colpito)",
-   "since": 1793836799999,
-   "price": 1.3175404071807861,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
-   "news": {
-    "score": 0,
-    "heads": []
-   },
-   "bt": {
-    "wrTest": 0.565,
-    "t": 2.14,
-    "n": 23,
-    "sharpeTest": 1.32
-   },
-   "stage": "osservazione",
-   "proof": {
-    "n": 0,
-    "avgR": null
-   },
-   "key": "GBPUSD=X-1d-sma-15-30-1-2",
    "risk": 0.5,
    "strength": 0,
    "conf": null

@@ -27,6 +27,25 @@
  },
  "watch": [
   {
+   "sym": "USDCHF=X",
+   "tf": "1h",
+   "st": "tod",
+   "a": 25,
+   "b": 120,
+   "ks": 3,
+   "kt": 4.5,
+   "lo": false,
+   "active": true,
+   "adopted": "2026-11-15T11:02:35.719Z",
+   "bt": {
+    "wrTest": 0.693,
+    "t": 5.3,
+    "n": 417,
+    "sharpeTest": 6.65
+   },
+   "tested": "2026-11-18T11:51:05.318Z"
+  },
+  {
    "sym": "GC=F",
    "tf": "1h",
    "st": "sma",
@@ -39,49 +58,11 @@
    "adopted": "2026-10-19T08:59:52.211Z",
    "bt": {
     "wrTest": 0.417,
-    "t": 1.41,
+    "t": 1.45,
     "n": 163,
-    "sharpeTest": 2.14
+    "sharpeTest": 2.21
    },
-   "tested": "2026-11-17T11:58:44.042Z"
-  },
-  {
-   "sym": "USDCHF=X",
-   "tf": "1h",
-   "st": "tod",
-   "a": 25,
-   "b": 120,
-   "ks": 3,
-   "kt": 4.5,
-   "lo": false,
-   "active": true,
-   "adopted": "2026-11-15T11:02:35.719Z",
-   "bt": {
-    "wrTest": 0.695,
-    "t": 5.32,
-    "n": 419,
-    "sharpeTest": 6.66
-   },
-   "tested": "2026-11-17T11:58:44.043Z"
-  },
-  {
-   "sym": "BNBUSDT",
-   "tf": "1h",
-   "st": "rsi",
-   "a": 35,
-   "b": 70,
-   "ks": 1.5,
-   "kt": 2,
-   "lo": false,
-   "active": true,
-   "adopted": "2026-11-16T11:31:22.670Z",
-   "bt": {
-    "wrTest": 0.684,
-    "t": 2.49,
-    "n": 19,
-    "sharpeTest": 5.01
-   },
-   "tested": "2026-11-17T11:58:44.043Z"
+   "tested": "2026-11-18T11:51:05.320Z"
   },
   {
    "sym": "CL=F",
@@ -100,7 +81,45 @@
     "n": 17,
     "sharpeTest": 3.83
    },
-   "tested": "2026-11-17T11:58:44.043Z"
+   "tested": "2026-11-18T11:51:05.320Z"
+  },
+  {
+   "sym": "BNBUSDT",
+   "tf": "1h",
+   "st": "rsi",
+   "a": 35,
+   "b": 70,
+   "ks": 1.5,
+   "kt": 2,
+   "lo": false,
+   "active": true,
+   "adopted": "2026-11-16T11:31:22.670Z",
+   "bt": {
+    "wrTest": 0.684,
+    "t": 2.49,
+    "n": 19,
+    "sharpeTest": 5.01
+   },
+   "tested": "2026-11-18T11:51:05.320Z"
+  },
+  {
+   "sym": "GBPUSD=X",
+   "tf": "1d",
+   "st": "sma",
+   "a": 15,
+   "b": 30,
+   "ks": 1,
+   "kt": 2,
+   "lo": false,
+   "active": true,
+   "adopted": "2026-11-10T11:19:16.405Z",
+   "bt": {
+    "wrTest": 0.565,
+    "t": 2.11,
+    "n": 23,
+    "sharpeTest": 1.27
+   },
+   "tested": "2026-11-18T11:51:05.320Z"
   },
   {
    "sym": "EURUSD=X",
@@ -119,31 +138,12 @@
     "n": 30,
     "sharpeTest": 2.15
    },
-   "tested": "2026-11-17T11:58:44.043Z"
-  },
-  {
-   "sym": "GBPUSD=X",
-   "tf": "1d",
-   "st": "sma",
-   "a": 15,
-   "b": 30,
-   "ks": 1,
-   "kt": 2,
-   "lo": false,
-   "active": true,
-   "adopted": "2026-11-10T11:19:16.405Z",
-   "bt": {
-    "wrTest": 0.565,
-    "t": 2.14,
-    "n": 23,
-    "sharpeTest": 1.32
-   },
-   "tested": "2026-11-17T11:58:44.043Z"
+   "tested": "2026-11-18T11:51:05.320Z"
   }
  ],
- "scannedAt": "2026-11-17T11:58:44.043Z",
+ "scannedAt": "2026-11-18T11:51:05.320Z",
  "basket": {
-  "updated": 1794917089016,
+  "updated": 1795003032589,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -153,10 +153,10 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/70 SL3/TP4.5 ATR",
-    "t": -0.44,
-    "trades": 669,
+    "t": -0.33,
+    "trades": 671,
     "breadth": [
-     35,
+     30,
      30
     ],
     "ok": false,
@@ -171,11 +171,11 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 1.26,
-    "trades": 394,
+    "t": 1.54,
+    "trades": 397,
     "breadth": [
-     40,
-     55
+     35,
+     60
     ],
     "ok": false,
     "why": [
@@ -189,11 +189,11 @@
     "basket": "crypto",
     "tf": "1h",
     "label": "RSI 25/70 SL3/TP4.5 ATR",
-    "t": 2.6,
-    "trades": 202,
+    "t": 2.63,
+    "trades": 201,
     "breadth": [
-     40,
-     70
+     35,
+     75
     ],
     "ok": false,
     "why": [
@@ -206,7 +206,7 @@
     "basket": "forex",
     "tf": "1h",
     "label": "Momentum 80/10 SL2/TP3 ATR",
-    "t": 2.16,
+    "t": 2.12,
     "trades": 157,
     "breadth": [
      60,
