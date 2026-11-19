@@ -1,9 +1,9 @@
 {
- "updated": 1795043118906,
+ "updated": 1795061256339,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 1
+  "used": 0
  },
  "basket": {
   "updated": 1795003032589,
@@ -87,20 +87,20 @@
  "blackout": null,
  "minPaper": 10,
  "scannedAt": "2026-11-18T11:51:05.320Z",
- "briefing": null,
+ "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – BNB: neutro (+0.2).",
  "signals": [
   {
    "sym": "USDCHF=X",
    "tf": "1h",
    "strat": "Stagionalità oraria 25/120 SL3/TP4.5 ATR",
-   "dir": "LONG",
-   "action": "ATTIVO",
-   "since": 1795039199999,
-   "price": 0.8434699773788452,
-   "entry": 0.8429999947547913,
-   "sl": 0.8398792353867643,
-   "tp": 0.8476811338068317,
-   "size": 135.1,
+   "dir": "FLAT",
+   "action": "FLAT",
+   "since": 1795046399999,
+   "price": 0.8441200256347656,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -113,8 +113,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 0,
-    "avgR": null
+    "n": 1,
+    "avgR": 0.29
    },
    "key": "USDCHF=X-1h-tod-25-120-3-4.5",
    "risk": 0.5,
@@ -128,7 +128,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1794977999999,
-   "price": 3727.800048828125,
+   "price": 3721.199951171875,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -160,7 +160,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793642399999,
-   "price": 81.88999938964844,
+   "price": 82.05999755859375,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -192,14 +192,16 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793977199999,
-   "price": 578.54,
+   "price": 586.31,
    "entry": null,
    "sl": null,
    "tp": null,
    "size": null,
    "news": {
     "score": 0,
-    "heads": []
+    "heads": [
+     "CZ says tokenized Anthropic is coming to BNB Chain on IPO day"
+    ]
    },
    "bt": {
     "wrTest": 0.684,
@@ -215,7 +217,12 @@
    "key": "BNBUSDT-1h-rsi-35-70-1.5-2",
    "risk": 0.5,
    "strength": 0,
-   "conf": null
+   "conf": null,
+   "llm": {
+    "score": 0.2,
+    "risk": "low",
+    "note": "sentiment +0.2 su 1 titoli"
+   }
   },
   {
    "sym": "GBPUSD=X",
@@ -224,7 +231,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793836799999,
-   "price": 1.3147860765457153,
+   "price": 1.3128355741500854,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -256,7 +263,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1794329999999,
-   "price": 1.0975743532180786,
+   "price": 1.0962508916854858,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -283,10 +290,10 @@
   }
  ],
  "paper": {
-  "n": 41,
-  "wr": 0.439,
-  "avgR": -0.04,
-  "sumPct": 9.7
+  "n": 42,
+  "wr": 0.452,
+  "avgR": -0.03,
+  "sumPct": 9.81
  },
  "recent": [
   {
@@ -300,9 +307,13 @@
    "tp": 0.8476811338068317,
    "slPct": 0.37,
    "t0": 1795039199999,
-   "status": "open",
+   "status": "signal",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 0.8441200256347656,
+   "t1": 1795061254335,
+   "pct": 0.109,
+   "r": 0.29
   },
   {
    "id": "GC=F-1h-1794603599999",
