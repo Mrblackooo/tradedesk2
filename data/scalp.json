@@ -1,5 +1,5 @@
 {
- "updated": 1795003197264,
+ "updated": 1795089348112,
  "feePct": 0.05,
  "strategies": [],
  "report": [
@@ -14,10 +14,10 @@
     "b": 75,
     "ks": 1.5,
     "kt": 3,
-    "wr": 0.345,
-    "n": 55,
-    "t": -0.89,
-    "costR": 0.565
+    "wr": 0.333,
+    "n": 54,
+    "t": -0.97,
+    "costR": 0.563
    },
    "ok": false,
    "why": [
@@ -35,19 +35,19 @@
    "atrPct": 0.255,
    "best": {
     "st": "rsi",
-    "a": 25,
+    "a": 20,
     "b": 85,
     "ks": 1.5,
     "kt": 2,
-    "wr": 0.4,
-    "n": 20,
-    "t": -0.43,
+    "wr": 0.563,
+    "n": 16,
+    "t": 0.73,
     "costR": 0.261
    },
    "ok": false,
    "why": [
     "costi",
-    "test",
+    "train",
     "trade",
     "signif"
    ]
@@ -78,7 +78,7 @@
    "sym": "ETHUSDT",
    "tf": "5m",
    "candles": 60000,
-   "atrPct": 0.163,
+   "atrPct": 0.164,
    "best": {
     "st": "rsi",
     "a": 15,
@@ -88,7 +88,7 @@
     "wr": 0.4,
     "n": 20,
     "t": 0.17,
-    "costR": 0.408
+    "costR": 0.407
    },
    "ok": false,
    "why": [
@@ -126,20 +126,19 @@
    "candles": 60000,
    "atrPct": 0.559,
    "best": {
-    "st": "rsi",
-    "a": 15,
-    "b": 70,
+    "st": "rsitrend",
+    "a": 35,
+    "b": 100,
     "ks": 1,
-    "kt": 2,
-    "wr": 0.368,
-    "n": 19,
-    "t": 0.46,
+    "kt": 1.5,
+    "wr": 0.264,
+    "n": 53,
+    "t": -2.46,
     "costR": 0.179
    },
    "ok": false,
    "why": [
-    "train",
-    "trade",
+    "test",
     "signif"
    ]
   },
@@ -147,7 +146,7 @@
    "sym": "SOLUSDT",
    "tf": "5m",
    "candles": 60000,
-   "atrPct": 0.204,
+   "atrPct": 0.205,
    "best": {
     "st": "rsi",
     "a": 20,
@@ -157,7 +156,7 @@
     "wr": 0.381,
     "n": 21,
     "t": 0.32,
-    "costR": 0.326
+    "costR": 0.325
    },
    "ok": false,
    "why": [
@@ -170,7 +169,7 @@
    "sym": "SOLUSDT",
    "tf": "15m",
    "candles": 60000,
-   "atrPct": 0.473,
+   "atrPct": 0.472,
    "best": {
     "st": "rsi",
     "a": 15,
@@ -214,7 +213,7 @@
    "sym": "XRPUSDT",
    "tf": "5m",
    "candles": 60000,
-   "atrPct": 0.19,
+   "atrPct": 0.191,
    "best": {
     "st": "rsi",
     "a": 25,
@@ -224,7 +223,7 @@
     "wr": 0.6,
     "n": 10,
     "t": 0.67,
-    "costR": 0.527
+    "costR": 0.524
    },
    "ok": false,
    "why": [
@@ -259,7 +258,7 @@
    "sym": "XRPUSDT",
    "tf": "30m",
    "candles": 60000,
-   "atrPct": 0.616,
+   "atrPct": 0.617,
    "best": {
     "st": "rsi",
     "a": 25,
@@ -268,7 +267,7 @@
     "kt": 3,
     "wr": 0.382,
     "n": 68,
-    "t": 0.19,
+    "t": 0.25,
     "costR": 0.108
    },
    "ok": false,

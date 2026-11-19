@@ -1,12 +1,12 @@
 {
- "updated": 1795061256339,
+ "updated": 1795089350084,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
   "used": 0
  },
  "basket": {
-  "updated": 1795003032589,
+  "updated": 1795089180535,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -16,11 +16,11 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/70 SL3/TP4.5 ATR",
-    "t": -0.33,
-    "trades": 671,
+    "t": -0.18,
+    "trades": 675,
     "breadth": [
-     30,
-     30
+     35,
+     35
     ],
     "ok": false,
     "why": [
@@ -34,11 +34,11 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 1.54,
-    "trades": 397,
+    "t": 1.57,
+    "trades": 400,
     "breadth": [
-     35,
-     60
+     40,
+     55
     ],
     "ok": false,
     "why": [
@@ -52,11 +52,11 @@
     "basket": "crypto",
     "tf": "1h",
     "label": "RSI 25/70 SL3/TP4.5 ATR",
-    "t": 2.63,
-    "trades": 201,
+    "t": 2.59,
+    "trades": 202,
     "breadth": [
-     35,
-     75
+     30,
+     70
     ],
     "ok": false,
     "why": [
@@ -86,8 +86,8 @@
  },
  "blackout": null,
  "minPaper": 10,
- "scannedAt": "2026-11-18T11:51:05.320Z",
- "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – BNB: neutro (+0.2).",
+ "scannedAt": "2026-11-19T11:47:06.239Z",
+ "briefing": null,
  "signals": [
   {
    "sym": "USDCHF=X",
@@ -96,7 +96,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1795046399999,
-   "price": 0.8441200256347656,
+   "price": 0.8424199819564819,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -106,9 +106,9 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.693,
-    "t": 5.3,
-    "n": 417,
+    "wrTest": 0.694,
+    "t": 5.32,
+    "n": 415,
     "sharpeTest": 6.65
    },
    "stage": "osservazione",
@@ -128,7 +128,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1794977999999,
-   "price": 3721.199951171875,
+   "price": 3726.800048828125,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -138,10 +138,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.417,
-    "t": 1.45,
-    "n": 163,
-    "sharpeTest": 2.21
+    "wrTest": 0.422,
+    "t": 1.56,
+    "n": 161,
+    "sharpeTest": 2.38
    },
    "stage": "osservazione",
    "proof": {
@@ -154,13 +154,45 @@
    "conf": null
   },
   {
+   "sym": "BNBUSDT",
+   "tf": "1h",
+   "strat": "RSI 35/70 SL1.5/TP2 ATR",
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1793977199999,
+   "price": 592.64,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.684,
+    "t": 2.49,
+    "n": 19,
+    "sharpeTest": 5.01
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 0,
+    "avgR": null
+   },
+   "key": "BNBUSDT-1h-rsi-35-70-1.5-2",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
+  {
    "sym": "CL=F",
    "tf": "1h",
    "strat": "Breakout 80 SL3/TP4.5 ATR",
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793642399999,
-   "price": 82.05999755859375,
+   "price": 82.08999633789062,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -186,52 +218,13 @@
    "conf": null
   },
   {
-   "sym": "BNBUSDT",
-   "tf": "1h",
-   "strat": "RSI 35/70 SL1.5/TP2 ATR",
-   "dir": "FLAT",
-   "action": "FLAT (SL/TP colpito)",
-   "since": 1793977199999,
-   "price": 586.31,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
-   "news": {
-    "score": 0,
-    "heads": [
-     "CZ says tokenized Anthropic is coming to BNB Chain on IPO day"
-    ]
-   },
-   "bt": {
-    "wrTest": 0.684,
-    "t": 2.49,
-    "n": 19,
-    "sharpeTest": 5.01
-   },
-   "stage": "osservazione",
-   "proof": {
-    "n": 0,
-    "avgR": null
-   },
-   "key": "BNBUSDT-1h-rsi-35-70-1.5-2",
-   "risk": 0.5,
-   "strength": 0,
-   "conf": null,
-   "llm": {
-    "score": 0.2,
-    "risk": "low",
-    "note": "sentiment +0.2 su 1 titoli"
-   }
-  },
-  {
    "sym": "GBPUSD=X",
    "tf": "1d",
    "strat": "Incrocio SMA 15/30 SL1/TP2 ATR",
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793836799999,
-   "price": 1.3128355741500854,
+   "price": 1.315824031829834,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -242,9 +235,9 @@
    },
    "bt": {
     "wrTest": 0.565,
-    "t": 2.11,
+    "t": 1.84,
     "n": 23,
-    "sharpeTest": 1.27
+    "sharpeTest": 1.12
    },
    "stage": "osservazione",
    "proof": {
@@ -263,7 +256,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1794329999999,
-   "price": 1.0962508916854858,
+   "price": 1.0997470617294312,
    "entry": null,
    "sl": null,
    "tp": null,
