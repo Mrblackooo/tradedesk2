@@ -1,5 +1,5 @@
 {
- "updated": 1795175766537,
+ "updated": 1795260051064,
  "feePct": 0.05,
  "strategies": [],
  "report": [
@@ -7,17 +7,17 @@
    "sym": "BTCUSDT",
    "tf": "5m",
    "candles": 60000,
-   "atrPct": 0.119,
+   "atrPct": 0.12,
    "best": {
     "st": "rsi",
     "a": 30,
     "b": 85,
     "ks": 1.5,
     "kt": 3,
-    "wr": 0.4,
-    "n": 15,
-    "t": 0.11,
-    "costR": 0.559
+    "wr": 0.357,
+    "n": 14,
+    "t": 0.03,
+    "costR": 0.557
    },
    "ok": false,
    "why": [
@@ -71,6 +71,7 @@
    "ok": false,
    "why": [
     "test",
+    "stab",
     "signif"
    ]
   },
@@ -78,17 +79,17 @@
    "sym": "ETHUSDT",
    "tf": "5m",
    "candles": 60000,
-   "atrPct": 0.165,
+   "atrPct": 0.166,
    "best": {
     "st": "rsi",
     "a": 15,
     "b": 75,
-    "ks": 1.5,
-    "kt": 3,
-    "wr": 0.4,
-    "n": 20,
-    "t": 0.17,
-    "costR": 0.404
+    "ks": 1,
+    "kt": 2,
+    "wr": 0.5,
+    "n": 22,
+    "t": 0.26,
+    "costR": 0.604
    },
    "ok": false,
    "why": [
@@ -131,9 +132,9 @@
     "b": 100,
     "ks": 1,
     "kt": 1.5,
-    "wr": 0.264,
-    "n": 53,
-    "t": -2.46,
+    "wr": 0.269,
+    "n": 52,
+    "t": -2.32,
     "costR": 0.179
    },
    "ok": false,
@@ -146,17 +147,17 @@
    "sym": "SOLUSDT",
    "tf": "5m",
    "candles": 60000,
-   "atrPct": 0.206,
+   "atrPct": 0.207,
    "best": {
     "st": "rsi",
     "a": 20,
-    "b": 80,
+    "b": 75,
     "ks": 1.5,
     "kt": 3,
-    "wr": 0.4,
-    "n": 20,
-    "t": 0.44,
-    "costR": 0.323
+    "wr": 0.313,
+    "n": 32,
+    "t": 0.26,
+    "costR": 0.322
    },
    "ok": false,
    "why": [
@@ -213,7 +214,7 @@
    "sym": "XRPUSDT",
    "tf": "5m",
    "candles": 60000,
-   "atrPct": 0.192,
+   "atrPct": 0.193,
    "best": {
     "st": "rsi",
     "a": 25,
@@ -223,7 +224,7 @@
     "wr": 0.556,
     "n": 9,
     "t": 0.2,
-    "costR": 0.52
+    "costR": 0.517
    },
    "ok": false,
    "why": [
@@ -258,16 +259,16 @@
    "sym": "XRPUSDT",
    "tf": "30m",
    "candles": 60000,
-   "atrPct": 0.617,
+   "atrPct": 0.618,
    "best": {
     "st": "rsi",
     "a": 25,
     "b": 75,
     "ks": 1.5,
     "kt": 3,
-    "wr": 0.382,
-    "n": 68,
-    "t": 0.25,
+    "wr": 0.377,
+    "n": 69,
+    "t": 0.1,
     "costR": 0.108
    },
    "ok": false,
