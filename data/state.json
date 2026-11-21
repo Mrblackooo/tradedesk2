@@ -1,5 +1,5 @@
 {
- "updated": 1795220503166,
+ "updated": 1795246125598,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -94,7 +94,7 @@
    "tf": "1h",
    "strat": "Stagionalità oraria 25/120 SL3/TP4.5 ATR",
    "dir": "LONG",
-   "action": "ATTIVO",
+   "action": "MERCATO CHIUSO",
    "since": 1795211999999,
    "price": 0.8395500183105469,
    "entry": 0.8395799994468689,
@@ -160,7 +160,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793977199999,
-   "price": 540.17,
+   "price": 526.65,
    "entry": null,
    "sl": null,
    "tp": null,
