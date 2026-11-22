@@ -1,12 +1,12 @@
 {
- "updated": 1795335013537,
+ "updated": 1795347546749,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
   "used": 0
  },
  "basket": {
-  "updated": 1795259903223,
+  "updated": 1795347414450,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -15,12 +15,12 @@
    {
     "basket": "crypto",
     "tf": "15m",
-    "label": "RSI 20/70 SL3/TP4.5 ATR",
-    "t": -0.15,
-    "trades": 683,
+    "label": "RSI 20/80 SL2/TP3 ATR",
+    "t": -0.3,
+    "trades": 367,
     "breadth": [
-     30,
-     40
+     25,
+     55
     ],
     "ok": false,
     "why": [
@@ -35,10 +35,10 @@
     "tf": "30m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
     "t": 1.76,
-    "trades": 407,
+    "trades": 414,
     "breadth": [
-     35,
-     60
+     40,
+     65
     ],
     "ok": false,
     "why": [
@@ -55,7 +55,7 @@
     "t": 2.5,
     "trades": 202,
     "breadth": [
-     40,
+     35,
      70
     ],
     "ok": false,
@@ -86,7 +86,7 @@
  },
  "blackout": null,
  "minPaper": 10,
- "scannedAt": "2026-11-21T11:13:08.121Z",
+ "scannedAt": "2026-11-22T11:31:55.996Z",
  "briefing": null,
  "signals": [
   {
@@ -106,10 +106,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.565,
-    "t": 1.96,
-    "n": 23,
-    "sharpeTest": 1.2
+    "wrTest": 0.583,
+    "t": 1.97,
+    "n": 24,
+    "sharpeTest": 1.21
    },
    "stage": "osservazione",
    "proof": {
@@ -170,10 +170,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.421,
-    "t": 1.57,
-    "n": 159,
-    "sharpeTest": 2.39
+    "wrTest": 0.427,
+    "t": 1.63,
+    "n": 157,
+    "sharpeTest": 2.47
    },
    "stage": "osservazione",
    "proof": {
@@ -181,38 +181,6 @@
     "avgR": -0.1
    },
    "key": "GC=F-1h-sma-15-30-2-4",
-   "risk": 0.5,
-   "strength": 0,
-   "conf": null
-  },
-  {
-   "sym": "BNBUSDT",
-   "tf": "1h",
-   "strat": "RSI 35/70 SL1.5/TP2 ATR",
-   "dir": "FLAT",
-   "action": "FLAT (SL/TP colpito)",
-   "since": 1793977199999,
-   "price": 541.09,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
-   "news": {
-    "score": 0,
-    "heads": []
-   },
-   "bt": {
-    "wrTest": 0.667,
-    "t": 2.24,
-    "n": 18,
-    "sharpeTest": 4.51
-   },
-   "stage": "osservazione",
-   "proof": {
-    "n": 0,
-    "avgR": null
-   },
-   "key": "BNBUSDT-1h-rsi-35-70-1.5-2",
    "risk": 0.5,
    "strength": 0,
    "conf": null
@@ -245,6 +213,38 @@
     "avgR": 1.47
    },
    "key": "CL=F-1h-brk-80-0-3-4.5",
+   "risk": 0.5,
+   "strength": 0,
+   "conf": null
+  },
+  {
+   "sym": "BNBUSDT",
+   "tf": "1h",
+   "strat": "RSI 35/70 SL1.5/TP2 ATR",
+   "dir": "FLAT",
+   "action": "FLAT (SL/TP colpito)",
+   "since": 1793977199999,
+   "price": 553.21,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
+   "news": {
+    "score": 0,
+    "heads": []
+   },
+   "bt": {
+    "wrTest": 0.667,
+    "t": 2.24,
+    "n": 18,
+    "sharpeTest": 4.51
+   },
+   "stage": "osservazione",
+   "proof": {
+    "n": 0,
+    "avgR": null
+   },
+   "key": "BNBUSDT-1h-rsi-35-70-1.5-2",
    "risk": 0.5,
    "strength": 0,
    "conf": null
