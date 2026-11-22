@@ -1,5 +1,5 @@
 {
- "updated": 1795295131402,
+ "updated": 1795309932292,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
@@ -192,7 +192,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793977199999,
-   "price": 549.44,
+   "price": 550.92,
    "entry": null,
    "sl": null,
    "tp": null,
