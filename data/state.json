@@ -1,12 +1,12 @@
 {
- "updated": 1795432322688,
+ "updated": 1795439120320,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
   "used": 0
  },
  "basket": {
-  "updated": 1795347414450,
+  "updated": 1795438954342,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -16,10 +16,10 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/80 SL2/TP3 ATR",
-    "t": -0.3,
-    "trades": 367,
+    "t": -0.29,
+    "trades": 366,
     "breadth": [
-     25,
+     20,
      55
     ],
     "ok": false,
@@ -34,7 +34,7 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 1.76,
+    "t": 1.67,
     "trades": 414,
     "breadth": [
      40,
@@ -51,16 +51,17 @@
    {
     "basket": "crypto",
     "tf": "1h",
-    "label": "RSI 25/70 SL3/TP4.5 ATR",
-    "t": 2.5,
-    "trades": 202,
+    "label": "RSI 20/65 SL2/TP3 ATR",
+    "t": 2.84,
+    "trades": 126,
     "breadth": [
-     35,
-     70
+     40,
+     80
     ],
     "ok": false,
     "why": [
      "non significativa nel periodo di scelta",
+     "pochi trade nel test",
      "funziona solo su pochi asset"
     ],
     "perDay": null
@@ -69,8 +70,8 @@
     "basket": "forex",
     "tf": "1h",
     "label": "Momentum 80/10 SL2/TP3 ATR",
-    "t": 2.24,
-    "trades": 157,
+    "t": 2.23,
+    "trades": 155,
     "breadth": [
      60,
      60
@@ -86,7 +87,7 @@
  },
  "blackout": null,
  "minPaper": 10,
- "scannedAt": "2026-11-22T11:31:55.996Z",
+ "scannedAt": "2026-11-23T12:56:42.070Z",
  "briefing": null,
  "signals": [
   {
@@ -96,7 +97,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1795219199999,
-   "price": 1.3105645179748535,
+   "price": 1.3081642389297485,
    "entry": 1.3086435794830322,
    "sl": 1.317144388762997,
    "tp": 1.2916419609231027,
@@ -128,7 +129,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1795395599999,
-   "price": 0.8384000062942505,
+   "price": 0.8391199707984924,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -138,10 +139,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.691,
-    "t": 5.22,
-    "n": 418,
-    "sharpeTest": 6.55
+    "wrTest": 0.697,
+    "t": 5.49,
+    "n": 416,
+    "sharpeTest": 6.84
    },
    "stage": "osservazione",
    "proof": {
@@ -160,7 +161,7 @@
    "dir": "LONG",
    "action": "ATTIVO",
    "since": 1795417199999,
-   "price": 3622.5,
+   "price": 3615.89990234375,
    "entry": 3620.800048828125,
    "sl": 3563.9814111049714,
    "tp": 3734.437324274432,
@@ -170,10 +171,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.427,
-    "t": 1.63,
-    "n": 157,
-    "sharpeTest": 2.47
+    "wrTest": 0.421,
+    "t": 1.71,
+    "n": 159,
+    "sharpeTest": 2.61
    },
    "stage": "osservazione",
    "proof": {
@@ -192,7 +193,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793642399999,
-   "price": 82.4800033569336,
+   "price": 82.20999908447266,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -205,7 +206,7 @@
     "wrTest": 0.765,
     "t": 3.01,
     "n": 17,
-    "sharpeTest": 3.84
+    "sharpeTest": 3.83
    },
    "stage": "osservazione",
    "proof": {
@@ -224,7 +225,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793977199999,
-   "price": 556.25,
+   "price": 556.36,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -256,7 +257,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1794329999999,
-   "price": 1.0967316627502441,
+   "price": 1.0948106050491333,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -266,10 +267,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.5,
-    "t": 1.54,
-    "n": 30,
-    "sharpeTest": 2.15
+    "wrTest": 0.517,
+    "t": 1.65,
+    "n": 29,
+    "sharpeTest": 2.29
    },
    "stage": "osservazione",
    "proof": {
