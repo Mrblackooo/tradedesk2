@@ -38,12 +38,12 @@
    "active": true,
    "adopted": "2026-11-10T11:19:16.405Z",
    "bt": {
-    "wrTest": 0.583,
-    "t": 1.97,
-    "n": 24,
-    "sharpeTest": 1.21
+    "wrTest": 0.522,
+    "t": 1.8,
+    "n": 23,
+    "sharpeTest": 1.11
    },
-   "tested": "2026-11-23T12:56:42.068Z"
+   "tested": "2026-11-24T13:51:00.137Z"
   },
   {
    "sym": "USDCHF=X",
@@ -57,12 +57,12 @@
    "active": true,
    "adopted": "2026-11-15T11:02:35.719Z",
    "bt": {
-    "wrTest": 0.697,
-    "t": 5.49,
-    "n": 416,
-    "sharpeTest": 6.84
+    "wrTest": 0.689,
+    "t": 5.3,
+    "n": 418,
+    "sharpeTest": 6.64
    },
-   "tested": "2026-11-23T12:56:42.070Z"
+   "tested": "2026-11-24T13:51:00.139Z"
   },
   {
    "sym": "GC=F",
@@ -76,12 +76,12 @@
    "active": true,
    "adopted": "2026-10-19T08:59:52.211Z",
    "bt": {
-    "wrTest": 0.421,
-    "t": 1.71,
-    "n": 159,
-    "sharpeTest": 2.61
+    "wrTest": 0.439,
+    "t": 1.88,
+    "n": 157,
+    "sharpeTest": 2.83
    },
-   "tested": "2026-11-23T12:56:42.070Z"
+   "tested": "2026-11-24T13:51:00.139Z"
   },
   {
    "sym": "CL=F",
@@ -98,9 +98,9 @@
     "wrTest": 0.765,
     "t": 3.01,
     "n": 17,
-    "sharpeTest": 3.83
+    "sharpeTest": 3.84
    },
-   "tested": "2026-11-23T12:56:42.070Z"
+   "tested": "2026-11-24T13:51:00.139Z"
   },
   {
    "sym": "BNBUSDT",
@@ -114,12 +114,12 @@
    "active": true,
    "adopted": "2026-11-16T11:31:22.670Z",
    "bt": {
-    "wrTest": 0.667,
-    "t": 2.24,
-    "n": 18,
-    "sharpeTest": 4.51
+    "wrTest": 0.632,
+    "t": 1.71,
+    "n": 19,
+    "sharpeTest": 3.62
    },
-   "tested": "2026-11-23T12:56:42.070Z"
+   "tested": "2026-11-24T13:51:00.139Z"
   },
   {
    "sym": "EURUSD=X",
@@ -133,17 +133,17 @@
    "active": true,
    "adopted": "2026-11-03T10:58:04.367Z",
    "bt": {
-    "wrTest": 0.517,
-    "t": 1.65,
-    "n": 29,
-    "sharpeTest": 2.29
+    "wrTest": 0.5,
+    "t": 1.54,
+    "n": 30,
+    "sharpeTest": 2.15
    },
-   "tested": "2026-11-23T12:56:42.070Z"
+   "tested": "2026-11-24T13:51:00.139Z"
   }
  ],
- "scannedAt": "2026-11-23T12:56:42.070Z",
+ "scannedAt": "2026-11-24T13:51:00.139Z",
  "basket": {
-  "updated": 1795438954342,
+  "updated": 1795528559084,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -153,11 +153,11 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/80 SL2/TP3 ATR",
-    "t": -0.29,
-    "trades": 366,
+    "t": -0.6,
+    "trades": 374,
     "breadth": [
      20,
-     55
+     50
     ],
     "ok": false,
     "why": [
@@ -171,11 +171,11 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 1.67,
+    "t": 1.39,
     "trades": 414,
     "breadth": [
-     40,
-     65
+     35,
+     60
     ],
     "ok": false,
     "why": [
@@ -188,17 +188,16 @@
    {
     "basket": "crypto",
     "tf": "1h",
-    "label": "RSI 20/65 SL2/TP3 ATR",
-    "t": 2.84,
-    "trades": 126,
+    "label": "RSI 25/70 SL3/TP4.5 ATR",
+    "t": 3.13,
+    "trades": 219,
     "breadth": [
      40,
-     80
+     75
     ],
     "ok": false,
     "why": [
      "non significativa nel periodo di scelta",
-     "pochi trade nel test",
      "funziona solo su pochi asset"
     ],
     "perDay": null
@@ -207,7 +206,7 @@
     "basket": "forex",
     "tf": "1h",
     "label": "Momentum 80/10 SL2/TP3 ATR",
-    "t": 2.23,
+    "t": 2.36,
     "trades": 155,
     "breadth": [
      60,
