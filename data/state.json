@@ -1,9 +1,9 @@
 {
- "updated": 1795473859373,
+ "updated": 1795501858974,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 1
+  "used": 0
  },
  "basket": {
   "updated": 1795438954342,
@@ -97,7 +97,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1795219199999,
-   "price": 1.3031353950500488,
+   "price": 1.3046314716339111,
    "entry": 1.3086435794830322,
    "sl": 1.317144388762997,
    "tp": 1.2916419609231027,
@@ -126,14 +126,14 @@
    "sym": "USDCHF=X",
    "tf": "1h",
    "strat": "Stagionalità oraria 25/120 SL3/TP4.5 ATR",
-   "dir": "LONG",
-   "action": "ATTIVO",
-   "since": 1795471199999,
-   "price": 0.8412700295448303,
-   "entry": 0.8418499827384949,
-   "sl": 0.8378491178145805,
-   "tp": 0.8478512801243665,
-   "size": 105.2,
+   "dir": "FLAT",
+   "action": "FLAT",
+   "since": 1795478399999,
+   "price": 0.8415499925613403,
+   "entry": null,
+   "sl": null,
+   "tp": null,
+   "size": null,
    "news": {
     "score": 0,
     "heads": []
@@ -146,8 +146,8 @@
    },
    "stage": "osservazione",
    "proof": {
-    "n": 2,
-    "avgR": 0.24
+    "n": 3,
+    "avgR": 0.12
    },
    "key": "USDCHF=X-1h-tod-25-120-3-4.5",
    "risk": 0.5,
@@ -161,10 +161,10 @@
    "dir": "LONG",
    "action": "ATTIVO",
    "since": 1795417199999,
-   "price": 3634.39990234375,
-   "entry": 3620.800048828125,
-   "sl": 3563.9814111049714,
-   "tp": 3734.437324274432,
+   "price": 3627.39990234375,
+   "entry": 3620.60009765625,
+   "sl": 3563.7814480383836,
+   "tp": 3734.2373968919824,
    "size": 31.9,
    "news": {
     "score": 0,
@@ -193,7 +193,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793642399999,
-   "price": 80.25,
+   "price": 79.72000122070312,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -225,7 +225,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1795445999999,
-   "price": 555.42,
+   "price": 552.67,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -257,7 +257,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1794329999999,
-   "price": 1.0906314849853516,
+   "price": 1.0913456678390503,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -284,10 +284,10 @@
   }
  ],
  "paper": {
-  "n": 43,
-  "wr": 0.465,
+  "n": 44,
+  "wr": 0.455,
   "avgR": -0.03,
-  "sumPct": 9.88
+  "sumPct": 9.82
  },
  "recent": [
   {
@@ -301,9 +301,13 @@
    "tp": 0.8478512801243665,
    "slPct": 0.475,
    "t0": 1795471199999,
-   "status": "open",
+   "status": "signal",
    "news": 0,
-   "blackout": false
+   "blackout": false,
+   "exit": 0.8415499925613403,
+   "t1": 1795501858021,
+   "pct": -0.06,
+   "r": -0.13
   },
   {
    "id": "GBPUSD=X-1d-1795219199999",
