@@ -1,12 +1,12 @@
 {
- "updated": 1795606918498,
+ "updated": 1795612314708,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
   "used": 0
  },
  "basket": {
-  "updated": 1795528559084,
+  "updated": 1795612147385,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -16,10 +16,10 @@
     "basket": "crypto",
     "tf": "15m",
     "label": "RSI 20/80 SL2/TP3 ATR",
-    "t": -0.6,
-    "trades": 374,
+    "t": -0.57,
+    "trades": 373,
     "breadth": [
-     20,
+     15,
      50
     ],
     "ok": false,
@@ -37,7 +37,7 @@
     "t": 1.39,
     "trades": 414,
     "breadth": [
-     35,
+     40,
      60
     ],
     "ok": false,
@@ -52,8 +52,8 @@
     "basket": "crypto",
     "tf": "1h",
     "label": "RSI 25/70 SL3/TP4.5 ATR",
-    "t": 3.13,
-    "trades": 219,
+    "t": 2.97,
+    "trades": 214,
     "breadth": [
      40,
      75
@@ -68,25 +68,29 @@
    {
     "basket": "forex",
     "tf": "1h",
-    "label": "Momentum 80/10 SL2/TP3 ATR",
-    "t": 2.36,
-    "trades": 155,
+    "label": "RSI nel trend 30/200 SL1.5/TP3 ATR",
+    "t": 2.5,
+    "trades": 122,
     "breadth": [
      60,
-     60
+     90
     ],
     "ok": false,
     "why": [
      "non significativa nel periodo di scelta",
-     "non significativa nel test"
+     "pochi trade nel test"
     ],
     "perDay": null
    }
   ]
  },
- "blackout": null,
+ "blackout": {
+  "title": "Core PCE Price Index m/m",
+  "country": "USD",
+  "t": 1795613400000
+ },
  "minPaper": 10,
- "scannedAt": "2026-11-24T13:51:00.139Z",
+ "scannedAt": "2026-11-25T13:03:01.988Z",
  "briefing": null,
  "signals": [
   {
@@ -94,9 +98,9 @@
    "tf": "1d",
    "strat": "Incrocio SMA 15/30 SL1/TP2 ATR",
    "dir": "SHORT",
-   "action": "ATTIVO",
+   "action": "IN ATTESA (evento macro)",
    "since": 1795219199999,
-   "price": 1.3061480522155762,
+   "price": 1.3061310052871704,
    "entry": 1.3086435794830322,
    "sl": 1.317144388762997,
    "tp": 1.2916419609231027,
@@ -106,10 +110,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.522,
-    "t": 1.8,
+    "wrTest": 0.565,
+    "t": 1.85,
     "n": 23,
-    "sharpeTest": 1.11
+    "sharpeTest": 1.14
    },
    "stage": "osservazione",
    "proof": {
@@ -128,7 +132,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1795564799999,
-   "price": 0.831849992275238,
+   "price": 0.830590009689331,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -138,10 +142,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.689,
-    "t": 5.3,
+    "wrTest": 0.684,
+    "t": 5.2,
     "n": 418,
-    "sharpeTest": 6.64
+    "sharpeTest": 6.49
    },
    "stage": "osservazione",
    "proof": {
@@ -160,7 +164,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1795553999999,
-   "price": 3544.300048828125,
+   "price": 3545.300048828125,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -170,9 +174,9 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.439,
-    "t": 1.88,
-    "n": 157,
+    "wrTest": 0.434,
+    "t": 1.86,
+    "n": 159,
     "sharpeTest": 2.83
    },
    "stage": "osservazione",
@@ -192,7 +196,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1793642399999,
-   "price": 81.5199966430664,
+   "price": 82.36000061035156,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -205,7 +209,7 @@
     "wrTest": 0.765,
     "t": 3.01,
     "n": 17,
-    "sharpeTest": 3.84
+    "sharpeTest": 3.83
    },
    "stage": "osservazione",
    "proof": {
@@ -224,7 +228,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1795445999999,
-   "price": 538.65,
+   "price": 539.65,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -256,7 +260,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1794329999999,
-   "price": 1.0942115783691406,
+   "price": 1.0940918922424316,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -266,10 +270,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.5,
-    "t": 1.54,
-    "n": 30,
-    "sharpeTest": 2.15
+    "wrTest": 0.517,
+    "t": 1.59,
+    "n": 29,
+    "sharpeTest": 2.18
    },
    "stage": "osservazione",
    "proof": {
