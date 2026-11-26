@@ -1,5 +1,5 @@
 {
- "updated": 1795612311160,
+ "updated": 1795697442292,
  "feePct": 0.05,
  "strategies": [],
  "report": [
@@ -7,7 +7,7 @@
    "sym": "BTCUSDT",
    "tf": "5m",
    "candles": 60000,
-   "atrPct": 0.121,
+   "atrPct": 0.122,
    "best": {
     "st": "rsi",
     "a": 20,
@@ -17,7 +17,7 @@
     "wr": 0.583,
     "n": 12,
     "t": 0.48,
-    "costR": 0.549
+    "costR": 0.547
    },
    "ok": false,
    "why": [
@@ -35,21 +35,20 @@
    "atrPct": 0.256,
    "best": {
     "st": "rsi",
-    "a": 25,
+    "a": 20,
     "b": 85,
-    "ks": 1.5,
+    "ks": 1,
     "kt": 2,
-    "wr": 0.4,
-    "n": 20,
-    "t": -0.43,
-    "costR": 0.261
+    "wr": 0.375,
+    "n": 16,
+    "t": -0.05,
+    "costR": 0.391
    },
    "ok": false,
    "why": [
     "costi",
     "test",
     "trade",
-    "stab",
     "signif"
    ]
   },
@@ -57,7 +56,7 @@
    "sym": "BTCUSDT",
    "tf": "30m",
    "candles": 60000,
-   "atrPct": 0.405,
+   "atrPct": 0.406,
    "best": {
     "st": "rsi",
     "a": 30,
@@ -89,7 +88,7 @@
     "wr": 0.5,
     "n": 20,
     "t": 0.27,
-    "costR": 0.597
+    "costR": 0.594
    },
    "ok": false,
    "why": [
@@ -117,7 +116,6 @@
    },
    "ok": false,
    "why": [
-    "train",
     "trade",
     "signif"
    ]
@@ -158,7 +156,7 @@
     "wr": 0.286,
     "n": 7,
     "t": 0.33,
-    "costR": 0.317
+    "costR": 0.315
    },
    "ok": false,
    "why": [
@@ -215,7 +213,7 @@
    "sym": "XRPUSDT",
    "tf": "5m",
    "candles": 60000,
-   "atrPct": 0.197,
+   "atrPct": 0.198,
    "best": {
     "st": "rsi",
     "a": 25,
@@ -225,7 +223,7 @@
     "wr": 0.6,
     "n": 10,
     "t": 0.34,
-    "costR": 0.634
+    "costR": 0.631
    },
    "ok": false,
    "why": [
@@ -260,7 +258,7 @@
    "sym": "XRPUSDT",
    "tf": "30m",
    "candles": 60000,
-   "atrPct": 0.617,
+   "atrPct": 0.618,
    "best": {
     "st": "rsi",
     "a": 25,
