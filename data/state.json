@@ -1,9 +1,9 @@
 {
- "updated": 1795697510103,
+ "updated": 1795730395118,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
-  "used": 0
+  "used": 1
  },
  "basket": {
   "updated": 1795697314787,
@@ -87,7 +87,7 @@
  "blackout": null,
  "minPaper": 10,
  "scannedAt": "2026-11-26T12:43:43.244Z",
- "briefing": null,
+ "briefing": "Sentiment delle ultime 6 ore (modello FinBERT) – BNB: neutro (+0.06).",
  "signals": [
   {
    "sym": "GBPUSD=X",
@@ -96,7 +96,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1795219199999,
-   "price": 1.3104957342147827,
+   "price": 1.31065034866333,
    "entry": 1.3086435794830322,
    "sl": 1.317144388762997,
    "tp": 1.2916419609231027,
@@ -125,14 +125,14 @@
    "sym": "USDCHF=X",
    "tf": "1h",
    "strat": "Stagionalità oraria 25/120 SL3/TP4.5 ATR",
-   "dir": "FLAT",
-   "action": "FLAT",
-   "since": 1795651199999,
-   "price": 0.8343200087547302,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
+   "dir": "SHORT",
+   "action": "ATTIVO",
+   "since": 1795723199999,
+   "price": 0.8342999815940857,
+   "entry": 0.8341100215911865,
+   "sl": 0.8371293099346497,
+   "tp": 0.8295810890759917,
+   "size": 138.1,
    "news": {
     "score": 0,
     "heads": []
@@ -162,8 +162,8 @@
    "since": 1795651199999,
    "price": 3620.39990234375,
    "entry": 3603.800048828125,
-   "sl": 3542.670672837408,
-   "tp": 3726.0588008095597,
+   "sl": 3542.6706729576076,
+   "tp": 3726.0588005691598,
    "size": 29.5,
    "news": {
     "score": 0,
@@ -192,14 +192,16 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1795618799999,
-   "price": 552.88,
+   "price": 556.5,
    "entry": null,
    "sl": null,
    "tp": null,
    "size": null,
    "news": {
     "score": 0,
-    "heads": []
+    "heads": [
+     "BNB Chain details new layer-1 for trading, private finance and AI"
+    ]
    },
    "bt": {
     "wrTest": 0.579,
@@ -215,7 +217,12 @@
    "key": "BNBUSDT-1h-rsi-35-70-1.5-2",
    "risk": 0.5,
    "strength": 0,
-   "conf": null
+   "conf": null,
+   "llm": {
+    "score": 0.06,
+    "risk": "low",
+    "note": "sentiment +0.06 su 1 titoli"
+   }
   },
   {
    "sym": "CL=F",
@@ -226,8 +233,8 @@
    "since": 1795640399999,
    "price": 84.41999816894531,
    "entry": 84.12999725341797,
-   "sl": 82.01192772021432,
-   "tp": 87.30710155322346,
+   "sl": 82.01192771665045,
+   "tp": 87.30710155856926,
    "size": 19.9,
    "news": {
     "score": 0,
@@ -256,7 +263,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1794329999999,
-   "price": 1.0979359149932861,
+   "price": 1.0972130298614502,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -289,6 +296,21 @@
   "sumPct": 9.66
  },
  "recent": [
+  {
+   "id": "USDCHF=X-1h-1795723199999",
+   "key": "USDCHF=X-1h-tod-25-120-3-4.5",
+   "sym": "USDCHF=X",
+   "tf": "1h",
+   "dir": "SHORT",
+   "entry": 0.8341100215911865,
+   "sl": 0.8371293099346497,
+   "tp": 0.8295810890759917,
+   "slPct": 0.362,
+   "t0": 1795723199999,
+   "status": "open",
+   "news": 0,
+   "blackout": false
+  },
   {
    "id": "USDCHF=X-1h-1795636799999",
    "key": "USDCHF=X-1h-tod-25-120-3-4.5",
@@ -550,25 +572,6 @@
    "t1": 1793793600000,
    "pct": -1.275,
    "r": -1.14
-  },
-  {
-   "id": "EURUSD=X-1h-1793757599999",
-   "key": "EURUSD=X-1h-rsi-35-75-2-4",
-   "sym": "EURUSD=X",
-   "tf": "1h",
-   "dir": "SHORT",
-   "entry": 1.1243535280227661,
-   "sl": 1.1271507797578038,
-   "tp": 1.1187590245526908,
-   "slPct": 0.249,
-   "t0": 1793757599999,
-   "status": "sl",
-   "news": 0,
-   "blackout": false,
-   "exit": 1.1271507797578038,
-   "t1": 1793797200000,
-   "pct": -0.273,
-   "r": -1.1
   }
  ]
 }
