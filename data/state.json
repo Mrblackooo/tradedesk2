@@ -1,12 +1,12 @@
 {
- "updated": 1795752488288,
+ "updated": 1795783274070,
  "riskPct": 0.5,
  "daily": {
   "max": 4,
   "used": 0
  },
  "basket": {
-  "updated": 1795697314787,
+  "updated": 1795783106223,
   "entries": 0,
   "perDay": 0,
   "label": "",
@@ -15,12 +15,12 @@
    {
     "basket": "crypto",
     "tf": "15m",
-    "label": "RSI 20/80 SL2/TP3 ATR",
-    "t": -0.42,
-    "trades": 371,
+    "label": "Breakout 100 SL3/TP4.5 ATR",
+    "t": -0.41,
+    "trades": 1222,
     "breadth": [
-     15,
-     55
+     5,
+     30
     ],
     "ok": false,
     "why": [
@@ -34,10 +34,10 @@
     "basket": "crypto",
     "tf": "30m",
     "label": "RSI 20/65 SL3/TP4.5 ATR",
-    "t": 1.43,
+    "t": 1.42,
     "trades": 414,
     "breadth": [
-     35,
+     40,
      60
     ],
     "ok": false,
@@ -51,12 +51,12 @@
    {
     "basket": "crypto",
     "tf": "1h",
-    "label": "RSI 25/70 SL3/TP4.5 ATR",
-    "t": 2.94,
-    "trades": 216,
+    "label": "RSI 30/75 SL3/TP4.5 ATR",
+    "t": 2.98,
+    "trades": 180,
     "breadth": [
-     45,
-     75
+     40,
+     65
     ],
     "ok": false,
     "why": [
@@ -68,17 +68,17 @@
    {
     "basket": "forex",
     "tf": "1h",
-    "label": "Momentum 80/10 SL2/TP3 ATR",
-    "t": 2.38,
-    "trades": 155,
+    "label": "RSI nel trend 30/200 SL1.5/TP3 ATR",
+    "t": 2.5,
+    "trades": 122,
     "breadth": [
      60,
-     60
+     90
     ],
     "ok": false,
     "why": [
      "non significativa nel periodo di scelta",
-     "non significativa nel test"
+     "pochi trade nel test"
     ],
     "perDay": null
    }
@@ -86,7 +86,7 @@
  },
  "blackout": null,
  "minPaper": 10,
- "scannedAt": "2026-11-26T12:43:43.244Z",
+ "scannedAt": "2026-11-27T12:32:18.978Z",
  "briefing": null,
  "signals": [
   {
@@ -96,7 +96,7 @@
    "dir": "SHORT",
    "action": "ATTIVO",
    "since": 1795219199999,
-   "price": 1.3116130828857422,
+   "price": 1.3131630420684814,
    "entry": 1.3086435794830322,
    "sl": 1.317144388762997,
    "tp": 1.2916419609231027,
@@ -107,9 +107,9 @@
    },
    "bt": {
     "wrTest": 0.522,
-    "t": 1.78,
+    "t": 1.73,
     "n": 23,
-    "sharpeTest": 1.09
+    "sharpeTest": 1.07
    },
    "stage": "osservazione",
    "proof": {
@@ -128,7 +128,7 @@
    "dir": "FLAT",
    "action": "FLAT",
    "since": 1795737599999,
-   "price": 0.8337600231170654,
+   "price": 0.8343499898910522,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -138,10 +138,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.683,
-    "t": 5.16,
-    "n": 420,
-    "sharpeTest": 6.45
+    "wrTest": 0.68,
+    "t": 5.23,
+    "n": 419,
+    "sharpeTest": 6.46
    },
    "stage": "osservazione",
    "proof": {
@@ -170,10 +170,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.439,
-    "t": 2,
-    "n": 157,
-    "sharpeTest": 3.03
+    "wrTest": 0.438,
+    "t": 1.92,
+    "n": 160,
+    "sharpeTest": 2.93
    },
    "stage": "osservazione",
    "proof": {
@@ -189,23 +189,23 @@
    "sym": "BNBUSDT",
    "tf": "1h",
    "strat": "RSI 35/70 SL1.5/TP2 ATR",
-   "dir": "FLAT",
-   "action": "FLAT (SL/TP colpito)",
-   "since": 1795618799999,
-   "price": 562.53,
-   "entry": null,
-   "sl": null,
-   "tp": null,
-   "size": null,
+   "dir": "SHORT",
+   "action": "ATTIVO",
+   "since": 1795755599999,
+   "price": 563.73,
+   "entry": 563.62,
+   "sl": 568.9909091031448,
+   "tp": 556.4587878624736,
+   "size": 52.5,
    "news": {
     "score": 0,
     "heads": []
    },
    "bt": {
     "wrTest": 0.579,
-    "t": 1.09,
+    "t": 1.23,
     "n": 19,
-    "sharpeTest": 2.36
+    "sharpeTest": 2.6
    },
    "stage": "osservazione",
    "proof": {
@@ -237,7 +237,7 @@
     "wrTest": 0.778,
     "t": 2.99,
     "n": 18,
-    "sharpeTest": 3.85
+    "sharpeTest": 3.84
    },
    "stage": "osservazione",
    "proof": {
@@ -256,7 +256,7 @@
    "dir": "FLAT",
    "action": "FLAT (SL/TP colpito)",
    "since": 1794329999999,
-   "price": 1.0976948738098145,
+   "price": 1.0967316627502441,
    "entry": null,
    "sl": null,
    "tp": null,
@@ -266,10 +266,10 @@
     "heads": []
    },
    "bt": {
-    "wrTest": 0.517,
-    "t": 1.65,
-    "n": 29,
-    "sharpeTest": 2.29
+    "wrTest": 0.519,
+    "t": 1.59,
+    "n": 27,
+    "sharpeTest": 2.16
    },
    "stage": "osservazione",
    "proof": {
